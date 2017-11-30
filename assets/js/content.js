@@ -1,110 +1,92 @@
 var slideData = [
 
   {
-    section: "INTRODUCTION",
-     icon: "pcy.svg",
+    section: "",
     header: "",
     bkgImage: {
-      small: "intro-small.jpg",
-      medium: "intro-medium.jpg",
-      large: "intro-large.jpg"
+      small: "Denver_capitol.jpg",
+      medium: "Denver_capitol.jpg",
+      large: "Denver_capitol.jpg"
     },
     body: `
 
 
   <span class="opening">
-  <p>Educators, families, and policymakers have known for some time that the academic achievement gap is in large part due to an opportunity gap. Experts agree that accessible, high quality after school and summer learning programs are an essential set of opportunities that can help to close the achievement gap and create more equitable educational outcomes for kids where differences in race, culture, and family income have too often been predictive of acute disparities. For after school and summer programs to do their work, they need to meet kids where they are: in schools, and where kids live, play, and socialize.  Right now, some of the most important work to meet kids where they are with expanded learning opportunities is happening where they live, in affordable and public housing settings.</p>
+  <p>Anyone who travels on highways in the Front Range knows that congestion is a major problem in the Denver metro area (Figure 1, below text) and, based on expected population growth (Figure 2) over the next 30 years, it’s only going to get worse.</p>
   </span>
 
 
 
 <p>
-The Partnership for Children & Youth (PCY), through our HousED Initiative, has spent years working with housing providers throughout California, enhancing the quality of learning in programs that collectively serve over 40,000 kids. HousED has also partnered with visionary leaders in housing to plan the future of capacity building, quality improvement, and enhanced public support for housing’s role in building greater equity in academic and life outcomes for young people from under-resourced families.</p>
+The traditional solution, expanding the highway network to relieve congestion and accommodate additional demand, is both unaffordable and ineffective. The Colorado Department of  Transportation has said it needs an additional $1 billion per year to maintain and expand the existing highway network, but the department’s main source of revenue, motor fuel taxes, actually is losing value because of inflation. Between 1993 (when Colorado last raised its gas tax) and 2015, the nominal value of the money CDOT collected rose by about $200 million dollars, but in real value the revenue has actually decreased by $21 million (Figure 3). The high cost of highway expansion makes it difficult to add lanes in a time of declining funding. Figure 4 shows the cost of recent highway expansions in the Denver metro area.
 <p>
-In 2015, we brought together a diverse group of housing agencies and educators to meet an ambitious goal: establish standards for quality expanded learning programs that speak to the unique needs and challenges of prodviding services to youth in public and affordable housing communities. The Quality Standards for Expanded Learning in California produced by the California Department of Education and the California Afterschool Network served as a strong foundation for us and our early partners; the National Afterschool Association, Council of Large Public Housing Authorities, The David P. Weikart Center for Youth Program Quality, and the Housing Development Consortium to use, adapt, and share our work.</p>
+Colorado leaders have proposed ways to raise more money for transportation, but the efforts have fallen short. In 2017, the state legislature came close to passing
 <p>
-These standards are a groundbreaking step forward. We are already seeing the impact these ideas are having on expanded learning programs in housing, and we look forward to hearing how you will use them. Every program is different, and we believe that these standards will serve as a guide that staff at each program will adapt to meet their unique needs.</p>
+House Bill 1242, which would have raised sales taxes to invest in roads, public transit and bicycle and pedestrian infrastructure. But even if this measure had passed, the revenue for roads would have been only one third of the amount that CDOT says it needs. So, adding new lanes to all of our congested highways seem politically unachievable.
 <P>
-We hope you will join us, and make these standards your own. Together, we will change the lives of youth in expanded learning programs across the country. Together, we will build pathways out of poverty.
-<p><br />
-<div class='imgwrapperB'><img class='reportimg' src='assets/images/logos/ca-dept-education.png' width='420' height='250' border='0' alt='HouseED Housing and Education'></div>
-<div class='imgwrapperE'><img class='reportimg' src='assets/images/logos/CLPHA-Logo.png' border='0' width='376' height='165' alt='HouseED Housing and Education'></div>
-<div class='imgwrapperF'><img class='reportimg' src='assets/images/logos/HDC_horiz_rgb.png' width='417' height='86' border='0' alt='HouseED Housing and Education'></div>
-<div class='imgwrapperE'><img class='reportimg' src='assets/images/logos/CYPQ_RGB.png' width='417' height='183' border='0' alt='HouseED Housing and Education'></div>
-<div class='imgwrapperC'><img class='reportimg' src='assets/images/logos/NAALogo_2013Colors.png' width='417' height='102' border='0' alt='HouseED Housing and Education'></div>
-
-    `
-  },
-  
-
-
-  {
-    section: "PROGRAMMATIC STANDARDS",
-     icon: "pcy.svg",
-    header: "",
-    bkgImage: {
-      small: "1-Cover-small.jpg",
-      medium: "1-Cover-medium.jpg",
-      large: "1-Cover-large.jpg"
-    },
-    body: `
-<h3 class='staff'>CLEAR VISION, MISSION, PURPOSE, AND MANAGEMENT</h3>
+Even if Colorado could find significant new revenues to expand its highways, the added lanes and routes would not untangle metro Denver’s congestion. Multiple studies show that while increasing highway capacity might temporarily reduce congestion, in the long run it only encourages more people to drive until congestion returns to high levels.
 <p>
-The program has clearly defined their vision, mission, goals, and measurable outcomes that respond to the needs of the community, reflect broad stakeholder input, and drive program design, implementation, and improvement. It demonstrates sound fiscal and administrative practices that are supported by, and communicated to, staff and stakeholders.
-</p>
-<h3 class='staff'>CONTINUOUS QUALITY IMPROVEMENT</h3>
-The program uses data from multiple sources to assess its strengths and opportunities for growth, in order to continuously improve program design, outcomes, and impact.
+One compelling example is the $1.67 billion Transportation Expansion Project, commonly called T- REX, which expanded Interstate 25 and added transit service parallel to the highway through southeast metro Denver. The project started in 2001, finished in 2006, but just four years later – in 2010 – congestion had returned to the level experienced before construction began. (Figure 5). The accompanying rail line provides a fast, uncongested trip for many travelers, but the highway expansion had no long-term benefit in reduced congestion according to CDOT’s congestion measurements. 
+
 <br />
-<br />
-<h3 class='staff'>QUALITY STAFF</h3>
-The program recruits and retains high quality staff and volunteers. It provides a safe and supportive environment for staff and ongoing professional development based on assessed staff needs and the organization’s vision, mission,  and goals.
-<br />
-<br />
-<h3 class='staff'>COLLABORATIVE PARTNERSHIPS</h3>
-The program intentionally builds and supports collaborative relationships among internal and external constituents, including families, schools, the community, and property stakeholders to achieve program goals.
-<br />
-<br />
-<h3 class='staff'>FAMILY ENGAGEMENT</h3>
-The program uses strength-based strategies to partner with families to manage and sustain their children’s learning and healthy development.
-<br />
-<br />
-<h3 class='staff'>SUSTAINABILITY</h3>
-The program builds enduring partnerships with property stakeholders, internal and external organizations, agencies, neighbors, and the community to secure monetary and in-kind contributions.
 
     `
   },
   
 
 
-
   {
-    section: "POINT-OF-SERVICE STANDARDS",
-     icon: "pcy.svg",
+    section: "",
     header: "",
     bkgImage: {
-      small: "1-Cover-small.jpg",
-      medium: "1-Cover-medium.jpg",
-      large: "1-Cover-large.jpg"
+      small: "sweep02.png",
+      medium: "sweep02.png",
+      large: "sweep02.png"
     },
     body: `
-<h3 class='prog'>DIVERSITY, ACCESS, AND INCLUSIVITY</h3>
-The program fosters an inclusive environment in which each participant’s individuality will be respected, understood, and embraced regardless of socioeconomic status, culture, ethnicity, religion, sex, age, national origin, medical conditions, physical ability, sexual orientation, and gender identity and/or expression.<br />
-<br />
-<h3 class='prog'>SAFE AND SUPPORTIVE ENVIRONMENT</h3>
-The program provides a safe and nurturing environment that supports the developmental, social-emotional, physical, and personal well -being of all children and youth.<br />
-<br />
-<h3 class='prog'>ACTIVE AND ENGAGED LEARNING</h3>
-The program design and activities utilize meaningful and engaging learning methods that promote collaboration and expand opportunities for children and youth.<br />
-<br />
-<h3 class='prog'>SKILL BUILDING</h3>
-The program maintains high expectations for all children and youth, intentionally links program learning goals with state and other standards, and provides activities to help participants achieve mastery.<br />
-<br />
-<h3 class='prog'>YOUTH VOICE AND LEADERSHIP</h3>
-The program provides and supports opportunities for children and youth to play a meaningful role in program design and implementation, and provides ongoing access to authentic leadership roles.<br />
-<br />
-<h3 class='prog'>HEALTHY CHOICES AND BEHAVIORS</h3>
-The program promotes the well-being of youth through opportunities to learn about and practice balanced nutrition, physical activity, and other healthy choices in an environment that supports and models a healthy lifestyle.
+<p>
+What if there was a way to increase mobility on the existing road, and improve transit and other options, without needing more public funds? This sounds like magic, but it really just requires a smart approach to using market forces to optimize the use of our existing highway lanes.
+</p>
+<p>
+The idea actually is very simple: Convert some existing highway lanes into high-occupancy toll (HOT) lanes. This relatively low-cost alternative can ensure a congestion-free travel option. The change takes less time to implement than adding entirely new lanes, and certainly costs far less money. Benefits can be maximized by using the revenue generated by the tolls to invest in improved access to public transit, expanding and upgrading biking and walking infrastructure, and additional alternatives such as carpools and vanpools.
+</p>
+ <p>
+Conversion of existing lanes to managed lanes, along with aggressive promotion of alternatives to driving alone, will give travelers more choices, without increasing congestion in the remaining general purpose lanes, all at much lower cost than trying to expand the highway.
+</p>
+<p>
+Colorado leaders have tried something very similar along U.S. 36 between Boulder and Denver, where the state added a high-occupancy travel (HOT) lane linking two key parts of the metro area, while the Regional Transportation District provides high-quality, rapid bus service with buses leaving every six minutes during rush hour or other peak travel periods. In this project, HOT lanes were created by widening the highway, not converting an existing lane.
+</p>
+<p>
+Vehicles with three or more occupants can use the HOT lanes for free, while cars with only one or two occupants pay reasonable use fees. Automatic devices collect information to assess the fees either by reading license plates or transponders of vehicles traveling the HOT lanes. Money from the HOT fees has helped fund the project. Travel along U.S. 36 has become much smoother and faster despite rapid population growth, particularly in Boulder County. 
+</p>
     `
+  },
+  
+
+
+
+  {
+    section: "",
+     header: "",
+    bkgImage: {
+      small: "sweep02.png",
+      medium: "sweep02.png",
+      large: "sweep02.png"
+    },
+    body: `
+<p>
+But it is expensive to add new lanes, and in many places physical constraints make it amost impossible. Other Front Range locations should examine the approach of incorporating HOT lanes on existing roads. Ironically, despite its recent expansion, a top candidate is I-25 through the T-REX area because of the severe congestion, and no realistic options to further expand the highway that now is hemmed in by large concrete walls and a rail line, much of it bordered by expensive commercial properties.				
+<p>
+As part of a companion white paper1, SWEEP analyzed this section of I-25 and found that there could be significant benefits from converting one lane in each direction to a HOT lane, then investing the revenue in transit passes and connections to transit particularly for the first and final miles of popular commuter routes. This win-win approach would give drivers access to HOT lanes where congestion would be greatly reduced. It further would allow more people to use additional, affordable, effective and efficient transit instead of driving. Meanwhile, traffic in the remaining “free” lanes would be no worse than before the changes. This method optimizes the use of the existing highway, and will give travelers new options that will save them time, whether they choose to pay a toll when they are in a rush, or take the train because there are now better first- and final-mile connections to the transit stations.						
+
+<p>
+This approach should appeal across the political spectrum. For conservatives, the plan minimizes expenditures of tax money and uses market forces to manage congestion. For those on the left, this approach also would increase transit use, avoid environmental impacts and give low-income commuters better access to transit. In a world of extremely limited transportation funds, it should appeal to officials trying to manage limited budgets by make the best use of existing infrastructure.					
+
+<p>
+Maybe it is time to try something new. 
+
+
+`
   },
   
 
@@ -112,8 +94,7 @@ The program promotes the well-being of youth through opportunities to learn abou
 
 
   {
-    section: "RECOMMENDED USES AND EXPANDED LEARNING DEFINITIONS",
-      icon: "pcy.svg",
+    section: "",
    header: "",
     bkgImage: {
        small: "4-Rec_Uses-small.jpg",
@@ -133,48 +114,11 @@ The program promotes the well-being of youth through opportunities to learn abou
       large: "5-Clear_Vision-large.jpg"
     },
     body: `
-      <h3 class='prog'>
-      Programmatic Level
-      </h3>
-      <ul>
-        <li>
-          The program involves all stakeholders in the creation of its vision, mission, goals, and desired outcomes. Participating stakeholders may include:
-          <ul>
-            <li>Youth</li>
-            <li>Families</li>
-            <li>Program staff</li>
-            <li>School site partners</li>
-            <li>Community partners</li>
-            <li>Property management</li>
-          </ul>
-        </li>
-        <li>The program ensures that its vision and mission complement each other and are reflected in program goals and outcomes.</li>
-        <li>
-          The program intentionally aligns the following with its vision, mission, goals, and outcomes:
-          <ul>
-            <li>Policies and procedures</li>
-            <li>Program plan</li>
-            <li>Budget</li>
-            <li>Staff development</li>
-            <li>Communications and marketing materials</li>
-          </ul>
-        </li>
-        <li>The program co-creates the roles and responsibilities in advancing its vision, mission, and goals with participants, families, staff, and partners.</li>
-        <li>The program regularly communicates, reviews, and makes appropriate changes to goals and outcomes in collaboration with all stakeholders.</li>
-        <li>The program creates and annually updates manuals that address fiscal management, personnel policies, and program operation, and adhere to federal, state, local, grant, and other revenue requirements.</li>
-        <li>The program creates and distributes user-friendly family handbooks that describe policies and procedures.</li>
-        <li>The program has a strong fiscal management system that includes:</li>
-           <ul>
-            <li>A well documented budget with line item expenses and the duration and amount of each revenue source</li>
-            <li>Flexibility at the program and site level for managers to make budgetary decisions throughout the year</li>
-            <li>A policy that allows managers to develop and utilize skills to manage the budget</li>
-          </ul>
-       </ul>
+      
     `
   },
   {
-    section: "CLEAR VISION, MISSION, PURPOSE, AND MANAGEMENT",
-   icon: "pcy-housed-icons-final2_clear vision 2.svg",
+    section: "",
    header: "",
     bkgImage: {
       small: "5-Clear_Vision-content-small-wide.jpg",
@@ -182,27 +126,7 @@ The program promotes the well-being of youth through opportunities to learn abou
       large: "5-Clear_Vision-content-large-wide.jpg"
     },
     body: `
- <h3 class=staff>Staff Level</h3>
-<ul><li>Staff design activities to advance the program’s goals
-and outcomes.
-</li>
-<li>Staff share program goals and outcomes with youth,
-families, and other stakeholders.
-</li><li>Staff take advantage of opportunities to develop
-management and leadership skills, and stay informed about new research, best practices, and innovations in expanded learning programs.
-</li><li>Staff at the program and site level keep up-to-date
-and accessible records on all participants, employees, and volunteers.
-</li><li>Site coordinators manage site-level budgets, have the
-flexibility to make site-level decisions about spending, track their expenses using the program’s fiscal
-management system, and have a process for requesting additional funds when needed.
-</li></ul><h3 class=part>Participant and Family Level</h3>
-<ul><li>Participants know the goals and outcomes of
-the program.
-</li><li>Participants provide input that is used to impact the
-program’s vision, mission, goals, and outcomes.
-</li></ul> 
-<blockquote>
-WITH THIS PLATFORM OF AFFORDABLE HOUSING, WE HAVE A WINDOW OF OPPORTUNITY WHERE WE CAN ENGAGE WITH FAMILIES AND INVEST IN THE RESOURCE THAT THEY CARE ABOUT THE MOST, WHICH IS YOUNG PEOPLE.</blockquote>   `
+    `
   },
 
     {
