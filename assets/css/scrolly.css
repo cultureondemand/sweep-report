@@ -955,8 +955,7 @@ background-color: #fff;
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {#logoOpener img {
-  margin-top: 1em;
-  margin-bottom: 1.6em;
+   margin-bottom: 1.6em;
 
 }
 
@@ -969,8 +968,7 @@ background-color: #fff;
  
  
 #logoOpener img {
-  margin-top: 1em;
-  margin-bottom: .9em;
+   margin-bottom: .9em;
 
 }
 
@@ -979,8 +977,7 @@ background-color: #fff;
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {#logoOpener img {
-  margin-top: 1em;
-  margin-bottom: .6em;
+   margin-bottom: .6em;
 
 }
 
