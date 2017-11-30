@@ -1191,8 +1191,8 @@ top: 0;
 left: 30%;
   text-transform: uppercase;
   color: #fff;
-  font-size: 32px;
-vertical-align: bottom;
+  font-size: 24px;
+/* vertical-align: bottom; */
    box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 
   font-family: "HelveticaNeueLight",
@@ -1208,8 +1208,7 @@ vertical-align: bottom;
     sans-serif;
   font-weight: 900;
 height: 119px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin:auto;
   padding: 12px;
   text-align: center;
   line-height: 1em;
@@ -1232,9 +1231,9 @@ top: 0;
 left: 30%;
   text-transform: uppercase;
   color: #fff;
-  font-size: 48px;
+  font-size: 36px;
    box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-word-spacing: 100vw; 
+ /* word-spacing: 100vw; */
   font-family: "HelveticaNeueLight",
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
@@ -1248,9 +1247,10 @@ word-spacing: 100vw;
     sans-serif;
   font-weight: 900;
 height: 139px;
-vertical-align: bottom;
+/*vertical-align: bottom;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 0; */
+  margin:auto;
   padding: 14px;
   text-align: center;
   line-height: 1em;
@@ -1288,10 +1288,11 @@ left: 25%;
     sans-serif;
   font-weight: 900;
 height: 139px;
-vertical-align: bottom;
+/* vertical-align: bottom;
 
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 0; */
+  margin:auto;
   padding: 18px;
   text-align: center;
   line-height: 1.6em;
