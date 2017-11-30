@@ -214,7 +214,64 @@ var scrollVis = function() {
    *
    *
    */
-  function showTitle4() {}
+  function showTitle4() {
+  
+  
+        var vis = document.getElementById("vis");
+    vis.setAttribute("style", "display:block; ");
+    vis.setAttribute("style", "visibility:visible; ");
+    
+    
+    
+  
+  
+  var data = [4,2,6,3,3,7,9,2,1,6];
+var width = 500, height = 500;
+
+var x = d3.scale.linear()
+    .range([0, width])
+    .domain([0, data.length -1]);
+
+var y = d3.scale.linear()
+    .range([height, 0])
+    .domain([0, 10]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.area()
+    .x(function(d, i) { return x(i); })
+    .y1(function(d) { return y(d); })
+    .y0(height)
+    .interpolate('cardinal');
+
+var svg = d3.select("#vis").append("svg")
+    .attr("width", width + 60)
+    .attr("height", height + 50)
+    .append("g")
+    .attr("transform", "translate(50, 10)")
+
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+
+  
+  }
 
   /////
   ////////
