@@ -160,7 +160,7 @@ top: 0;
 width: 100%;
 }
 .example {
--webkit-columns: 2 350px;
+/* -webkit-columns: 2 350px;
 -moz-columns: 2 350px;
 columns: 2 350px;
 -webkit-column-gap: 5em;
@@ -171,14 +171,14 @@ column-gap: 5em;
 column-rule-width: 1px;
 -webkit-column-rule-color: #828282;
 -moz-column-rule-color: #828282;
-column-rule-color: #828282;
+column-rule-color: #828282; */
 margin: 2em auto 2em;
 }
 
 .example-dotted {
--webkit-column-rule-style: dotted;
+/* -webkit-column-rule-style: dotted;
 -moz-column-rule-style: dotted;
-column-rule-style: dotted;
+column-rule-style: dotted; */
 }
 ul {
 
