@@ -1188,7 +1188,7 @@ background-color: #fff;
 @media only screen and (max-width: 400px) {
 
 #titleOpener {
-  background-color: rgba(56, 113, 193, .9);
+  background-color: rgba(79, 101, 34, .9);
   display: inline-block;
 top: 0;
 left: 30%;
@@ -1229,7 +1229,7 @@ height: 119px;
 @media only screen and (min-width: 401px) and (max-width: 960px) {
  
 #titleOpener {
-  background-color: rgba(56, 113, 193, .9);
+  background-color: rgba(79, 101, 34, .9);
   display: inline-block;
 top: 0;
 left: 30%;
@@ -1272,7 +1272,7 @@ vertical-align: bottom;
 @media only screen and (min-width: 961px) {
 
 #titleOpener {
-  background-color: rgba(56, 113, 193, .9);
+  background-color: rgba(79, 101, 34, .9);
   display: inline-block;
 top: 0;
 left: 25%;
