@@ -251,34 +251,34 @@ d3.select("#vis").select("g").remove();
     
 var width = wwidth, height = hheight;
 
+ 
     
-    var scale = d3.scale.linear()
-            .domain([50000, max])
-          /////////////////  .range([0, width - margin*4 - labelWidth]);
-            .range([0, width - margin*4]);
-    
+     
+    /*
+    var width = 500, height = 500;
+    */
     
 var x = d3.scale.linear()
-/*    .range([0, width])
+    .range([0, width])
     .domain([0, data.length -1]);
-  */  
-             ////////////////   .domain([0, max])
-           ////////// .range([0, width - margin*4]);
-    .domain([0, data.length -1]);
-
 
 var y = d3.scale.linear()
     .range([height, 0])
-            .domain([50000, max]);
+    .domain([50000, 100000]);
 
 var xAxis = d3.svg.axis()
-            .scale(scale)
-            .tickSize(-height + 4*margin + axisMargin)
-            .orient("bottom");
+    .scale(x)
+    .orient("bottom");
 
 var yAxis = d3.svg.axis()
-    .scale(scale)
+    .scale(y)
     .orient("left");
+
+    
+    
+    
+    
+    
 
 var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
@@ -369,7 +369,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height - 210)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -100)")
+    .attr("transform", "translate(100, -80)")
 
 svg.append("g")
       .attr("class", "x axis")
