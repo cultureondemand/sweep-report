@@ -251,6 +251,12 @@ d3.select("#vis").select("g").remove();
     
 var width = wwidth, height = hheight;
 
+    
+    var scale = d3.scale.linear()
+            .domain([0, max])
+            .range([0, width - margin*4 - labelWidth]);
+    
+    
 var x = d3.scale.linear()
 /*    .range([0, width])
     .domain([0, data.length -1]);
