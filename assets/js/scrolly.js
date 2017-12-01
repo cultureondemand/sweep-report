@@ -238,7 +238,7 @@ d3.select("#vis").select("g").remove();
      
   
   
-  var data = [4,2,6,3,3,7,9,2,1,6];
+  var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
     
   var wwidth= window.innerWidth;
   var hheight= window.innerHeight;
