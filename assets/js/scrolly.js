@@ -397,20 +397,44 @@ svg.append("g")
   /////////////////////////
   ///////////////////////
 
-  function showTitle6() {}
+  function showTitle6() {
+  
+  
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
+  
+  
+  }
 
   ////////////////
   /////////////////////////
   ///////////////////////
 
-  function showTitle7() {}
+  function showTitle7() {
+  
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
+  
+  
+  }
 
 
   ////////////////
   /////////////////////////
   ///////////////////////
 
-  function showTitle8() {}
+  function showTitle8() {
+  
+  
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
+  
+  
+  
+  }
 
   ////////////////
   /////////////////////////
