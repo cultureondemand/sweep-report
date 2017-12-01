@@ -203,7 +203,18 @@ var scrollVis = function() {
   /**
    *
    */
-  function showTitle3() {}
+  function showTitle3() {
+  
+  
+  
+  
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
+  
+  
+  
+  }
 
   ///////
   ///////
@@ -213,6 +224,11 @@ var scrollVis = function() {
    *
    */
   function showTitle4() {
+  
+  
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
   
   
         var vis = document.getElementById("vis");
@@ -276,7 +292,74 @@ svg.append("g")
   /**
    *
    */
-  function showTitle5() {}
+  function showTitle5() {
+  
+  
+  
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
+  
+    
+    
+    ///
+    ////
+    ////
+    
+     
+   
+  var data = [4338785, 4444513, 4504709, 4555084, 4608811, 4662534, 4745660, 4821784, 4901938, 4976853, 5049935, 5119538, 5191086, 5268413, 5350118, 5448055, 5538180];
+var width = 500, height = 500;
+
+var x = d3.scale.linear()
+    .range([0, width])
+    .domain([0, data.length -1]);
+
+var y = d3.scale.linear()
+    .range([height, 0])
+    .domain([0, 10]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.area()
+    .x(function(d, i) { return x(i); })
+    .y1(function(d) { return y(d); })
+    .y0(height)
+    .interpolate('cardinal');
+
+var svg = d3.select("#vis").append("svg")
+    .attr("width", width + 60)
+    .attr("height", height + 50)
+    .append("g")
+    .attr("transform", "translate(50, 10)")
+
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+
+  
+    
+    ///
+    ///
+    ////
+  
+  }
 
   ////////////////
   /////////////////////////
