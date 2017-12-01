@@ -99,9 +99,9 @@ Maybe it is time to try something new.
     section: "",
    header: "",
     bkgImage: {
-       small: "4-Rec_Uses-small.jpg",
-      medium: "4-Rec_Uses-medium.jpg",
-      large: "4-Rec_Uses-large.jpg"
+       small: "",
+      medium: "",
+      large: ""
     },
     body:""
 
@@ -110,9 +110,9 @@ Maybe it is time to try something new.
     section: "",
    header: "The program has clearly defined their vision, mission, goals, and desired outcomes that respond to the needs of the community, reflect broad stakeholder input, and drive program design, implementation, and improvement. It demonstrates sound fiscal and administrative practices that are supported by, and communicated to, staff and stakeholders.",
     bkgImage: {
-      small: "5-Clear_Vision-small.jpg",
-      medium: "5-Clear_Vision-medium.jpg",
-      large: "5-Clear_Vision-large.jpg"
+      small: "",
+      medium: "",
+      large: ""
     },
     body: `
       
@@ -122,9 +122,9 @@ Maybe it is time to try something new.
     section: "",
    header: "",
     bkgImage: {
-      small: "5-Clear_Vision-content-small-wide.jpg",
-      medium: "5-Clear_Vision-content-small-wide.jpg",
-      large: "5-Clear_Vision-content-large-wide.jpg"
+      small: "",
+      medium: "",
+      large: ""
     },
     body: `
     `
@@ -134,9 +134,9 @@ Maybe it is time to try something new.
     section: "",
     header: "The program uses data from multiple sources to assess its strengths and opportunities for growth, in order to continuously improve program design, outcomes, and impact.",
     bkgImage: {
-      small: "6-Continuous_Quality_Improvement-small.jpg",
-      medium: "6-Continuous_Quality_Improvement-medium.jpg",
-      large: "6-Continuous_Quality_Improvement-large.jpg"
+      small: "",
+      medium: "",
+      large: ""
     },
     body: `  `
     
@@ -145,9 +145,9 @@ Maybe it is time to try something new.
     section: "",
   header: "",
     bkgImage: {
-      small: "6-Continuous_Quality_Improvement-content-small-wide.jpg",
-      medium: "6-Continuous_Quality_Improvement-content-large-wide.jpg",
-      large: "6-Continuous_Quality_Improvement-content-large-wide.jpg"
+      small: "",
+      medium: "",
+      large: ""
     },
     body:` `
 
@@ -156,9 +156,9 @@ Maybe it is time to try something new.
     section: "CONTACT",
 header: "",
     bkgImage: {
-      small: "19-Last-small.jpg",
-      medium: "19-Last-medium.jpg",
-      large: "19-Last-large.jpg"
+      small: "",
+      medium: "",
+      large: ""
     },
 
     body:`
