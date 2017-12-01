@@ -254,7 +254,8 @@ var width = wwidth, height = hheight;
     
     var scale = d3.scale.linear()
             .domain([0, max])
-            .range([0, width - margin*4 - labelWidth]);
+          /////////////////  .range([0, width - margin*4 - labelWidth]);
+            .range([0, width - margin*4]);
     
     
 var x = d3.scale.linear()
