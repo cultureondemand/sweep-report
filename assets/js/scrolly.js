@@ -278,7 +278,6 @@ var xAxis = d3.svg.axis()
 
 var yAxis = d3.svg.axis()
     .scale(scale)
-            .tickSize(-height + 4*margin + axisMargin)
     .orient("left");
 
 var line = d3.svg.area()
@@ -292,7 +291,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height - 210)
     .append("g")
    ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, 100)")
+    .attr("transform", "translate(100, -100)")
 
 svg.append("g")
       .attr("class", "x axis")
@@ -349,7 +348,7 @@ var x = d3.scale.linear()
 
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([0, 6000000]);
+    .domain([4000000, 6000000]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
