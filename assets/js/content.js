@@ -153,7 +153,7 @@ Maybe it is time to try something new.
 
   } ,
   {
-    section: "CONTACT",
+    section: "",
 header: "",
     bkgImage: {
       small: "",
