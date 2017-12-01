@@ -251,7 +251,7 @@ var x = d3.scale.linear()
 
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([0, 10]);
+    .domain([0, data.length -1]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -328,7 +328,7 @@ var x = d3.scale.linear()
 
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([0, 10]);
+    .domain([0, data.length -1]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
