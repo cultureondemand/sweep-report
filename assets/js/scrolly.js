@@ -369,7 +369,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height - 210)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, 100)")
+    .attr("transform", "translate(100, -100)")
 
 svg.append("g")
       .attr("class", "x axis")
