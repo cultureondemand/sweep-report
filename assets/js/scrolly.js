@@ -239,7 +239,11 @@ d3.select("#vis").select("g").remove();
   
   
   var data = [4,2,6,3,3,7,9,2,1,6];
-var width = 500, height = 500;
+    
+  var wwidth= window.innerWidth;
+  var hheight= window.innerHeight;
+    
+var width = wwidth, height = hheight;
 
 var x = d3.scale.linear()
     .range([0, width])
@@ -309,8 +313,15 @@ d3.select("#vis").select("g").remove();
      
    
   var data = [4338785, 4444513, 4504709, 4555084, 4608811, 4662534, 4745660, 4821784, 4901938, 4976853, 5049935, 5119538, 5191086, 5268413, 5350118, 5448055, 5538180];
-var width = 500, height = 500;
 
+    var wwidth= window.innerWidth;
+  var hheight= window.innerHeight;
+    
+var width = wwidth, height = hheight;  
+    /*
+    var width = 500, height = 500;
+    */
+    
 var x = d3.scale.linear()
     .range([0, width])
     .domain([0, data.length -1]);
