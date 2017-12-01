@@ -211,7 +211,10 @@ var scrollVis = function() {
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
 
-  
+    
+        var vis = document.getElementById("vis");
+    vis.setAttribute("style", "display:none !important; ");
+    vis.setAttribute("style", "visibility:hidden; ");
   
   
   }
@@ -432,6 +435,10 @@ d3.select("#vis").select("g").remove();
 d3.select("#vis").select("g").remove();
 
   
+  
+        var vis = document.getElementById("vis");
+    vis.setAttribute("style", "display:none !important; ");
+    vis.setAttribute("style", "visibility:hidden; ");
   
   
   }
