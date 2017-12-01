@@ -218,7 +218,7 @@ var scrollVis = function() {
   
   
         var vis = document.getElementById("vis");
-    vis.setAttribute("style", "display:block; ");
+    vis.setAttribute("style", "display:inline-block !important; ");
     vis.setAttribute("style", "visibility:visible; ");
     
     
