@@ -1497,6 +1497,7 @@ word-spacing: normal !important;
   height: 100%;
   z-index: 9999990;
   padding: 0;
+  position:absolute;
   /* height: 600px; */
   /* width: 600px; */
   /* background-color: #ddd; */
