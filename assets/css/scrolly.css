@@ -52,7 +52,7 @@ body {
 }
 
 a:link, a:visited {
-  color: #3871C1;
+  color: #c78242;
   background-color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -60,7 +60,7 @@ a:link, a:visited {
 
 a:hover {
   color: white;
-  background-color: #3871C1;
+  background-color: #c78242;
 
   text-decoration: underline;
 }
@@ -254,7 +254,7 @@ video#bgvid02 {
   border: 16px solid #fff;
   border-radius: 0;
   border-top: 16px solid #efefef;
-background-color:#3871C1;
+background-color:#c78242;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
@@ -458,7 +458,7 @@ polyline {
 
 #logobar {
   position: fixed;
-  color: #3871C1;
+  color: #c78242;
   display: block;
   top: 0;
   z-index: 99999;
@@ -712,7 +712,7 @@ polyline {
 top: 0;
 left: 0;
   text-transform: none !important;
-  color: #3871C1;
+  color: #c78242;
   font-size: 1.4em;
 display: inline-block;
 height: 119px;
@@ -754,7 +754,7 @@ height: 139px;
 top: 0;
 left: 0;
   text-transform: none !important;
-  color: #3871C1;
+  color: #c78242;
   font-size: 1.4em;
 display: inline-block;
 height: 139px;
@@ -793,7 +793,7 @@ position: fixed;
 top: 0;
 left: 0;
   text-transform: none !important;
-  color: #3871C1;
+  color: #c78242;
   font-size: 1.4em;
 display: inline-block;
 height: 139px;
@@ -1659,7 +1659,7 @@ picture.js-background-image {
 
 .mdc-toolbar a {
 
-color: #3871C1 !important;
+color: #c78242 !important;
 
 }
 
@@ -1696,7 +1696,7 @@ z-index: 11 !important;
 
 .mdc-toolbar__icon--menu {
 
-color: #3871C1 !important;
+color: #c78242 !important;
 
 }
 
