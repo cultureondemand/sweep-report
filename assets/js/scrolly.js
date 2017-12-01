@@ -236,7 +236,7 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "visibility:visible; ");
     
     var axisMargin = 5,
-            margin = 10,
+            margin = 5,
             valueMargin = 4;
   
   
@@ -262,7 +262,7 @@ var x = d3.scale.linear()
 /*    .range([0, width])
     .domain([0, data.length -1]);
   */  
-                .domain([0, max])
+             ////////////////   .domain([0, max])
            ////////// .range([0, width - margin*4]);
     .domain([0, data.length -1]);
 
