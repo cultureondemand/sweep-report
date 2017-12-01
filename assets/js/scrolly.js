@@ -140,8 +140,6 @@ var scrollVis = function() {
     ///////// SET INITIAL CONTAINER VISIBILITY
     ////////////////////////////////////////////
 
-    var vis = document.getElementById("vis");
-    vis.setAttribute("style", "display:none; ");
     
     var logobar = document.getElementById("logobar");
     logobar.setAttribute("style", "display:none; ");
@@ -221,8 +219,7 @@ var scrollVis = function() {
     vis.setAttribute("style", "display:inline-block !important; ");
     vis.setAttribute("style", "visibility:visible; ");
     
-    
-    
+     
   
   
   var data = [4,2,6,3,3,7,9,2,1,6];
