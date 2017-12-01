@@ -288,8 +288,8 @@ var line = d3.svg.area()
     .interpolate('cardinal');
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width - 110)
-    .attr("height", height - 110)
+    .attr("width", width - 210)
+    .attr("height", height - 210)
     .append("g")
    ///////// .attr("transform", "translate(50, 10)")
     .attr("transform", "translate(100, 100)")
@@ -366,8 +366,8 @@ var line = d3.svg.area()
     .interpolate('cardinal');
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width - 110)
-    .attr("height", height - 110)
+    .attr("width", width - 210)
+    .attr("height", height - 210)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
     .attr("transform", "translate(100, 100)")
