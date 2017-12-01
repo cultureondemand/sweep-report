@@ -236,6 +236,10 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "visibility:visible; ");
     
      
+
+    var axisMargin = 5,
+            margin = 10,
+            valueMargin = 4;
   
   
   var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
@@ -246,19 +250,25 @@ d3.select("#vis").select("g").remove();
 var width = wwidth, height = hheight;
 
 var x = d3.scale.linear()
-    .range([0, width])
+/*    .range([0, width])
     .domain([0, data.length -1]);
+  */  
+                .domain([0, max])
+            .range([0, width - margin*4]);
+
 
 var y = d3.scale.linear()
     .range([height, 0])
     .domain([0, data.length -1]);
 
 var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
+            .scale(scale)
+            .tickSize(-height + 4*margin + axisMargin)
+            .orient("bottom");
 
 var yAxis = d3.svg.axis()
-    .scale(y)
+    .scale(scale)
+            .tickSize(-height + 4*margin + axisMargin)
     .orient("left");
 
 var line = d3.svg.area()
