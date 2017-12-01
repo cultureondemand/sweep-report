@@ -235,8 +235,6 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "display:inline-block !important; ");
     vis.setAttribute("style", "visibility:visible; ");
     
-     
-
     var axisMargin = 5,
             margin = 10,
             valueMargin = 4;
@@ -244,6 +242,9 @@ d3.select("#vis").select("g").remove();
   
   var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
     
+        var max = d3.max(data, function(d) { return d.a; });
+
+
   var wwidth= window.innerWidth;
   var hheight= window.innerHeight;
     
