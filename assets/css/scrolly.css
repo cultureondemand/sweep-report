@@ -1500,7 +1500,7 @@ word-spacing: normal !important;
   position:fixed;
   /* height: 600px; */
   /* width: 600px; */
-   background-color: #fff;  
+   background-color: #95cddc;  
 }
 
 #vis .title {
@@ -1518,14 +1518,14 @@ word-spacing: normal !important;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 8em;
-  color: #fff;
+  color: #000;
   text-anchor: middle;
   font-style: normal;
 }
 
 .axis path, .axis line {
   fill: none;
-  stroke: #fff;
+  stroke: #000;
   shape-rendering: crispEdges;
 }
 
