@@ -1489,7 +1489,7 @@ word-spacing: normal !important;
 }
 
 #vis {
-  display: none;
+/*  display: none; */
   visibility: hidden;
   top: 0;
   color: #000000;
