@@ -1500,7 +1500,7 @@ word-spacing: normal !important;
   position:fixed;
   /* height: 600px; */
   /* width: 600px; */
-  /* background-color: #ddd; */
+   background-color: #fff;  
 }
 
 #vis .title {
