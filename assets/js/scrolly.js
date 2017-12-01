@@ -253,7 +253,7 @@ var width = wwidth, height = hheight;
 
     
     var scale = d3.scale.linear()
-            .domain([0, max])
+            .domain([50000, max])
           /////////////////  .range([0, width - margin*4 - labelWidth]);
             .range([0, width - margin*4]);
     
@@ -263,12 +263,13 @@ var x = d3.scale.linear()
     .domain([0, data.length -1]);
   */  
                 .domain([0, max])
-            .range([0, width - margin*4]);
+           ////////// .range([0, width - margin*4]);
+    .domain([0, data.length -1]);
 
 
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([0, data.length -1]);
+            .domain([50000, max]);
 
 var xAxis = d3.svg.axis()
             .scale(scale)
