@@ -348,7 +348,7 @@ var x = d3.scale.linear()
 
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([0, 5538180]);
+    .domain([0, 6000000]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -365,10 +365,11 @@ var line = d3.svg.area()
     .interpolate('cardinal');
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width + 60)
-    .attr("height", height + 50)
+    .attr("width", width - 60)
+    .attr("height", height - 50)
     .append("g")
-    .attr("transform", "translate(50, 10)")
+  ////////////  .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(10, 10)")
 
 svg.append("g")
       .attr("class", "x axis")
