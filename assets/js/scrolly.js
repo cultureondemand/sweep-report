@@ -229,8 +229,14 @@ d3.select("#vis").select("g").remove();
   function showTitle4() {
          
   ////////  var bgimage = document.getElementsByClassName("bgbg");
-    var bgimage =  d3.select("body").selectAll(".bgbg")
-  bgimage.setAttribute("style", "display:none; ");
+    
+    d3.selectAll('circle')
+  .style('fill', 'orange')
+
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'none');
+
+  ///////////////bgimage.setAttribute("style", "display:none; ");
 
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
