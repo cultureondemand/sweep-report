@@ -228,7 +228,8 @@ d3.select("#vis").select("g").remove();
    */
   function showTitle4() {
          
-    var bgimage = document.getElementsByClassName("bgbg");
+  ////////  var bgimage = document.getElementsByClassName("bgbg");
+    var bgimage =  d3.select("body").selectAll(".bgbg")
   bgimage.setAttribute("style", "display:none; ");
 
   d3.select("#vis").select("svg").remove();
