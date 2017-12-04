@@ -207,6 +207,8 @@ var scrollVis = function() {
   
   
   
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'inline-block');
   
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
@@ -229,9 +231,7 @@ d3.select("#vis").select("g").remove();
   function showTitle4() {
          
   ////////  var bgimage = document.getElementsByClassName("bgbg");
-    
-    d3.selectAll('circle')
-  .style('fill', 'orange')
+     
 
    d3.select("body").selectAll(".bgbg")
       .style('display', 'none');
@@ -331,8 +331,12 @@ svg.append("g")
   function showTitle5() {
   
   
-    var bgimage = document.getElementsByClassName("bgbg");
-  bgimage.setAttribute("style", "display:none; ");
+    
+    
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'none');
+    
+     
   
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
@@ -413,9 +417,13 @@ svg.append("g")
 
   function showTitle6() {
   
-  
-    var bgimage = document.getElementsByClassName("bgbg");
-  bgimage.setAttribute("style", "display:none; ");
+    
+    
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'none');
+    
+    
+   
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
 
@@ -430,8 +438,9 @@ d3.select("#vis").select("g").remove();
   function showTitle7() {
   
     
-    var bgimage = document.getElementsByClassName("bgbg");
-  bgimage.setAttribute("style", "display:none; ");
+ 
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'none');
     
     
   d3.select("#vis").select("svg").remove();
@@ -449,6 +458,8 @@ d3.select("#vis").select("g").remove();
   function showTitle8() {
   
   
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'inline-block');
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
 
