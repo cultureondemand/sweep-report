@@ -23,6 +23,8 @@ function scroller() {
   var currentIndex = -1;
   // y coordinate of
   var containerStart = 0;
+    var containerEnd = 0;
+
   var containerStartB = 0;
   var yyy;
   var conheight;
@@ -92,6 +94,7 @@ function scroller() {
    containerStart = (container.node().getBoundingClientRect().top + container.node().getBoundingClientRect().height) + window.pageYOffset;  
     containerStartB = container.node().getBoundingClientRect().top + container.node().getBoundingClientRect().height;
  
+    containerEnd = (container.node().getBoundingClientRect().bottom + container.node().getBoundingClientRect().height) + window.pageYOffset;  
 
 
   }
@@ -107,7 +110,11 @@ function scroller() {
   
  
 
-    var pos = window.pageYOffset + 296 - containerStart;
+    var pos = window.pageYOffset - 66 - containerEnd;
+
+
+
+ ///////   var pos = window.pageYOffset + 296 - containerStart;
 
 
 
