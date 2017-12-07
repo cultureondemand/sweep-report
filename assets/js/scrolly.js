@@ -641,7 +641,8 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
      y.domain([4000000, 6000000]);*/
  
     
-    max = d3.max(datasetset, function(d) { return d.year; });
+  /*  var max = d3.max(datasetset, function(d) { return d.year; }); */
+    var max = 2050;
     
     
  var x = d3.scale.linear()
@@ -655,11 +656,11 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     .domain([4000000, 6000000]); 
 
   
-     scale = d3.scale.linear()
+     var scale = d3.scale.linear()
             .domain([2000, max])
             .range([0, width - margin*4 - labelWidth]);
 
-    xAxis = d3.svg.axis()
+   var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
             .orient("bottom");
