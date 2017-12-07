@@ -570,7 +570,7 @@ var width = wwidth, height = hheight;
 var y = d3.scale.linear().rangeRound([hheight, 0]);
   
     
-    
+    /*
     
     
     var color.domain(d3.keys(dataset[0]).filter(function (key) {
@@ -589,8 +589,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
         };
     });
     
-    console.log(efteValues);
-    x.domain(dataset.map(function(d) { 
+     x.domain(dataset.map(function(d) { 
     	return d.year; }));
 
     y.domain([
@@ -604,11 +603,15 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             return v.pop;
         });
     })]);
+    */
     
     
     
+      x.domain(dataset.map(function(d) { 
+    	return d.year; }));  
     
     
+     y.domain([4000000, 6000000]);
     
 /* var x = d3.scale.linear()
     .range([0, width])
