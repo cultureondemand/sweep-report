@@ -1543,9 +1543,8 @@ word-spacing: normal !important;
 
 .axis path, .axis line {
   fill: none;
-  stroke: #fff;
-  str
-  shape-rendering: crispEdges;
+/*  stroke: #fff; */
+   shape-rendering: crispEdges;
 }
 
 .highlight {
