@@ -657,7 +657,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
 
   
      var scale = d3.scale.linear()
-            .domain([2000, max])
+            .domain([2000, 2050])
             .range([0, width - margin*4 - labelWidth]);
 
    var xAxis = d3.svg.axis()
