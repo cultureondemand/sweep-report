@@ -1540,9 +1540,10 @@ word-spacing: normal !important;
 /*  stroke: white;
   stroke-width: 2px;
   fill: none; */
-  
-   fill: #fc0d1b;
-  stroke: #fc0d1b;
+  fill: rgba(79, 101, 34, .9);
+//////////   fill: #fc0d1b;
+stroke:none;
+  ///////  stroke: #fc0d1b;
   stroke-width: 1.5px;
    
   
@@ -1901,7 +1902,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 .bartexth {
  
   fill: #fff;
-  font-size: 116%;
+  font-size: 166%;
   
 }
 
@@ -1918,7 +1919,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 
       .thing-0 {
-        fill: #dcf428;
+        fill: rgba(79, 101, 34, .9);
       }
 
 
