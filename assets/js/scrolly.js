@@ -308,7 +308,7 @@ var range = [];
  var x = d3.scale.linear()
     .range([0, width])
 /////////////////////     .domain([0, data.length -1]);
-   .domain([2000, 2050]);
+   .domain([2000, 2014]);
 
     
 /*    var x = d3.scale.ordinal()
