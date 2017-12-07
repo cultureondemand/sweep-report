@@ -1920,3 +1920,10 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 .domain {
  stroke:none; 
 }
+.org {
+  
+  
+  font-size: 11px;
+    display: block;
+  
+}
