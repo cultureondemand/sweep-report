@@ -1543,7 +1543,8 @@ word-spacing: normal !important;
 
 .axis path, .axis line {
   fill: none;
-  stroke: #000;
+  stroke: #fff;
+  str
   shape-rendering: crispEdges;
 }
 
@@ -1919,8 +1920,9 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 .bartexth {
  
   fill: #fff;
-  font-size: 166%;
-  
+
+    font-size: 366%;
+    font-weight: 900;  
 }
 
 
