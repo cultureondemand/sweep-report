@@ -305,11 +305,19 @@ var width = wwidth, height = hheight;
     var width = 500, height = 500;
     */
     
-var x = d3.scale.linear()
+/* var x = d3.scale.linear()
     .range([0, width])
-  .domain([0, data.length -1]);
+  .domain([0, data.length -1]); */
 /////////////////////      .domain([2000, 2014]);
 
+    
+    var x = d3.scale.ordinal()
+    .range([0, width])
+  .domain([2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014]);
+    
+    
+    
+    
 var y = d3.scale.linear()
     .range([height, 0])
     .domain([50000, 100000]);
