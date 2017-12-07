@@ -250,7 +250,42 @@ d3.select("#vis").select("g").remove();
     var axisMargin = 5,
             margin = 5,
             valueMargin = 4;
-  
+ 
+    
+    
+    
+    
+    var dataset1 = [{
+    'qName': 'Q1',
+        'PFTE': '10',
+        'EFTE': '62.7',
+        'SOME': '72.2'
+}, {
+    'qName': 'Q2',
+        'PFTE': '58',
+        'EFTE': '59.9',
+        'SOME': '67.7'
+}, {
+    'qName': 'Q3',
+        'PFTE': '53.3',
+        'EFTE': '59.1',
+        'SOME': '69.4'
+}, {
+    'qName': 'Q4',
+        'PFTE': '35.7',
+        'EFTE': '58.8',
+        'SOME': '68'
+}, {
+    'qName': 'Q5',
+        'PFTE': '34.2',
+        'EFTE': '58.7',
+        'SOME': '72.4'
+}, ];
+    
+    
+    
+    
+    
   
   var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
     
@@ -349,7 +384,176 @@ d3.select("#vis").select("g").remove();
     ////
     ////
     
-     
+   
+    
+    var dataset = [{
+    'year': '2000',
+        'pop': '4338785'
+}, {
+    'year': '2001',
+        'pop': '4444513'
+}, {
+    'year': '2002',
+        'pop': '4504709'
+}, {
+    'year': '2003',
+        'pop': '4555084'
+
+}, {
+    'year': '2004',
+        'pop': '4608811'
+},, {
+    'year': '2005',
+        'pop': '4662534'
+}, {
+    'year': '2006',
+        'pop': '4745660'
+}, {
+    'year': '2007',
+        'pop': '4821784'
+
+}, {
+    'year': '2008',
+        'pop': '4901938'
+}, {
+    'year': '2009',
+        'pop': '4976853'
+}, {
+    'year': '2010',
+        'pop': '5049935'
+}, {
+    'year': '2011',
+        'pop': '5119538'
+
+}, {
+    'year': '2012',
+        'pop': '5191086'
+}, {
+    'year': '2013',
+        'pop': '5268413'
+}, {
+    'year': '2014',
+        'pop': '5350118'
+}, {
+    'year': '2015',
+        'pop': '5448055'
+
+}, {
+    'year': '2016',
+        'pop': '5538180'
+},, {
+    'year': '2017',
+        'pop': '5630987'
+}, {
+    'year': '2018',
+        'pop': '5722618'
+}, {
+    'year': '2019',
+        'pop': '5814810'
+
+}, {
+    'year': '2020',
+        'pop': '5907198'
+}, {
+    'year': '2021',
+        'pop': '5999526'
+}, {
+    'year': '2022',
+        'pop': '6094505'
+}, {
+    'year': '2023',
+        'pop': '6191834'
+
+}, {
+    'year': '2024',
+        'pop': '6290361'
+}, {
+    'year': '2025',
+        'pop': '6391239'
+}, {
+    'year': '2026',
+        'pop': '6493758'
+}, {
+    'year': '2027',
+        'pop': '6596551'
+
+}, {
+    'year': '2028',
+        'pop': '6697517'
+},, {
+    'year': '2029',
+        'pop': '6795627'
+}, {
+    'year': '2030',
+        'pop': '6892192'
+}, {
+    'year': '2031',
+        'pop': '6987094'
+
+}, {
+    'year': '2032',
+        'pop': '7080671'
+}, {
+    'year': '2033',
+        'pop': '7172969'
+}, {
+    'year': '2034',
+        'pop': '7263730'
+}, {
+    'year': '2035',
+        'pop': '7352841'
+
+}, {
+    'year': '2036',
+        'pop': '7440617'
+}, {
+    'year': '2037',
+        'pop': '7526725'
+}, {
+    'year': '2038',
+        'pop': '7611347'
+}, {
+    'year': '2039',
+        'pop': '7693013'
+
+}, {
+    'year': '2040',
+        'pop': '7773481'
+},, {
+    'year': '2041',
+        'pop': '7851186'
+}, {
+    'year': '2042',
+        'pop': '7924338'
+}, {
+    'year': '2043',
+        'pop': '7995903'
+
+}, {
+    'year': '2044',
+        'pop': '8065959'
+}, {
+    'year': '2045',
+        'pop': '8134846'
+}, {
+    'year': '2046',
+        'pop': '8201706'
+}, {
+    'year': '2047',
+        'pop': '8267672'
+
+}, {
+    'year': '2048',
+        'pop': '8332833'
+}, {
+    'year': '2049',
+        'pop': '8397333'
+} , {
+    'year': '2050',
+        'pop': '8461295'
+}   ];
+    
+    
    
   var data = [4338785, 4444513, 4504709, 4555084, 4608811, 4662534, 4745660, 4821784, 4901938, 4976853, 5049935, 5119538, 5191086, 5268413, 5350118, 5448055, 5538180];
 
@@ -360,15 +564,61 @@ var width = wwidth, height = hheight;
     /*
     var width = 500, height = 500;
     */
+
     
-var x = d3.scale.linear()
+    var x = d3.scale.ordinal().rangeRoundBands([0, wwidth], .2);
+var y = d3.scale.linear().rangeRound([hheight, 0]);
+  
+    
+    
+    
+    
+    color.domain(d3.keys(dataset[0]).filter(function (key) {
+        return key !== "year";
+    }));
+    
+    var efteValues = color.domain().map(function (name) {
+    return {
+        name: name,
+        values: dataset.map(function (d) {
+            return {
+                year: d.year,
+                pop: +d[name]
+            };
+        })
+        };
+    });
+    
+    console.log(efteValues);
+    x.domain(dataset.map(function(d) { 
+    	return d.year; }));
+
+    y.domain([
+    d3.min(efteValues, function (c) {
+        return d3.min(c.values, function (v) {
+            return v.pop;
+        });
+    }),
+    d3.max(efteValues, function (c) {
+        return d3.max(c.values, function (v) {
+            return v.pop;
+        });
+    })]);
+    
+    
+    
+    
+    
+    
+/* var x = d3.scale.linear()
     .range([0, width])
-   .domain([0, data.length -1]);
+   .domain([0, data.length -1]); */
 ///////     .domain([2000, 2024]);
 
-var y = d3.scale.linear()
+    
+/* var y = d3.scale.linear()
     .range([height, 0])
-    .domain([4000000, 6000000]);
+    .domain([4000000, 6000000]); */
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -378,11 +628,22 @@ var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
 
-var line = d3.svg.area()
+    
+    var line = d3.svg.line()
+    .interpolate("basis")
+    .x(function (d) {
+        return x(d.year);
+    })
+    .y(function (d) {
+        return y(d.pop);
+    });
+    
+    
+/* var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d); })
     .y0(height)
-    .interpolate('cardinal');
+    .interpolate('cardinal'); */
 
 var svg = d3.select("#vis").append("svg")
     .attr("width", width - 210)
