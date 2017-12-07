@@ -323,9 +323,19 @@ var y = d3.scale.linear()
     .range([height, 0])
     .domain([50000, 100000]);
 
-var xAxis = d3.svg.axis()
+     var scale = d3.scale.linear()
+            .domain([2000, max])
+            .range([0, width - margin*4 - labelWidth]);
+
+   var xAxis = d3.svg.axis()
+            .scale(scale)
+            .tickSize(-height + 4*margin + axisMargin)
+            .orient("bottom");
+    
+    
+/* var xAxis = d3.svg.axis()
     .scale(x)
-    .orient("bottom");
+    .orient("bottom"); */
 
 var yAxis = d3.svg.axis()
     .scale(y)
@@ -395,7 +405,7 @@ d3.select("#vis").select("g").remove();
     
    
     
-    var dataset = [{
+    var datasetset = [{
     'year': '2000',
         'pop': '4338785'
 }, {
@@ -629,6 +639,10 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     
     
      y.domain([4000000, 6000000]);*/
+ 
+    
+    max = d3.max(datasetset, function(d) { return d.year; });
+    
     
  var x = d3.scale.linear()
     .range([0, width])
@@ -640,6 +654,22 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     .range([height, 0])
     .domain([4000000, 6000000]); 
 
+  
+     scale = d3.scale.linear()
+            .domain([2000, max])
+            .range([0, width - margin*4 - labelWidth]);
+
+    xAxis = d3.svg.axis()
+            .scale(scale)
+            .tickSize(-height + 4*margin + axisMargin)
+            .orient("bottom");
+
+    
+    
+    
+    /*
+    
+    
     
         var scale = d3.scale.linear()
             .domain([2000, 2050])
@@ -649,7 +679,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
             .orient("bottom");
-    
+     */
     
  /*   
 var xAxis = d3.svg.axis()
