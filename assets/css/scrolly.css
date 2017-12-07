@@ -1916,3 +1916,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
         stroke: rgba(0, 0, 0, .2);
     }
 
+
+      .thing-0 {
+        fill: #dcf428;
+      }
