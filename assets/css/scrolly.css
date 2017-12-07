@@ -1513,8 +1513,10 @@ word-spacing: normal !important;
   position:fixed;
   /* height: 600px; */
   /* width: 600px; */
-/*   background-color: #95cddc;  */
-   background-color: #c78242;  
+/*   background-color: #95cddc; 
+   background-color: #c78242;   */
+  
+  background-color: rgba(79, 101, 34, .9);
   
   
 }
@@ -1553,10 +1555,12 @@ word-spacing: normal !important;
 /*  stroke: white;
   stroke-width: 2px;
   fill: none; */
-  fill: rgba(79, 101, 34, .9);
-//////////   fill: #fc0d1b;
+  fill: #c78242;
+  
+  
+/*  fill: #fc0d1b; */
 stroke:none;
-  ///////  stroke: #fc0d1b;
+  /*  stroke: #fc0d1b; */
   stroke-width: 1.5px;
    
   
