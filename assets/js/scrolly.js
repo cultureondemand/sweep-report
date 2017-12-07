@@ -574,12 +574,12 @@ var width = wwidth, height = hheight;
     */
 
     
+    /*
+     
     var x = d3.scale.ordinal().rangeRoundBands([0, wwidth], .2);
 var y = d3.scale.linear().rangeRound([hheight, 0]);
   
-    
-    /*
-    
+   
     
     var color.domain(d3.keys(dataset[0]).filter(function (key) {
         return key !== "year";
@@ -614,22 +614,22 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     */
     
     
-    
+/*    
       x.domain(dataset.map(function(d) { 
     	return d.year; }));  
     
     
-     y.domain([4000000, 6000000]);
+     y.domain([4000000, 6000000]);*/
     
-/* var x = d3.scale.linear()
+ var x = d3.scale.linear()
     .range([0, width])
-   .domain([0, data.length -1]); */
+   .domain([0, data.length -1]); 
 ///////     .domain([2000, 2024]);
 
-    
-/* var y = d3.scale.linear()
+ /* */   
+ var y = d3.scale.linear()
     .range([height, 0])
-    .domain([4000000, 6000000]); */
+    .domain([4000000, 6000000]); 
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -640,21 +640,21 @@ var yAxis = d3.svg.axis()
     .orient("left");
 
     
-    var line = d3.svg.line()
+/*     var line = d3.svg.line()
     .interpolate("basis")
     .x(function (d) {
         return x(d.year);
     })
     .y(function (d) {
         return y(d.pop);
-    });
+    });*/
     
     
-/* var line = d3.svg.area()
+var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d); })
     .y0(height)
-    .interpolate('cardinal'); */
+    .interpolate('cardinal'); 
 
 var svg = d3.select("#vis").append("svg")
     .attr("width", width - 210)
