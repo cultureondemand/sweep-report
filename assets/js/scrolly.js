@@ -724,7 +724,7 @@ d3.select("#vis").select("g").remove();
             barPadding = (height-axisMargin-margin*2)*0.4/data.length,
             data, bar, svg, scale, xAxis, labelWidth = 0;
 
-    max = d3.max(data, function(d) { return d.b; });
+    max = d3.max(data_tax, function(d) { return d.b; });
 
 
 
@@ -737,7 +737,7 @@ var chart = d3.select("#vis").append("svg")
 
 
     bar = chart.selectAll("g")
-            .data(data)
+            .data(data_tax)
             .enter()
             .append("g");
 
