@@ -720,8 +720,8 @@ d3.select("#vis").select("g").remove();
             width = (window.innerWidth-16),
      //////////       height = parseInt(d3.select('body').style('height'), 10),
             height = 500,
-            barHeight = (height-axisMargin-margin*2)* 0.6/data.length,
-            barPadding = (height-axisMargin-margin*2)*0.4/data.length,
+            barHeight = (height-axisMargin-margin*2)* 0.6/data_tax.length,
+            barPadding = (height-axisMargin-margin*2)*0.4/data_tax.length,
             data, bar, svg, scale, xAxis, labelWidth = 0;
 
     max = d3.max(data_tax, function(d) { return d.b; });
