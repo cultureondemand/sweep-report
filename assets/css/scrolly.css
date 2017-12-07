@@ -1204,7 +1204,7 @@ left: 30%;
 height: 119px;
   margin:auto;
   padding: 1em;
-  text-align: center;
+  text-align: left;
   line-height: 1em;
   position: relative;
   width: 70%;
@@ -1246,7 +1246,7 @@ height: 139px;
   margin-top: 0; */
   margin:auto;
   padding: 1em;
-  text-align: center;
+  text-align: left;
   line-height: 1em;
   position: relative;
   width: 70%;
@@ -1288,7 +1288,7 @@ height: 139px;
   margin-top: 0; */
   margin:auto;
   padding: 1em;
-  text-align: center;
+  text-align: left;
   line-height: 1em;
   position: relative;
   width: 75%;
