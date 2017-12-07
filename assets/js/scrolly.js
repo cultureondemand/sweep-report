@@ -719,7 +719,8 @@ d3.select("#vis").select("g").remove();
   ///////          width = parseInt(d3.select('body').style('width'), 10),
             width = (window.innerWidth-16),
      //////////       height = parseInt(d3.select('body').style('height'), 10),
-            height = 500,
+           ////// height = 500,
+        height= window.innerHeight-16,
             barHeight = (height-axisMargin-margin*2)* 0.6/data_tax.length,
             barPadding = (height-axisMargin-margin*2)*0.4/data_tax.length,
             data, bar, svg, scale, xAxis, labelWidth = 0;
@@ -758,8 +759,8 @@ var chart = d3.select("#vis").append("svg")
     });
 
     scale = d3.scale.linear()
-            .domain([0, max])
-            .range([300, width - margin*4 - labelWidth]);
+            .domain([300, max])
+            .range([0, width - margin*4 - labelWidth]);
 
     xAxis = d3.svg.axis()
             .scale(scale)
