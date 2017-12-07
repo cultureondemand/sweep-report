@@ -247,11 +247,11 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "display:inline-block !important; ");
     vis.setAttribute("style", "visibility:visible; ");
     
-    var axisMargin = 5,
-            margin = 5,
-            valueMargin = 4;
  
-    
+    var axisMargin = 5,
+            margin = 10,
+            valueMargin = 4,
+            labelWidth = 50;
     
     
     
