@@ -632,9 +632,22 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     .range([height, 0])
     .domain([4000000, 6000000]); 
 
+    
+        var scale = d3.scale.linear()
+            .domain([2000, 2050])
+            .range([0, width - margin*4 - labelWidth]);
+
+    var xAxis = d3.svg.axis()
+            .scale(scale)
+            .tickSize(-height + 4*margin + axisMargin)
+            .orient("bottom");
+    
+    
+ /*   
 var xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom");
+*/
 
 var yAxis = d3.svg.axis()
     .scale(y)
