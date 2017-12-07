@@ -305,16 +305,16 @@ var range = [];
     var width = 500, height = 500;
     */
     
-/* var x = d3.scale.linear()
+ var x = d3.scale.linear()
     .range([0, width])
-  .domain([0, data.length -1]); */
-/////////////////////      .domain([2000, 2014]);
+/////////////////////     .domain([0, data.length -1]);
+   .domain([2000, 2050]);
 
     
-    var x = d3.scale.ordinal()
+/*    var x = d3.scale.ordinal()
  ////   .range([range])
     .range([0, width])
-  .domain(['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']);
+  .domain(['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']); */
     
     
     
@@ -324,7 +324,7 @@ var y = d3.scale.linear()
     .domain([50000, 100000]);
 
      var scale = d3.scale.linear()
-            .domain([2000, max])
+            .domain([2000, 2050])
             .range([0, width - margin*4 - labelWidth]);
 
    var xAxis = d3.svg.axis()
