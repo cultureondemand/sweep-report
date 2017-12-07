@@ -570,6 +570,14 @@ d3.select("#vis").select("g").remove();
   var hheight= window.innerHeight;
     
 var width = wwidth, height = hheight;  
+    
+        var axisMargin = 5,
+            margin = 10,
+            valueMargin = 4,
+            labelWidth = 50;
+
+            
+            
     /*
     var width = 500, height = 500;
     */
