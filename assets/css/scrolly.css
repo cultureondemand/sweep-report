@@ -1859,3 +1859,35 @@ font-weight: 700;
   
 top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;  
 }
+
+
+
+#step-3 {
+  width:33%;
+  min-width:280px;
+  max-width:400px;
+}
+
+
+
+#step-4 {
+  width:33%;
+  min-width:280px;
+  max-width:400px;
+}
+
+
+
+#step-5 {
+  width:33%;
+  min-width:280px;
+  max-width:400px;
+}
+
+
+
+#step-6 {
+  width:33%;
+  min-width:280px;
+  max-width:400px;
+}
