@@ -809,7 +809,7 @@ var chart = d3.select("#vis").append("svg")
             .attr("dy", ".35em") //vertical align middle
             .attr("text-anchor", "start")
             .text(function(d){
-                return (d.a+": "+d.b+"%");
+                return (d.a+": $"+d.b+" Million");
             })
        ////////// .attr("x", function(d){
           ///////      var width = this.getBBox().width;
