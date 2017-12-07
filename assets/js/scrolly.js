@@ -573,7 +573,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     
     
     
-    color.domain(d3.keys(dataset[0]).filter(function (key) {
+    var color.domain(d3.keys(dataset[0]).filter(function (key) {
         return key !== "year";
     }));
     
