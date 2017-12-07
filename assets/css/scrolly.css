@@ -1904,3 +1904,15 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   font-size: 66%;
   
 }
+
+
+
+  .axisHorizontal path{
+        fill: none;
+    }
+
+    .axisHorizontal .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, .2);
+    }
+
