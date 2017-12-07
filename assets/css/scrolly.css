@@ -1358,18 +1358,26 @@ height: 139px;
     "Geneva",
     "Arial",
     sans-serif;
- line-height: 14px;
-
+ 
 
   font-weight: 200;
 vertical-align: top;
  
- 
-   text-align: center;
-  position: relative;
-  display: block;
-  width: 100%;
- 
+  
+  
+  
+  
+      line-height: 4em;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    left: 25%;
+    padding-left: 40px;
+  
+  
+  
 }
 
 
@@ -1405,12 +1413,20 @@ word-spacing: normal !important;
 
   font-weight: 200;
 
-  line-height: 14px;   margin:0;
-   text-align: center;
-  position: relative;
-  display: block;
-  width: 100%;
- 
+   
+  
+      line-height: 4em;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    left: 25%;
+    padding-left: 40px;
+  
+  
+  
+  
 }
 
 
@@ -1440,15 +1456,18 @@ word-spacing: normal !important;
 
 
   font-weight: 200;
-
- line-height: 1px;
  
-   margin:0;
-   text-align: center;
-  position: relative;
-  display: block;
-  width: 100%;
- 
+  
+      line-height: 4em;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    left: 25%;
+    padding-left: 40px;
+  
+  
 }
 
 
