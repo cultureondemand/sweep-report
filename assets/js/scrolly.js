@@ -386,13 +386,13 @@ svg.append("g")
 
 
  .on("mousemove", function(d){
-            div.style("left", d3.event.pageX+10+"px");
+            div.style("left", d3.event.pageX-23+"px");
             div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
             div.style("zIndex", "99");
-            div.style("position", "absolute");
-            div.html("<h4>"+(d)+"%</h4>");
+            div.att("style", "tooltip");
+            div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
          })
 
         .on("mouseout", function(d){
@@ -769,9 +769,9 @@ svg.append("g")
             div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
-            div.style("zIndex", "99");
-            div.style("position", "absolute");
-            div.html("<h4>"+(d)+"%</h4>");
+            div.style("zindex", "99");
+            div.att("style", "tooltip");
+            div.html("<h4>"+(d.pop)+" Residents of Colorado in </h4>+(d.year)+");
          })
 
         .on("mouseout", function(d){
