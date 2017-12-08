@@ -42,7 +42,7 @@ var scrollVis = function() {
   // through the section with the current
   // progress through the section.
   var updateFunctions = [];
- var div = d3.select("body").append("div").attr("class", "tooltip");
+ var div = d3.select("#vis").append("div").attr("class", "tooltip");
 
   /**
    * chart
