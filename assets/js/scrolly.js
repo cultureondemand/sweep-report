@@ -679,7 +679,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
  /* */   
  var y = d3.scale.linear()
     .range([height, 0])
-    .domain([4000000, 6000000]); 
+    .domain([4000000, 9000000]); 
 
   
      var scale = d3.scale.linear()
