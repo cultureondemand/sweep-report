@@ -42,7 +42,7 @@ var scrollVis = function() {
   // through the section with the current
   // progress through the section.
   var updateFunctions = [];
- var div = d3.select("body").append("div").attr("class", "toolTip");
+ var div = d3.select("body").append("div").attr("class", "tooltip");
 
   /**
    * chart
@@ -390,9 +390,7 @@ svg.append("g")
             div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
-            div.style("zindex", "99");
-            div.attr("class", "tooltip");
-            div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
+             div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
          })
 
         .on("mouseout", function(d){
@@ -429,174 +427,178 @@ d3.select("#vis").select("g").remove();
     
    
     
-    var datasetset = [{
-    'year': '2000',
-        'pop': '4338785'
+    
+  var data_tax = [
+{a:"1993 Revenue",b:372},
+{a:"2015 Real Revenue",b:351} 
+    
+    
+    var datasetset = [{year: "2000",
+        pop: "4338785"
 }, {
-    'year': '2001',
-        'pop': '4444513'
+    year: "2001",
+        pop: "4444513"
 }, {
-    'year': '2002',
-        'pop': '4504709'
+    year: "2002",
+        pop: "4504709"
 }, {
-    'year': '2003',
-        'pop': '4555084'
+    year: "2003",
+        pop: "4555084"
 
 }, {
-    'year': '2004',
-        'pop': '4608811'
+    year: "2004",
+        pop: "4608811"
 },, {
-    'year': '2005',
-        'pop': '4662534'
+    year: "2005",
+        pop: "4662534"
 }, {
-    'year': '2006',
-        'pop': '4745660'
+    year: "2006",
+        pop: "4745660"
 }, {
-    'year': '2007',
-        'pop': '4821784'
+    year: "2007",
+        pop: "4821784"
 
 }, {
-    'year': '2008',
-        'pop': '4901938'
+    year: "2008",
+        pop: "4901938"
 }, {
-    'year': '2009',
-        'pop': '4976853'
+    year: "2009",
+        pop: "4976853"
 }, {
-    'year': '2010',
-        'pop': '5049935'
+    year: "2010",
+        pop: "5049935"
 }, {
-    'year': '2011',
-        'pop': '5119538'
+    year: "2011",
+        pop: "5119538"
 
 }, {
-    'year': '2012',
-        'pop': '5191086'
+    year: "2012",
+        pop: "5191086"
 }, {
-    'year': '2013',
-        'pop': '5268413'
+    year: "2013",
+        pop: "5268413"
 }, {
-    'year': '2014',
-        'pop': '5350118'
+    year: "2014",
+        pop: "5350118"
 }, {
-    'year': '2015',
-        'pop': '5448055'
+    year: "2015",
+        pop: "5448055"
 
 }, {
-    'year': '2016',
-        'pop': '5538180'
+    year: "2016",
+        pop: "5538180"
 },, {
-    'year': '2017',
-        'pop': '5630987'
+    year: "2017",
+        pop: "5630987"
 }, {
-    'year': '2018',
-        'pop': '5722618'
+    year: "2018",
+        pop: "5722618"
 }, {
-    'year': '2019',
-        'pop': '5814810'
+    year: "2019",
+        pop: "5814810"
 
 }, {
-    'year': '2020',
-        'pop': '5907198'
+    year: "2020",
+        pop: "5907198"
 }, {
-    'year': '2021',
-        'pop': '5999526'
+    year: "2021",
+        pop: "5999526"
 }, {
-    'year': '2022',
-        'pop': '6094505'
+    year: "2022",
+        pop: "6094505"
 }, {
-    'year': '2023',
-        'pop': '6191834'
+    year: "2023",
+        pop: "6191834"
 
 }, {
-    'year': '2024',
-        'pop': '6290361'
+    year: "2024",
+        pop: "6290361"
 }, {
-    'year': '2025',
-        'pop': '6391239'
+    year: "2025",
+        pop: "6391239"
 }, {
-    'year': '2026',
-        'pop': '6493758'
+    year: "2026",
+        pop: "6493758"
 }, {
-    'year': '2027',
-        'pop': '6596551'
+    year: "2027",
+        pop: "6596551"
 
 }, {
-    'year': '2028',
-        'pop': '6697517'
+    year: "2028",
+        pop: "6697517"
 },, {
-    'year': '2029',
-        'pop': '6795627'
+    year: "2029",
+        pop: "6795627"
 }, {
-    'year': '2030',
-        'pop': '6892192'
+    year: "2030",
+        pop: "6892192"
 }, {
-    'year': '2031',
-        'pop': '6987094'
+    year: "2031",
+        pop: "6987094"
 
 }, {
-    'year': '2032',
-        'pop': '7080671'
+    year: "2032",
+        pop: "7080671"
 }, {
-    'year': '2033',
-        'pop': '7172969'
+    year: "2033",
+        pop: "7172969"
 }, {
-    'year': '2034',
-        'pop': '7263730'
+    year: "2034",
+        pop: "7263730"
 }, {
-    'year': '2035',
-        'pop': '7352841'
+    year: "2035",
+        pop: "7352841"
 
 }, {
-    'year': '2036',
-        'pop': '7440617'
+    year: "2036",
+        pop: "7440617"
 }, {
-    'year': '2037',
-        'pop': '7526725'
+    year: "2037",
+        pop: "7526725"
 }, {
-    'year': '2038',
-        'pop': '7611347'
+    year: "2038",
+        pop: "7611347"
 }, {
-    'year': '2039',
-        'pop': '7693013'
+    year: "2039",
+        pop: "7693013"
 
 }, {
-    'year': '2040',
-        'pop': '7773481'
+    year: "2040",
+        pop: "7773481"
 },, {
-    'year': '2041',
-        'pop': '7851186'
+    year: "2041",
+        pop: "7851186"
 }, {
-    'year': '2042',
-        'pop': '7924338'
+    year: "2042",
+        pop: "7924338"
 }, {
-    'year': '2043',
-        'pop': '7995903'
+    year: "2043",
+        pop: "7995903"
 
 }, {
-    'year': '2044',
-        'pop': '8065959'
+    year: "2044",
+        pop: "8065959"
 }, {
-    'year': '2045',
-        'pop': '8134846'
+    year: "2045",
+        pop: "8134846"
 }, {
-    'year': '2046',
-        'pop': '8201706'
+    year: "2046",
+        pop: "8201706"
 }, {
-    'year': '2047',
-        'pop': '8267672'
+    year: "2047",
+        pop: "8267672"
 
 }, {
-    'year': '2048',
-        'pop': '8332833'
+    year: "2048",
+        pop: "8332833"
 }, {
-    'year': '2049',
-        'pop': '8397333'
+    year: "2049",
+        pop: "8397333"
 } , {
-    'year': '2050',
-        'pop': '8461295'
+    year: "2050",
+        pop: "8461295"
 }   ];
-    
-    
+   
    
   var data = [4338785, 4444513, 4504709, 4555084, 4608811, 4662534, 4745660, 4821784, 4901938, 4976853, 5049935, 5119538, 5191086, 5268413, 5350118, 5448055, 5538180];
 
@@ -757,19 +759,20 @@ svg.append("g")
   
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(data)
+        .data(datasetset)
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d); }) 
+        .attr("cy", function(d) { return y(d.pop); }) 
       
       .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
             div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
-            div.html("<h4>"+(d)+" Residents of Colorado in </h4>+(i)+");
+            div.attr("class", "residents");
+            div.html("<h4>"+(d.pop)+" Colorado Residents in </h4>"+(d.year)+"");
          })
 
         .on("mouseout", function(d){
@@ -871,7 +874,7 @@ var chart = d3.select("#vis").append("svg")
 
  .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
-            div.style("top", (d3.event.pageY)-25+"px");
+            div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
             div.html((d.a)+"<h4>"+(d.b)+"%</h4>");
