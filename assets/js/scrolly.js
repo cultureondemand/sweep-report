@@ -1,5 +1,5 @@
 /**
- * scrollVis - encapsulates
+ * scrollVis - encapsulates 
  * all the code for the visualization
  * using reusable charts pattern:
  * http://bost.ocks.org/mike/chart/
