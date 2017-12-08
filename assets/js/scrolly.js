@@ -391,7 +391,7 @@ svg.append("g")
             div.style("display", "inline-block");
             div.style("position", "absolute");
             div.style("zIndex", "99");
-            div.attr("style", "tooltip");
+            div.attr("class", "tooltip");
             div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
          })
 
@@ -757,12 +757,12 @@ svg.append("g")
   
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(data)
+        .data(datasetset)
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d); }) 
+        .attr("cy", function(d) { return y(d.pop); }) 
       
       .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
@@ -770,7 +770,7 @@ svg.append("g")
             div.style("display", "inline-block");
             div.style("position", "absolute");
             div.style("zindex", "99");
-            div.attr("style", "tooltip");
+            div.attr("class", "tooltip");
             div.html("<h4>"+(d.pop)+" Residents of Colorado in </h4>+(d.year)+");
          })
 
