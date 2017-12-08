@@ -96,30 +96,18 @@ Maybe it is time to try something new.
 
 
   {
-    section: "",
+    section: "Figure 1 | Annual Hours of Delay, Denver-Aurora2",
    header: "",
     bkgImage: {
        small: "",
       medium: "",
       large: ""
     },
-    body:""
+    body:"2 Texas A&M Transportation Institute. 2015. Annual Urban Mobility Scorecard. https://mobility.tamu.edu/ums/"
 
    },
   {
-    section: "",
-   header: "The program has clearly defined their vision, mission, goals, and desired outcomes that respond to the needs of the community, reflect broad stakeholder input, and drive program design, implementation, and improvement. It demonstrates sound fiscal and administrative practices that are supported by, and communicated to, staff and stakeholders.",
-    bkgImage: {
-      small: "",
-      medium: "",
-      large: ""
-    },
-    body: `
-      
-    `
-  },
-  {
-    section: "",
+    section: "Figure 2 | Colorado Population, 2000-20503",
    header: "",
     bkgImage: {
       small: "",
@@ -127,12 +115,26 @@ Maybe it is time to try something new.
       large: ""
     },
     body: `
+      3 Colorado State Demography Office. 2017. Population Forecasts. https://demography.dola.colorado.gov/population/population-totals-colorado-substate/#population-totals-for- colorado-and-sub-state-regions
+    `
+  },
+  {
+    section: "Figure 3 | Colorado State Motor Fuel Taxes in Real Dollars, 1993 and 20154",
+   header: "",
+    bkgImage: {
+      small: "",
+      medium: "",
+      large: ""
+    },
+    body: `
+4 Federal Highway Administration. Highway Statistics. 1993 and 2015. Table SF-1 Motor Fuel Taxes. https://www.fhwa.dot.gov/policyinformation/statistics.cfm and
+US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalculator.com/
     `
   },
 
     {
-    section: "",
-    header: "The program uses data from multiple sources to assess its strengths and opportunities for growth, in order to continuously improve program design, outcomes, and impact.",
+    section: "Figure 4 | Managed Lanes and Interstate Expansion Costs in the Denver Metro Area",
+    header: "",
     bkgImage: {
       small: "",
       medium: "",
@@ -142,14 +144,14 @@ Maybe it is time to try something new.
     
   },
   {
-    section: "",
+    section: "Figure 5 | Congestion on the T-REX Corridor5",
   header: "",
     bkgImage: {
       small: "",
       medium: "",
       large: ""
     },
-    body:` `
+    body:`5 Volume/Capacity Ratio data was obtained for the entire corridor from CDOT.`
 
   } ,
   {
