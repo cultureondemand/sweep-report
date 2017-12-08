@@ -624,7 +624,7 @@ polyline {
     color: #fff;
     font-style: normal;
     font-weight: 400;
-    background-color: #fff;
+  /*  background-color: #fff; */
     height: 100%;
     color: #000;
     margin-left: 0;
@@ -652,7 +652,7 @@ polyline {
     color: #fff;
     font-style: normal;
     font-weight: 400;
-    background-color: #fff;
+ /*   background-color: #fff; */
     height: 100%;
     color: #000;
     margin-left: 0;
