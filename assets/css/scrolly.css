@@ -83,6 +83,7 @@ div.tooltip {
   pointer-events: none;
   position: absolute;
   text-align: center;
+  text-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
   z-index:99;
 }
 
@@ -415,9 +416,10 @@ background-color:#c78242;
 
 path {
   fill: #C78244;
-  fill-opacity: .8;
-  stroke: #000;
-  stroke-width: 1.5px;
+  fill-opacity: .9;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
+/*  stroke: #000;
+  stroke-width: 1.5px; */
 }
 
 line {
@@ -1960,5 +1962,5 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
  
   fill:#fff;
   stroke:none;
-  
+  box-shadow:0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
