@@ -1951,3 +1951,12 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
     display: block;
   
 }
+
+
+
+.plotter {
+ 
+  fill:#fff;
+  stroke:none;
+  
+}
