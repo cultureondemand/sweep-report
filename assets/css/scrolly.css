@@ -717,7 +717,7 @@ left: 0;
   text-transform: none !important;
   color: #c78242;
  display: inline-block;
-height: 169px;
+height: 199px;
    box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 
     font-family: "HelveticaNeue",
@@ -756,7 +756,7 @@ left: 0;
   text-transform: none !important;
   color: #c78242;
  display: inline-block;
-height: 169px;
+height: 199px;
    box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 
     font-family: "HelveticaNeue",
@@ -1203,7 +1203,7 @@ left: 30%;
     "Arial",
     sans-serif;
   font-weight: 900;
-height: 169px;
+height: 199px;
   margin:auto;
   padding: 1em;
   text-align: left;
@@ -1242,7 +1242,7 @@ left: 30%;
     "Arial",
     sans-serif;
   font-weight: 900;
-height: 169px;
+height: 199px;
 /*vertical-align: bottom;
   margin-bottom: 0;
   margin-top: 0; */
@@ -1375,8 +1375,7 @@ vertical-align: top;
     position: relative;
     display: inline-block;
     width: 75%;
-    left: 25%;
-    padding-left: 40px;
+     padding-left: 200px;
   
   
   
@@ -1423,8 +1422,7 @@ word-spacing: normal !important;
     position: relative;
     display: inline-block;
     width: 75%;
-    left: 25%;
-    padding-left: 40px;
+     padding-left: 200px;
   
   
   
