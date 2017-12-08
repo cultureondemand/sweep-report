@@ -666,8 +666,9 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
      y.domain([4000000, 6000000]);*/
  
     
- var max = d3.max(datasetset, function(d) { return d.year; }); */
-    /*   var max = 2050;
+ var max = d3.max(datasetset, function(d) { return d.year; });
+    /*   */ 
+    var max = 2050;
     
     
  var x = d3.scale.linear()
