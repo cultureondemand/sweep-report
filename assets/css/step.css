@@ -175,14 +175,16 @@ column-gap: 5em;
 column-rule-width: 1px;
 -webkit-column-rule-color: #828282;
 -moz-column-rule-color: #828282;
-column-rule-color: #828282; */
-margin: 2em auto 2em;
+column-rule-color: #828282;
+margin: 2em auto 2em; */
 }
 
 .example-dotted {
 /* -webkit-column-rule-style: dotted;
 -moz-column-rule-style: dotted;
 column-rule-style: dotted; */
+ 
+ padding:3em;
 }
 ul {
 
