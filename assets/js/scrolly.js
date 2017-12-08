@@ -757,12 +757,12 @@ svg.append("g")
   
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(datasetset)
+        .data(data)
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d.pop); }) 
+        .attr("cy", function(d) { return y(d); }) 
       
       .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
@@ -771,7 +771,7 @@ svg.append("g")
             div.style("position", "absolute");
             div.style("zindex", "99");
             div.attr("class", "tooltip");
-            div.html("<h4>"+(d.pop)+" Residents of Colorado in </h4>+(d.year)+");
+            div.html("<h4>"+(d)+" Residents of Colorado in </h4>+x(i)+");
          })
 
         .on("mouseout", function(d){
