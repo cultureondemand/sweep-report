@@ -996,8 +996,8 @@ background-color: #fff;
   left: 0;
   border-top: 1px solid #000;
   text-transform: uppercase;
-   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-
+ /*  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+*/
   font-family: "HelveticaNeueLight",
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
@@ -1009,11 +1009,11 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 1.2em;
+  font-size: 2.2em;
   font-weight: 600;
 
   margin: 0 auto;
-  padding-left: 108px;
+  padding-left: 120px;
   padding-right: 10px;
   padding-top: 17px;
   padding-bottom: 16px;
@@ -1039,8 +1039,8 @@ background-color: #fff;
   left: 0;
   border-top: 1px solid #000;
   text-transform: uppercase;
-   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-
+ /*  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+*/
   font-family: "HelveticaNeueLight",
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
@@ -1052,11 +1052,11 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 1.2em;
+  font-size: 2.2em;
   font-weight: 600;
 
   margin: 0 auto;
-  padding-left: 108px;
+  padding-left: 120px;
   padding-right: 10px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1078,8 +1078,8 @@ background-color: #fff;
   left: 0;
   border-top: 1px solid #000;
   text-transform: uppercase;
-   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-
+ /*  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+*/
   font-family: "HelveticaNeueLight",
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
@@ -1091,11 +1091,11 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 1.2em;
+  font-size: 2.2em;
   font-weight: 600;
 
   margin: 0 auto;
-  padding-left: 108px;
+  padding-left: 120px;
   padding-right: 10px;
   padding-top: 16px;
   padding-bottom: 16px;
