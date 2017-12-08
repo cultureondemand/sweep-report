@@ -426,14 +426,11 @@ d3.select("#vis").select("g").remove();
     ////
     
    
+     
     
-    
-  var data_tax = [
-{a:"1993 Revenue",b:372},
-{a:"2015 Real Revenue",b:351} 
-    
-    
-    var datasetset = [{year: "2000",
+    var datasetset = [
+      
+      {year: "2000",
         pop: "4338785"
 }, {
     year: "2001",
@@ -448,7 +445,7 @@ d3.select("#vis").select("g").remove();
 }, {
     year: "2004",
         pop: "4608811"
-},, {
+}, {
     year: "2005",
         pop: "4662534"
 }, {
@@ -487,7 +484,7 @@ d3.select("#vis").select("g").remove();
 }, {
     year: "2016",
         pop: "5538180"
-},, {
+}, {
     year: "2017",
         pop: "5630987"
 }, {
@@ -526,7 +523,7 @@ d3.select("#vis").select("g").remove();
 }, {
     year: "2028",
         pop: "6697517"
-},, {
+}, {
     year: "2029",
         pop: "6795627"
 }, {
@@ -565,7 +562,7 @@ d3.select("#vis").select("g").remove();
 }, {
     year: "2040",
         pop: "7773481"
-},, {
+}, {
     year: "2041",
         pop: "7851186"
 }, {
