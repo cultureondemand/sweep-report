@@ -378,8 +378,9 @@ svg.append("g")
     svg.selectAll("dot")
         .data(data)
       .enter().append("circle")
-        .attr("r", 3.5)
-        .attr("cx", function(d, i) { return x(i); })
+        .attr("r", 6.3)
+        .attr("class", "plotter")
+      .attr("cx", function(d, i) { return x(i); })
         .attr("cy", function(d) { return y(d); });
 
   
