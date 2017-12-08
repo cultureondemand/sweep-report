@@ -1369,13 +1369,14 @@ vertical-align: top;
   
   
   
-      line-height: 4em;
+      line-height: 1em;
     margin: 0;
     text-align: left;
     position: relative;
     display: inline-block;
-    width: 75%;
-     padding-left: 200px;
+/*    width: 75%; */
+     padding-left: 142px;
+     padding-top: 1em;
   
   
   
@@ -1416,14 +1417,15 @@ word-spacing: normal !important;
 
    
   
-      line-height: 4em;
+      line-height: 1em;
     margin: 0;
     text-align: left;
     position: relative;
     display: inline-block;
-    width: 75%;
-     padding-left: 200px;
-  
+/*    width: 75%; */
+     padding-left: 142px;
+       padding-top: 1em;
+
   
   
   
