@@ -389,9 +389,11 @@ svg.append("g")
 
  .on("mousemove", function(d){
             div.style("left", d3.event.pageX-23+"px");
-            div.style("top", (d3.event.pageY)-15+"px");
+            div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
+                        div.attr("class", "fixedtooltip");
+
              div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
          })
 
@@ -768,9 +770,11 @@ svg.append("g")
       
       .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
-            div.style("top", (d3.event.pageY)+25+"px");
+            div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
+                        div.attr("class", "fixedtooltip");
+
             div.html("<h4>"+(d.pop)+" Colorado Residents in </h4>"+(d.year)+"");
          })
 
