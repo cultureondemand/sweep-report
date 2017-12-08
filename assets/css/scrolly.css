@@ -1577,8 +1577,9 @@ stroke:none;
   fill: white;
 }
 
-.x.axis path {
+.x axis path {
   display: none;
+      stroke-opacity: .3;
 }
 
 .d3-tip {
