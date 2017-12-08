@@ -391,7 +391,7 @@ svg.append("g")
             div.style("display", "inline-block");
             div.style("position", "absolute");
             div.style("zIndex", "99");
-            div.att("style", "tooltip");
+            div.attr("style", "tooltip");
             div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
          })
 
@@ -770,7 +770,7 @@ svg.append("g")
             div.style("display", "inline-block");
             div.style("position", "absolute");
             div.style("zindex", "99");
-            div.att("style", "tooltip");
+            div.attr("style", "tooltip");
             div.html("<h4>"+(d.pop)+" Residents of Colorado in </h4>+(d.year)+");
          })
 
