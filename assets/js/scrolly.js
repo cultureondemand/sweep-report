@@ -666,13 +666,13 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
      y.domain([4000000, 6000000]);*/
  
     
-  /*  var max = d3.max(datasetset, function(d) { return d.year; }); */
-    var max = 2050;
+ var max = d3.max(datasetset, function(d) { return d.year; }); */
+    /*   var max = 2050;
     
     
  var x = d3.scale.linear()
     .range([0, width])
-   .domain([0, data.length -1]); 
+   .domain([0, datasetset.length -1]); 
 ///////     .domain([2000, 2024]);
 
  /* */   
@@ -730,7 +730,7 @@ var yAxis = d3.svg.axis()
     
 var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
-    .y1(function(d) { return y(d); })
+    .y1(function(d) { return y(d.pop); })
     .y0(height)
     .interpolate('cardinal'); 
 
@@ -751,7 +751,7 @@ svg.append("g")
       .call(yAxis)
 
   svg.append("path")
-      .datum(data)
+      .datum(datasetset)
       .attr("class", "line")
       .attr("d", line);
 
