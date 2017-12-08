@@ -42,6 +42,7 @@ var scrollVis = function() {
   // through the section with the current
   // progress through the section.
   var updateFunctions = [];
+ var div = d3.select("body").append("div").attr("class", "toolTip");
 
   /**
    * chart
@@ -383,6 +384,18 @@ svg.append("g")
       .attr("cx", function(d, i) { return x(i); })
         .attr("cy", function(d) { return y(d); });
 
+
+ .on("mousemove", function(d){
+            div.style("left", d3.event.pageX+10+"px");
+            div.style("top", (d3.event.pageY)-25+"px");
+            div.style("display", "inline-block");
+            div.style("position", "absolute");
+            div.html("<h4>"+(d)+"%</h4>");
+         })
+
+        .on("mouseout", function(d){
+            div.style("display", "none");
+        })
   
   }
 
