@@ -729,8 +729,8 @@ var yAxis = d3.svg.axis()
     
     
 var line = d3.svg.area()
-    .x(function(d, i) { return x(d.year); })
-    .y1(function(d) { return y(d.pop); })
+    .x(function(d, i) { return x(i); })
+    .y1(function(d) { return y(d); })
     .y0(height)
     .interpolate('cardinal'); 
 
@@ -751,14 +751,14 @@ svg.append("g")
       .call(yAxis)
 
   svg.append("path")
-      .datum(datasetset)
+      .datum(data)
       .attr("class", "line")
       .attr("d", line);
 
   
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(datasetset)
+        .data(data)
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
@@ -767,7 +767,7 @@ svg.append("g")
       
       .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
-            div.style("top", (d3.event.pageY)-45+"px");
+            div.style("top", (d3.event.pageY)-25+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
             div.attr("class", "residents");
