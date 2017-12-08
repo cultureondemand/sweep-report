@@ -75,14 +75,15 @@ a:hover {
 }
 
 div.tooltip {
-  background: rgba(0, 0, 0, 0.6);
-  color: #FFFFFF;
-  font-size: 12px;
+/*  background: rgba(0, 0, 0, 0.6); */
+  fill: #000;
+  font-size: 36px;
   font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
   padding: 4px 6px;
   pointer-events: none;
   position: absolute;
   text-align: center;
+  z-index:99;
 }
 
 #menu {
