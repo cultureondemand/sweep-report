@@ -729,8 +729,8 @@ var yAxis = d3.svg.axis()
     
     
 var line = d3.svg.area()
-    .x(function(d, i) { return x(i); })
-    .y1(function(d) { return y(d); })
+    .x(function(d, i) { return x(d.year); })
+    .y1(function(d) { return y(d.pop); })
     .y0(height)
     .interpolate('cardinal'); 
 
@@ -751,7 +751,7 @@ svg.append("g")
       .call(yAxis)
 
   svg.append("path")
-      .datum(data)
+      .datum(datasetset)
       .attr("class", "line")
       .attr("d", line);
 
