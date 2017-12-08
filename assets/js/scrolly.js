@@ -251,9 +251,9 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "visibility:visible; ");
     
  
-    var axisMargin = 5,
+    var axisMargin = 1,
             margin = 10,
-            valueMargin = 4,
+            valueMargin = 1,
             labelWidth = 50;
     
     
@@ -606,9 +606,9 @@ d3.select("#vis").select("g").remove();
     
 var width = wwidth, height = hheight;  
     
-        var axisMargin = 5,
+        var axisMargin = 1,
             margin = 10,
-            valueMargin = 4,
+            valueMargin = 1,
             labelWidth = 50;
 
             
