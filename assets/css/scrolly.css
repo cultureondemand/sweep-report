@@ -717,7 +717,7 @@ left: 0;
   text-transform: none !important;
   color: #c78242;
  display: inline-block;
-height: 119px;
+height: 169px;
    box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 
     font-family: "HelveticaNeue",
@@ -750,14 +750,13 @@ position: fixed;
 #logoOpener {
 
     background-color: #fff;
-height: 139px;
-
+ 
 top: 0;
 left: 0;
   text-transform: none !important;
   color: #c78242;
  display: inline-block;
-height: 139px;
+height: 169px;
    box-shadow: 0 3px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 
     font-family: "HelveticaNeue",
@@ -952,7 +951,7 @@ background-color: #fff;
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {#logoOpener img {
- /*  margin-bottom: 1.6em; */
+  margin-top: 2em;  
 
 }
 
@@ -965,7 +964,7 @@ background-color: #fff;
  
  
 #logoOpener img {
-/*   margin-bottom: .9em; */
+    margin-top: 2em;  
 
 }
 
@@ -1204,7 +1203,7 @@ left: 30%;
     "Arial",
     sans-serif;
   font-weight: 900;
-height: 119px;
+height: 169px;
   margin:auto;
   padding: 1em;
   text-align: left;
@@ -1243,7 +1242,7 @@ left: 30%;
     "Arial",
     sans-serif;
   font-weight: 900;
-height: 139px;
+height: 169px;
 /*vertical-align: bottom;
   margin-bottom: 0;
   margin-top: 0; */
