@@ -387,8 +387,10 @@ svg.append("g")
 
  .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
-            div.style("top", (d3.event.pageY)-25+"px");
+            div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
+            div.style("position", "absolute");
+            div.style("zIndex", "99");
             div.style("position", "absolute");
             div.html("<h4>"+(d)+"%</h4>");
          })
@@ -760,9 +762,21 @@ svg.append("g")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d); });
+        .attr("cy", function(d) { return y(d); }) 
+      
+      .on("mousemove", function(d){
+            div.style("left", d3.event.pageX+10+"px");
+            div.style("top", (d3.event.pageY)-45+"px");
+            div.style("display", "inline-block");
+            div.style("position", "absolute");
+            div.style("zIndex", "99");
+            div.style("position", "absolute");
+            div.html("<h4>"+(d)+"%</h4>");
+         })
 
-  
+        .on("mouseout", function(d){
+            div.style("display", "none");
+        })
     
     ///
     ///
