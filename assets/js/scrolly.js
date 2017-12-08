@@ -758,12 +758,12 @@ svg.append("g")
   
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(data)
+        .data(datasetset)
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d); }) 
+        .attr("cy", function(d) { return y(d.pop); }) 
       
       .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
