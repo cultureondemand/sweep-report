@@ -740,6 +740,16 @@ svg.append("g")
       .attr("d", line);
 
   
+    // Add the scatterplot
+    svg.selectAll("dot")
+        .data(data)
+      .enter().append("circle")
+        .attr("r", 6.3)
+        .attr("class", "plotter")
+      .attr("cx", function(d, i) { return x(i); })
+        .attr("cy", function(d) { return y(d); });
+
+  
     
     ///
     ///
