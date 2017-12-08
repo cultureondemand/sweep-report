@@ -20,12 +20,12 @@ background-color: #fff;
  .step-content {
 /*max-width: 800px; */
 width:100%;
-/* margin: 0 auto 20vh; */
-  margin-top: 25vh;
+/* margin: 0 auto 20vh;
+  margin-top: 25vh; 
+padding: 12px 22px 12px 40px;
+*/
  background-color: #fff;
 position: relative;
-padding: 12px 22px 12px 40px;
-
 z-index: 2;
 }
 }
@@ -36,12 +36,12 @@ z-index: 2;
  .step-content {
 /*max-width: 800px; */
 width:100%;
-/* margin: 0 auto 20vh; */
-  margin-top: 25vh;
+/* margin: 0 auto 20vh;
+  margin-top: 25vh; 
+padding: 12px 40px 12px 40px;
+*/
  background-color: #fff;
 position: relative;
-padding: 12px 40px 12px 40px;
-
 z-index: 2;
 }
 }
