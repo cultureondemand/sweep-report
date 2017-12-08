@@ -858,7 +858,7 @@ var chart = d3.select("#vis").append("svg")
     });
 
     scale = d3.scale.linear()
-            .domain([300, max])
+            .domain([330, 380])
             .range([0, width - margin*4 - labelWidth]);
 
     xAxis = d3.svg.axis()
