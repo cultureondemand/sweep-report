@@ -52,13 +52,14 @@ z-index: 2;
 .step-content {
 /*max-width: 800px; */
 width:100%;
-/* margin: 0 auto 25vh; */
+/* margin: 0 auto 25vh; 
   margin-top: 25vh;
- background-color: #fff;
-position: relative;
 padding: 12px 72px 12px 106px;
 
-z-index: 2;
+*/
+ background-color: #fff;
+position: relative;
+ z-index: 2;
 }
 }
 
