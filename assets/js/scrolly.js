@@ -1161,7 +1161,9 @@ svg.append("g")
       .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
- 
+ .text(function(d){
+   return d
+   )}
     
    
      .style("fill", function(d) {
