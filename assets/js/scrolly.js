@@ -1112,11 +1112,6 @@ svg.append("g")
       .attr("d", line);
 
     
-  svg.append("text", function(d) {
-            if (d == 65105) {return "Label test"}
-            else 	{   }
-        ;})
-   
     
     
     // Add the scatterplot
@@ -1131,6 +1126,11 @@ svg.append("g")
      
     
   
+  .append("text", function(d) {
+            if (d == 65105) {return "Label test"}
+            else 	{   }
+        ;})
+   
       
      
     
