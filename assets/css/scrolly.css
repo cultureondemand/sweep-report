@@ -1552,6 +1552,10 @@ word-spacing: normal !important;
 
 .highlight {
   fill: #ffd200;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  text-anchor: middle;
 }
 
 .line {
