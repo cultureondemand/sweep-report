@@ -1111,6 +1111,14 @@ svg.append("g")
       .attr("class", "line")
       .attr("d", line);
 
+    
+  svg.append("text", function(d) {
+            if (d == 65105) {return "Label test"}
+            else 	{   }
+        ;})
+   
+    
+    
     // Add the scatterplot
     svg.selectAll("dot")
         .data(data)
@@ -1121,12 +1129,6 @@ svg.append("g")
         .attr("cy", function(d) { return y(d); })
 
      
-    
-     .style("fill", function(d) {
-            if (d == 65105) {return "red"}
-            else 	{ return "black" }
-        ;})
-    
     
   
       
