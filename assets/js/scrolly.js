@@ -1118,19 +1118,20 @@ svg.append("g")
      svg.selectAll("dot")
         .data(data)
       .enter().append("text")
- 
+
         .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
-
+       .attr("transform", "translate(0,100)")
+.attr("style", "highlight")
            .text(function(d) {
             if (d == 65105) {return "T-REX Starts"}
             else 	{  }
 
-                 if (d == 82043) {return "T-REX Starts"}
+                 if (d == 82043) {return "T-REX Completed"}
             else 	{  }
 
      
-                 if (d == 87862) {return "T-REX Starts"}
+                 if (d == 87862) {return "Congestion Hits Pre- Construction Levels"}
             else 	{  }
 
      
