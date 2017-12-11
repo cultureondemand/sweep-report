@@ -1120,6 +1120,7 @@ svg.append("g")
   svg.append("text")
         .datum(data)
    .attr("x", function(d, i) { return x(i); })
+        .attr("y", function(d) { return y(d); })
 
  .text(function(d){ return 'label label'; })
      
