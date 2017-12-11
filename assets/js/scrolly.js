@@ -1121,7 +1121,7 @@ svg.append("g")
 
         .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
-       .attr("transform", "translate(0,100)")
+       .attr("transform", "translate(0,50)")
 .attr("style", "highlight")
            .text(function(d) {
             if (d == 65105) {return "T-REX Starts"}
@@ -1131,7 +1131,7 @@ svg.append("g")
             else 	{  }
 
      
-                 if (d == 87862) {return "Congestion Hits Pre- Construction Levels"}
+                 if (d == 82287) {return "Congestion Hits Pre- Construction Levels"}
             else 	{  }
 
      
