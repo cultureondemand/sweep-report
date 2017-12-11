@@ -1988,3 +1988,12 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
   
 }
+
+
+.fixedtooltip {
+ 
+  display:inline-block;
+  position:fixed;
+  right:5%;
+  bottom:5%;
+}
