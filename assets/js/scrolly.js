@@ -1115,22 +1115,6 @@ svg.append("g")
     
     
     
-        
-    // Add the label
-  svg.append("text")
-        .datum(data)
-   .attr("x", function(d, i) { return x(i); })
-        .attr("y", function(d) { return y(d); })
-
- .text(function(d){ return 'label label'; })
-     
-     .style("fill", function(d) {
-            if (d == 65105) {return "black"}
-            else 	{ return "none" }
-        ;})
-    
-    
-    
      
     
     
@@ -1175,6 +1159,29 @@ svg.append("g")
     
     
    
+    
+    
+    
+    
+    
+      var text = d3.select("g")
+  
+    // Add the label
+  text.append("text")
+   .attr("x", function(d, i) { return x(i); })
+        .attr("y", function(d) { return y(d); })
+
+ .text(function(d){ return 'label label'; })
+     
+     .style("fill", function(d) {
+            if (d == 65105) {return "black"}
+            else 	{ return "none" }
+        ;})
+    
+    
+    
+    
+    
     
     
     
