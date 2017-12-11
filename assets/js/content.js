@@ -136,9 +136,9 @@ US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalcu
     section: "Figure 4 | Managed Lanes and Interstate Expansion Costs in the Denver Metro Area",
     header: "",
     bkgImage: {
-      small: "",
-      medium: "",
-      large: ""
+      small: "map.png",
+      medium: "map.png",
+      large: "map.png"
     },
     body: `  `
     
