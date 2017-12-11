@@ -1168,11 +1168,7 @@ svg.append("g")
       .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
- .attr("x", function(d, i) {
-            if (d == 65105) {return x(i)}
-            else 	{   }
-        ;})    
-     
+ 
     
    
      .style("fill", function(d) {
