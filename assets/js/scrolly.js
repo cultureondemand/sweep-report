@@ -1120,6 +1120,24 @@ svg.append("g")
       .attr("cx", function(d, i) { return x(i); })
         .attr("cy", function(d) { return y(d); })
 
+     
+        if (cy == 65105) {
+        
+    dot.append("text")
+       .attr({"x":function(d){return x(i);},
+              "y":function(d){return y(d);},
+              "class":"plotter",
+              "stroke":"black"})
+       .text(function(d){return 'Label 1 here';});
+      
+    }
+      
+      
+      
+     
+    
+    
+    
 
  .on("mousemove", function(d){
             div.style("left", d3.event.pageX-23+"px");
