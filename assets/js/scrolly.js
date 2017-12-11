@@ -1173,7 +1173,7 @@ svg.append("g")
       .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
-           .text("fill", function(d) {
+           .text(function(d) {
             if (d == 65105) {return "T-REX Starts"}
             else 	{ return "" }
         ;})
