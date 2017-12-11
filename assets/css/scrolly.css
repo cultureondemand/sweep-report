@@ -2010,3 +2010,24 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   right:5%;
   bottom:5%;
 }
+
+
+
+
+.highlight {
+  visibility:visible;
+  display:inline-block;
+  fill:#000;
+  
+}
+
+.transparent {
+  visibility:hidden;
+  display:none;
+  fill:transparent;
+  
+}
+
+
+
+
