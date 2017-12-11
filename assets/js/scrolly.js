@@ -1123,12 +1123,12 @@ svg.append("g")
      
         if (cy == 65105) {
         
-    dot.append("text")
+    .append("text")
        .attr({"x":function(d){return x(i);},
               "y":function(d){return y(d);},
               "class":"plotter",
               "stroke":"black"})
-       .text(function(d){return 'Label 1 here';});
+       .text(function(d){return 'Label 1 here';})
       
     }
       
