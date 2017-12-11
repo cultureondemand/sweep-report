@@ -1115,14 +1115,21 @@ svg.append("g")
     
     
     
-    
-  svg.append("text")
-      .datum(data)
-      .attr("x", function(d, i) { return x(i); })
+        
+    // Add the label
+    svg.selectAll("g")
+        .data(data)
+         .enter().append("text")
+    .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
  .text(function(d){ return d; })
-    
+     
+     .style("fill", function(d) {
+            if (d == 65105) {return "black"}
+            else 	{ return "none" }
+        ;})
+      
   
     
     
