@@ -963,17 +963,178 @@ d3.select("#vis").select("g").remove();
 
   function showTitle8() {
   
+   
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
   
+  
+
    d3.select("body").selectAll(".bgbg")
-      .style('display', 'inline-block');
+      .style('display', 'none');
+
+  ///////////////bgimage.setAttribute("style", "display:none; ");
+
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
 
   
   
         var vis = document.getElementById("vis");
-    vis.setAttribute("style", "display:none !important; ");
-    vis.setAttribute("style", "visibility:hidden; ");
+    vis.setAttribute("style", "display:inline-block !important; ");
+    vis.setAttribute("style", "visibility:visible; ");
+    
+ 
+    var axisMargin = 1,
+            margin = 10,
+            valueMargin = 1,
+            labelWidth = 50;
+    
+    
+    
+    var dataset1 = [{
+    'qName': 'Q1',
+        'PFTE': '10',
+        'EFTE': '62.7',
+        'SOME': '72.2'
+}, {
+    'qName': 'Q2',
+        'PFTE': '58',
+        'EFTE': '59.9',
+        'SOME': '67.7'
+}, {
+    'qName': 'Q3',
+        'PFTE': '53.3',
+        'EFTE': '59.1',
+        'SOME': '69.4'
+}, {
+    'qName': 'Q4',
+        'PFTE': '35.7',
+        'EFTE': '58.8',
+        'SOME': '68'
+}, {
+    'qName': 'Q5',
+        'PFTE': '34.2',
+        'EFTE': '58.7',
+        'SOME': '72.4'
+}, ];
+    
+    
+    
+    
+    
+  
+  var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
+    
+    //////////////    var max = d3.max(data, function(d) { return d.a; });
+        var max = 91479;
+
+
+  var wwidth= window.innerWidth;
+  var hheight= window.innerHeight;
+    
+var width = wwidth, height = hheight;
+var range = [];
+ 
+    
+     
+    /*
+    var width = 500, height = 500;
+    */
+    
+ var x = d3.scale.linear()
+    .range([0, width])
+  .domain([0, data.length -1]);
+ /////////////////////     .domain([2000, 2014]);
+
+    
+/*    var x = d3.scale.ordinal()
+ ////   .range([range])
+    .range([0, width])
+  .domain(['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']); */
+    
+    
+    
+    
+var y = d3.scale.linear()
+    .range([height, 0])
+    .domain([50000, 100000]);
+
+     var scale = d3.scale.linear()
+            .domain([2000, 2014])
+            .range([0, width - margin*4 - labelWidth]);
+
+   var xAxis = d3.svg.axis()
+            .scale(scale)
+            .tickSize(-height + 4*margin + axisMargin)
+            .orient("bottom");
+    
+    
+/* var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom"); */
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+    
+    
+    
+    
+    
+
+var line = d3.svg.area()
+    .x(function(d, i) { return x(i); })
+    .y1(function(d) { return y(d); })
+    .y0(height)
+    .interpolate('cardinal');
+
+var svg = d3.select("#vis").append("svg")
+    .attr("width", width - 210)
+    .attr("height", height - 210)
+    .append("g")
+   ///////// .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(100, -20)")
+
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+
+    // Add the scatterplot
+    svg.selectAll("dot")
+        .data(data)
+      .enter().append("circle")
+        .attr("r", 6.3)
+        .attr("class", "plotter")
+      .attr("cx", function(d, i) { return x(i); })
+        .attr("cy", function(d) { return y(d); })
+
+
+ .on("mousemove", function(d){
+            div.style("left", d3.event.pageX-23+"px");
+            div.style("top", (d3.event.pageY)-45+"px");
+            div.style("display", "inline-block");
+            div.style("position", "absolute");
+                        div.attr("class", "fixedtooltip");
+
+             div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
+         })
+
+        .on("mouseout", function(d){
+            div.style("display", "none");
+        })
+  
   
   
   }
@@ -982,7 +1143,24 @@ d3.select("#vis").select("g").remove();
   /////////////////////////
   ///////////////////////
 
-  function showTitle9() {}
+  function showTitle9() {
+  
+  
+  
+  
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
+  
+  
+
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'inline-block');
+
+  
+  
+  
+  }
 
   ////////////////
   /////////////////////////
