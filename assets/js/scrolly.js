@@ -1123,12 +1123,7 @@ svg.append("g")
 
  .text(function(d){ return d; })
     
-   
-     .style("fill", function(d) {
-            if (d == 65105) {return "black"}
-            else 	{ return "none" }
-        ;})
-      
+  
     
     
     
