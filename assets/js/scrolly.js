@@ -1125,13 +1125,6 @@ svg.append("g")
 
      
     
-  
-  .append("text", function(d) {
-            if (d == 65105) {return "Label test"}
-            else 	{   }
-        ;})
-   
-      
      
     
     
