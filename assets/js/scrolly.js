@@ -1148,26 +1148,21 @@ svg.append("g")
     
     
    
-    
-    
-    var text = d3.select("svg")
-
-    
-    // Add the scatterplot
-         .data(data)
+        svg.selectAll("highlight")
+        .data(data)
       .enter().append("text")
+
+     
  
     
       .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
- .text(function(d){
-   return d
- })
+ .text(function(d){ return d; })
     
    
-     .style("fill", function(d) {
-            if (d == 65105) {return "red"}
+     .style("style", function(d) {
+            if (d == 65105) {return "highlight"}
             else 	{ return "transparent" }
         ;})
       
