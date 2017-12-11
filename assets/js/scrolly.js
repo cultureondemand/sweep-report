@@ -1122,7 +1122,7 @@ svg.append("g")
         .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
        .attr("transform", "translate(0,50)")
-.attr("style", "highlight")
+.attr("class", "highlight")
            .text(function(d) {
             if (d == 65105) {return "T-REX Starts"}
             else 	{  }
