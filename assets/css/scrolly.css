@@ -1551,12 +1551,12 @@ word-spacing: normal !important;
 }
 
 .highlight {
-  fill: #ffd200;
-  font-family: 'Oswald', sans-serif;
+  visibility:visible;
+  display:inline-block;
+  fill:#000;  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 1.1em;
-  text-anchor: middle;
-}
+ }
 
 .line {
 /*  stroke: white;
@@ -2015,15 +2015,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   bottom:5%;
 }
 
-
-
-
-.highlight {
-  visibility:visible;
-  display:inline-block;
-  fill:#000;
-  
-}
+ 
 
 .transparent {
   visibility:hidden;
