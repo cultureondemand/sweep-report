@@ -1165,7 +1165,7 @@ svg.append("g")
     
     
     // Add the scatterplot
- var words = d3.select("#vis").append("svg")
+ var words = d3.select("svg")
  svg.selectAll("g")
         .data(data)
       .enter().append("text")
