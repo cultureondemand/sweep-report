@@ -1121,18 +1121,7 @@ svg.append("g")
         .attr("cy", function(d) { return y(d); })
 
      
-      
-        if (cy == '65105') {
-        
-          
-          d3.selectAll('plotter')
-  .append('text')
-  .text(function(d, i) {
-    return i + 1;
-  });
-
-   
-    }
+  
       
      
     
@@ -1158,7 +1147,20 @@ svg.append("g")
     
       
     
-    
+        
+        if (cy == '65105') {
+        
+          
+          d3.selectAll('plotter')
+                  .data(data)
+
+   .enter().append('text')
+  .text(function(d, i) {
+    return i + 1;
+  });
+
+   
+    }
     
   
   }
