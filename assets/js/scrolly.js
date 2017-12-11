@@ -1121,13 +1121,11 @@ svg.append("g")
         .attr("cy", function(d) { return y(d); })
 
      
-        if (cy == 65105) {
+        if (cy == '65105') {
         
     .append("text")
-       .attr({"x":function(d){return x(i);},
-              "y":function(d){return y(d);},
-              "class":"plotter",
-              "stroke":"black"})
+      .attr("x", function(d, i) { return x(i); })
+        .attr("y", function(d) { return y(d); })
        .text(function(d){return 'Label 1 here';})
       
     }
