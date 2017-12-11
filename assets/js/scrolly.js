@@ -1176,7 +1176,7 @@ svg.append("g")
            .text(function(d) {
             if (d == 65105) {return "T-REX Starts"}
             else 	{  }
-        ;})
+        })
     
     
     
