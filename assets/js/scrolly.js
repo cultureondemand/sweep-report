@@ -1163,7 +1163,7 @@ svg.append("g")
 
  .text(function(d){
    return d
-   )}
+ })
     
    
      .style("fill", function(d) {
