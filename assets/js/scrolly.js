@@ -1111,7 +1111,21 @@ svg.append("g")
       .attr("class", "line")
       .attr("d", line);
 
+   
     
+    
+    // Add the scatterplot
+     svg.append("text")
+          .data(data)
+        .attr("x", function(d, i) { return x(i); })
+        .attr("y", function(d) { return y(d); })
+
+           .text(function(d) {
+            if (d == 65105) {return "T-REX Starts"}
+            else 	{  }
+        })
+    
+     
     
     
     
@@ -1160,22 +1174,6 @@ svg.append("g")
     
    
     
-    
-    
-    
-    
-    // Add the scatterplot
-     svg.append("text")
-          .data(data)
-      .enter().append("text")
-         .attr("class", "hightlight")
-      .attr("x", function(d, i) { return x(i); })
-        .attr("y", function(d) { return y(d); })
-
-           .text(function(d) {
-            if (d == 65105) {return "T-REX Starts"}
-            else 	{  }
-        })
     
     
     
