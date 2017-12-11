@@ -1121,6 +1121,13 @@ svg.append("g")
         .attr("cy", function(d) { return y(d); })
 
      
+    
+     .style("fill", function(d) {
+            if (d == 65105) {return "red"}
+            else 	{ return "black" }
+        ;})
+    
+    
   
       
      
@@ -1147,19 +1154,7 @@ svg.append("g")
     
       
     
-        
-        if (y(d) == '65105') {
-        
-          
-          d3.selectAll('plotter')
- 
-    .append('text')
-  .text(function(d, i) {
-    return i + 1;
-  });
-
-   
-    }
+     
     
   
   }
