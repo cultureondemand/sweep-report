@@ -1165,7 +1165,7 @@ svg.append("g")
     
     
     // Add the scatterplot
- var words = d3.select("g")
+ var words = d3.selectAll("g")
          .data(data)
       .enter().append("text")
          .attr("class", "hightlight")
