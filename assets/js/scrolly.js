@@ -1114,6 +1114,25 @@ svg.append("g")
     
     
     
+    
+    
+  svg.append("text")
+      .datum(data)
+      .attr("x", function(d, i) { return x(i); })
+        .attr("y", function(d) { return y(d); })
+
+ .text(function(d){ return d; })
+    
+   
+     .style("style", function(d) {
+            if (d == 65105) {return "highlight"}
+            else 	{ return "transparent" }
+        ;})
+      
+    
+    
+    
+    
     // Add the scatterplot
     svg.selectAll("dot")
         .data(data)
@@ -1148,24 +1167,6 @@ svg.append("g")
     
     
    
-        svg.selectAll("highlight")
-        .data(data)
-      .enter().append("text")
-
-     
- 
-    
-      .attr("x", function(d, i) { return x(i); })
-        .attr("y", function(d) { return y(d); })
-
- .text(function(d){ return d; })
-    
-   
-     .style("style", function(d) {
-            if (d == 65105) {return "highlight"}
-            else 	{ return "transparent" }
-        ;})
-      
     
     
     
