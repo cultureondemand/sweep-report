@@ -985,7 +985,7 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "visibility:visible; ");
     
  
-    var axisMargin = 1,
+    var axisMargin = 20,
             margin = 10,
             valueMargin = 1,
             labelWidth = 50;
@@ -1120,7 +1120,6 @@ svg.append("g")
   svg.append("text")
         .datum(data)
    .attr("x", function(d, i) { return x(i); })
-        .attr("y", function(d) { return y(d); })
 
  .text(function(d){ return 'label label'; })
      
@@ -1128,6 +1127,13 @@ svg.append("g")
             if (d == 65105) {return "black"}
             else 	{ return "none" }
         ;})
+    
+    
+    
+     
+    
+    
+    
       
   
     
@@ -1171,9 +1177,6 @@ svg.append("g")
     
     
     
-    
-    
-     
     
   
   }
