@@ -1162,21 +1162,17 @@ svg.append("g")
     
     
     
-    // Add the text for some
-var text = d3.select("g")
-       .data(data)
-       .enter().append("text")
-       .attr("x", function(d, i) { return x(i); })
-       .attr("y", function(d) { return y(d); })
-       .text(function(d){ return 'label label'; })
-       .style("fill", function(d) {
-            if (d == 65105) {return "black"}
-            else 	{ return "red" }
-        ;})
     
     
-    
-    
+    // Add the scatterplot
+    svg.selectAll("g")
+        .data(data)
+      .enter().append("text")
+         .attr("class", "hightlight")
+      .attr("x", function(d, i) { return x(i); })
+        .attr("y", function(d) { return y(d); })
+
+     
     
     
     
