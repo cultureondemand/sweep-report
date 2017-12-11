@@ -1167,7 +1167,7 @@ svg.append("g")
        .data(data)
        .enter().append("text")
        .attr("x", function(d, i) { return x(i); })
-       .attr("y", function(d) { return d; })
+       .attr("y", function(d) { return y(d); })
        .text(function(d){ return 'label label'; })
        .style("fill", function(d) {
             if (d == 65105) {return "black"}
