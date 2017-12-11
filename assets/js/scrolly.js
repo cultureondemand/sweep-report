@@ -1165,14 +1165,18 @@ svg.append("g")
     
     
     // Add the scatterplot
-    svg.selectAll("hightlight")
+ var words = d3.select("#vis").append("svg")
+ svg.selectAll("g")
         .data(data)
       .enter().append("text")
          .attr("class", "hightlight")
       .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
-     
+           .text("fill", function(d) {
+            if (d == 65105) {return "T-REX Starts"}
+            else 	{ return "" }
+        ;})
     
     
     
