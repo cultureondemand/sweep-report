@@ -1115,8 +1115,10 @@ svg.append("g")
     
     
     // Add the scatterplot
-     svg.append("text")
-          .data(data)
+     svg.selectAll("dot")
+        .data(data)
+      .enter().append("text")
+ 
         .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
