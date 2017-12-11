@@ -1124,9 +1124,9 @@ svg.append("g")
  .text(function(d){ return d; })
     
    
-     .style("style", function(d) {
-            if (d == 65105) {return "highlight"}
-            else 	{ return "transparent" }
+     .style("fill", function(d) {
+            if (d == 65105) {return "black"}
+            else 	{ return "none" }
         ;})
       
     
