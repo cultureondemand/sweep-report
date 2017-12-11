@@ -1165,7 +1165,7 @@ svg.append("g")
     
     
     // Add the scatterplot
-    svg.selectAll("g")
+    svg.selectAll("hightlight")
         .data(data)
       .enter().append("text")
          .attr("class", "hightlight")
