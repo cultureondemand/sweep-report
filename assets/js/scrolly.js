@@ -1121,16 +1121,6 @@ svg.append("g")
         .attr("cy", function(d) { return y(d); })
 
      
-        if (cy == '65105') {
-        
-    svg.append("text")
-      .attr("x", function(d, i) { return x(i); })
-        .attr("y", function(d) { return y(d); })
-       .text(function(d){return 'Label 1 here';})
-      
-    }
-      
-      
       
      
     
