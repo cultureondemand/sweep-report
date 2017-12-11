@@ -1175,7 +1175,7 @@ svg.append("g")
      
      .style("fill", function(d) {
             if (d == 65105) {return "black"}
-            else 	{ return "none" }
+            else 	{ return "red" }
         ;})
     
     
