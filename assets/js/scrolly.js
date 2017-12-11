@@ -1125,7 +1125,16 @@ svg.append("g")
            .text(function(d) {
             if (d == 65105) {return "T-REX Starts"}
             else 	{  }
-        })
+
+                 if (d == 82043) {return "T-REX Starts"}
+            else 	{  }
+
+     
+                 if (d == 87862) {return "T-REX Starts"}
+            else 	{  }
+
+     
+     })
     
      
     
