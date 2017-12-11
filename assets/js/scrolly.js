@@ -1117,10 +1117,8 @@ svg.append("g")
     
         
     // Add the label
-    svg.selectAll("text")
-        .data(data)
-         .enter().append("text")
-    .attr("x", function(d, i) { return x(i); })
+  svg.append("text")
+     .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
  .text(function(d){ return d; })
