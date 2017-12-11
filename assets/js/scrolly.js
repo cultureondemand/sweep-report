@@ -1150,11 +1150,11 @@ svg.append("g")
    
     
     
-    
+    var text = d3.select("svg")
+
     
     // Add the scatterplot
-    svg.selectAll("g")
-        .data(data)
+         .data(data)
       .enter().append("text")
  
     
