@@ -1148,13 +1148,12 @@ svg.append("g")
       
     
         
-        if (cy == '65105') {
+        if (y(d) == '65105') {
         
           
           d3.selectAll('plotter')
-                  .data(data)
-
-   .enter().append('text')
+ 
+    .append('text')
   .text(function(d, i) {
     return i + 1;
   });
