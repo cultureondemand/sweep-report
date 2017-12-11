@@ -1163,7 +1163,7 @@ svg.append("g")
     
     
     // Add the text for some
-    svg.selectAll("g")
+    svg.selectAll("text")
        .data(data)
        .enter().append("text")
        .attr("x", function(d, i) { return x(i); })
