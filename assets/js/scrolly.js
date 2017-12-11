@@ -1121,7 +1121,7 @@ svg.append("g")
      .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d); })
 
- .text(function(d){ return d; })
+ .text(function(d){ return 'label label'; })
      
      .style("fill", function(d) {
             if (d == 65105) {return "black"}
