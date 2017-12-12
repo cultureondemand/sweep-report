@@ -1206,7 +1206,8 @@ svg.append("g")
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
 
-  
+    d3.select("#vis").style('display', 'none');
+ 
   
 
    d3.select("body").selectAll(".bgbg")
