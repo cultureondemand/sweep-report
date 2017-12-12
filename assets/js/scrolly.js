@@ -333,9 +333,7 @@ var y = d3.scale.linear()
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
-     .tickFormat(d3.time.format("%Y"))
-
-            .orient("bottom");
+             .orient("bottom");
     
     
 /* var xAxis = d3.svg.axis()
@@ -396,7 +394,7 @@ svg.append("g")
             div.style("position", "absolute");
                         div.attr("class", "fixedtooltip");
 
-             div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
+             div.html((d)+" Annual Hours of Delay, Denver-Aurora");
          })
 
         .on("mouseout", function(d){
