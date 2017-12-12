@@ -170,14 +170,14 @@ header: "",
 
 <h3 class='prog'></h3>
 
-<span><a href='http://www.sweep.org/' target='_blank'>www.sweep.org</a></span>
+<span><a href='http://www.swenergy.org/' target='_blank'>www.swenergy.org</a></span>
 
 <br />
 
-<a href="//www.facebook.com/PartnerForChildren/" class="social-icon" aria-label="Facebook" alt="Facebook">
+<a href="//www.facebook.com/SWenergyefficiency/" class="social-icon" aria-label="Facebook" alt="Facebook">
 <img src="assets/images/facebook-box.png" height="21" border="0" alt="facebook"></a>
           
-<a href="//www.twitter.com/partnr4childrn" class="social-icon" aria-label="Facebook" alt="Facebook">
+<a href="//www.twitter.com/southwestee" class="social-icon" aria-label="Twitter" alt="Twitter">
 <img src="assets/images/twitter.png" height="21" border="0" alt="facebook"></a>
 
 <br />
