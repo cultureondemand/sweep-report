@@ -183,7 +183,9 @@ margin: 2em auto 2em; */
 /* -webkit-column-rule-style: dotted;
 -moz-column-rule-style: dotted;
 column-rule-style: dotted; */
- 
+     margin: auto;
+    display: flex;
+    max-width: 1200px;
  padding:3em;
 }
 ul {
