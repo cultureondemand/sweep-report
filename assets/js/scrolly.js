@@ -333,6 +333,8 @@ var y = d3.scale.linear()
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
+     .tickFormat(d3.time.format("%Y"))
+
             .orient("bottom");
     
     
@@ -691,7 +693,8 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
-            .orient("bottom");
+       .tickFormat(d3.time.format("%Y"))
+          .orient("bottom");
 
     
     
@@ -867,7 +870,8 @@ var chart = d3.select("#vis").append("svg")
     xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
-            .orient("bottom");
+      .tickFormat(d3.time.format("%Y"))
+           .orient("bottom");
 
     bar.append("rect")
 
