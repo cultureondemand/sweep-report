@@ -946,7 +946,7 @@ var chart = d3.select("#vis").append("svg")
     
  
    d3.select("body").selectAll(".bgbg")
-      .style('display', 'none');
+      .style('display', 'inline-block');
     
     
   d3.select("#vis").select("svg").remove();
