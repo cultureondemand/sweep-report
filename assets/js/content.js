@@ -168,9 +168,9 @@ header: "",
  
 <p>&nbsp;</p>
 
-<h3 class='prog'>(510)830-4200</h3>
+<h3 class='prog'></h3>
 
-<span><a href='http://www.partnerforchildren.org/housing' target='_blank'>www.sweep.org</a></span>
+<span><a href='http://www.sweep.org/' target='_blank'>www.sweep.org</a></span>
 
 <br />
 
@@ -186,8 +186,8 @@ header: "",
 .
 <p>&nbsp;</p>
 
-<button class="mdc-button mdc-button--raised" data-demo-no-js style="width:60%;font-size:135%;font-weight:800; " onclick="window.open('http://partnerforchildren.org/donate/')">
-Donate!
+<button class="mdc-button mdc-button--raised" data-demo-no-js style="width:60%;font-size:135%;font-weight:800; " onclick="window.open('assets/sweep_improving_mobility_wout_more_lanes.pdf')">
+Download the Report
 </button>
 
 
