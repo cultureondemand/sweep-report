@@ -290,21 +290,21 @@ d3.select("#vis").select("g").remove();
     
     
          var data=[
-           {"date":new Date(2000), "value": 59247},
-            {"date":new Date(2001), "value": 65105},
-            {"date":new Date(2002), "value": 70590},   
-            {"date":new Date(2003), "value": 73139},
-           {"date":new Date(2004), "value": 77530},
-            {"date":new Date(2005), "value": 80507},
-            {"date":new Date(2006), "value": 82043},   
-            {"date":new Date(2007), "value": 82630},
-            {"date":new Date(2008), "value": 82287},
-            {"date":new Date(2009), "value": 81419},
-           {"date":new Date(2010), "value": 83544},
-            {"date":new Date(2011), "value": 84100},
-            {"date":new Date(2012), "value": 87862},   
-            {"date":new Date(2013), "value": 90623},
-            {"date":new Date(2014), "value": 91479}
+           {"date":2000, "value": 59247},
+            {"date":2001, "value": 65105},
+            {"date":2002, "value": 70590},   
+            {"date": 2003, "value": 73139},
+           {"date": 2004, "value": 77530},
+            {"date": 2005, "value": 80507},
+            {"date": 2006, "value": 82043},   
+            {"date": 2007, "value": 82630},
+            {"date": 2008, "value": 82287},
+            {"date": 2009, "value": 81419},
+           {"date": 2010, "value": 83544},
+            {"date": 2011, "value": 84100},
+            {"date": 2012, "value": 87862},   
+            {"date": 2013, "value": 90623},
+            {"date": 2014, "value": 91479}
          
          
          ];
@@ -330,7 +330,7 @@ d3.select("#vis").select("g").remove();
 var width = wwidth, height = hheight;
 var range = [];
  
-            padding = 100; // space around the chart, not including labels
+            padding = 10; // space around the chart, not including labels
 
      
     /*
@@ -401,7 +401,7 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
-    .y1(function(d) { return y(d); })
+    .y1(function(d) { return y(d.value); })
     .y0(height)
     .interpolate('cardinal');
 
