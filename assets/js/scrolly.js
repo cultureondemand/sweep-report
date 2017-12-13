@@ -400,7 +400,7 @@ var yAxis = d3.svg.axis()
     
 
 var line = d3.svg.area()
-    .x(function(d, i) { return x(i); })
+    .x(function(d, i) { return x(d.date); })
     .y1(function(d) { return y(d.value); })
     .y0(height)
     .interpolate('cardinal');
@@ -460,7 +460,7 @@ var svg = d3.select("#vis").append("svg")
   svg.append("path")
       .datum(data)
       .attr("class", "line")
-      .attr("d.value", line);
+      .attr("d", line);
 
     // Add the scatterplot
     svg.selectAll("dot")
