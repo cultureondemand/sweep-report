@@ -448,19 +448,19 @@ var svg = d3.select("#vis").append("svg")
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Value");
+            .text("Annual hours of delay, Denver-Aurora");
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
-            .text("Date");
+            .text("Year");
     
     
 
   svg.append("path")
       .datum(data)
       .attr("class", "line")
-      .attr("d", line);
+      .attr("d.value", line);
 
     // Add the scatterplot
     svg.selectAll("dot")
@@ -469,7 +469,7 @@ var svg = d3.select("#vis").append("svg")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d); })
+        .attr("cy", function(d) { return y(d.value); })
 
 
  .on("mousemove", function(d){
@@ -479,7 +479,7 @@ var svg = d3.select("#vis").append("svg")
             div.style("position", "absolute");
                         div.attr("class", "fixedtooltip");
 
-             div.html((d)+" Annual Hours of Delay, Denver-Aurora");
+             div.html((d.value)+" Annual Hours of Delay, Denver-Aurora in "+(d.year));
          })
 
         .on("mouseout", function(d){
