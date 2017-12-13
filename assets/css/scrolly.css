@@ -1550,6 +1550,12 @@ word-spacing: normal !important;
    shape-rendering: crispEdges;
 }
 
+.xaxis {
+  
+text-anchor:start;
+
+}
+
 .highlight {
   visibility:visible;
   display:inline-block;
