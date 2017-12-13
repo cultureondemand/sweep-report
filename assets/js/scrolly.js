@@ -406,11 +406,11 @@ var line = d3.svg.area()
     .interpolate('cardinal');
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width - 210)
-    .attr("height", height - 210)
+    .attr("width", width - 250)
+    .attr("height", height - 250)
     .append("g")
    ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -20)")
+    .attr("transform", "translate(100, 10)")
 
 //////////////////////////////
 /* svg.append("g")
@@ -448,7 +448,7 @@ var svg = d3.select("#vis").append("svg")
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Annual hours of delay, Denver-Aurora");
+            .text("Hours (in thousands)");
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
@@ -686,7 +686,7 @@ d3.select("#vis").select("g").remove();
 }   ];
    
    
-  var data = [4338785, 4444513, 4504709, 4555084, 4608811, 4662534, 4745660, 4821784, 4901938, 4976853, 5049935, 5119538, 5191086, 5268413, 5350118, 5448055, 5538180];
+ //// var data = [4338785, 4444513, 4504709, 4555084, 4608811, 4662534, 4745660, 4821784, 4901938, 4976853, 5049935, 5119538, 5191086, 5268413, 5350118, 5448055, 5538180];
 
     var wwidth= window.innerWidth;
   var hheight= window.innerHeight;
@@ -696,15 +696,19 @@ var width = wwidth, height = hheight;
         var axisMargin = 1,
             margin = 10,
             valueMargin = 1,
-            labelWidth = 50;
-
-            
+            labelWidth = 50,
+                padding = 2; // space around the chart, not including labels
+        
             
     /*
     var width = 500, height = 500;
     */
 
+        var x_domain = d3.extent(datasetset, function(d) { return d.year; }),
+            y_domain = d3.extent(datasetset, function(d) { return d.pop; });
+        
     
+        
     /*
      
     var x = d3.scale.ordinal().rangeRoundBands([0, wwidth], .2);
@@ -757,6 +761,22 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     /*   */ 
     var max = 2050;
     
+  
+	  
+	         var xScale = d3.time.scale()
+	        .domain(x_domain)    // values between for month of january
+		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
+
+	  
+	     // define the y scale  (vertical)
+        var yScale = d3.scale.linear()
+	        .domain(y_domain).nice()   // make axis end in round number
+		.range([height - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
+                 //REMEMBER: y axis range has the bigger number first because the y value of zero is at the top of chart and increases as you go down.
+		    
+	  
+	  
+          var  date_format = d3.time.format("%Y");
     
  var x = d3.scale.linear()
     .range([0, width])
@@ -778,7 +798,12 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             .tickSize(-height + 4*margin + axisMargin)
            .orient("bottom");
 
-    
+
+	  
+	  
+	  
+	  
+	  
     
     
     /*
@@ -828,7 +853,7 @@ var svg = d3.select("#vis").append("svg")
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
     .attr("transform", "translate(100, -20)")
-
+/*
 svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
@@ -842,7 +867,45 @@ svg.append("g")
       .datum(datasetset)
       .attr("class", "line")
       .attr("d", line);
+*/
 
+
+
+      // draw x axis with labels and move to the bottom of the chart area
+        svg.append("g")
+            .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
+            .attr("transform", "translate(0," + (height - padding) + ")")
+            .call(xAxis);
+            
+  // draw y axis with labels and move in from the size by the amount of padding
+        svg.append("g")
+        	.attr("class", "axis")
+            .attr("transform", "translate("+padding+",0)")
+            .call(yAxis)
+
+        // now rotate text on x axis
+        // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
+        // first move the text left so no longer centered on the tick
+        // then rotate up to get 45 degrees.
+        svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
+          .attr("transform", function(d) {
+             return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
+         });
+    
+        // now add titles to the axes
+        svg.append("text")
+            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .text("Population");
+
+        svg.append("text")
+            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
+            .text("Year");
+    
+	  
+	  
+	  
   
     // Add the scatterplot
     svg.selectAll("dot")
