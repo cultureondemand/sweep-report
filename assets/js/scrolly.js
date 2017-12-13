@@ -362,7 +362,16 @@ var y = d3.scale.linear()
        var xScale = d3.time.scale()
 	        .domain(x_domain)    // values between for month of january
 		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
+
+	  
+	     // define the y scale  (vertical)
+        var yScale = d3.scale.linear()
+	        .domain(y_domain).nice()   // make axis end in round number
+		.range([height - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
+                 //REMEMBER: y axis range has the bigger number first because the y value of zero is at the top of chart and increases as you go down.
 		    
+	  
+	  
           var  date_format = d3.time.format("%Y");
   
     
