@@ -381,7 +381,7 @@ var y = d3.scale.linear()
 
 var yAxis = d3.svg.axis()
   /////////  .scale(y)
-              .scale(yScale);
+              .scale(yScale)
               .orient("left");
 
     
