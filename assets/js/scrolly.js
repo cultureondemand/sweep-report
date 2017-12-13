@@ -277,7 +277,7 @@ d3.select("#vis").select("g").remove();
             {"date": 2012, "value": 87862},   
             {"date": 2013, "value": 90623},
             {"date": 2014, "value": 91479},
-            {"date": 2015, "value": }
+            {"date": 2015, "value": ''}
          
          
          ];
