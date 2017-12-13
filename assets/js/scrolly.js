@@ -251,14 +251,24 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "visibility:visible; ");
     
  
-    var axisMargin = 1,
+    
+     var axisMargin = 1,
             margin = 10,
             valueMargin = 1,
-            labelWidth = 50;
+            labelWidth = 50,
+                padding = 2; // space around the chart, not including labels
+        
     
     
-     
+    var wwidth= window.innerWidth;
+  var hheight= window.innerHeight;
     
+    var wwwidth= window.innerWidth-200;
+  var hhheight= window.innerHeight-200;
+    
+var width = wwidth, height = hheight;  
+    
+         
     
     
          var data=[
@@ -283,22 +293,7 @@ d3.select("#vis").select("g").remove();
             
             
       
-  
-    
-    var wwidth= window.innerWidth;
-  var hheight= window.innerHeight;
-    
-    var wwwidth= window.innerWidth-200;
-  var hhheight= window.innerHeight-200;
-    
-var width = wwidth, height = hheight;  
-    
-        var axisMargin = 1,
-            margin = 10,
-            valueMargin = 1,
-            labelWidth = 50,
-                padding = 2; // space around the chart, not including labels
-        
+ 
             
     /*
     var width = 500, height = 500;
@@ -357,7 +352,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
      y.domain([4000000, 6000000]);*/
  
     
- var max = d3.max(data, function(d) { return d.date; });
+ var max = d3.max(data, function(d) { return d.value; });
     /*   */ 
     var max = 2050;
     
@@ -442,8 +437,10 @@ var yAxis = d3.svg.axis()
     
     
 var line = d3.svg.area()
-    .x(function(d, i) { return x(d.date); })
-    .y1(function(d) { return y(d.value); })
+/////    .x(function(d, i) { return x(d.date); })
+/////    .y1(function(d) { return y(d.value); })
+    .x(function(d, i) { return d.date; })
+    .y1(function(d) { return d.value; })
     .y0(height)
     .interpolate('cardinal'); 
 
