@@ -416,7 +416,7 @@ var svg = d3.select("#vis").append("svg")
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
           .attr("transform", function(d) {
-             return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().hhheight + ")rotate(-45)";
+             return "translate(" + this.getBBox().hhheight*2 + "," + this.getBBox().hhheight + ")rotate(-45)";
          });
     
         // now add titles to the axes
