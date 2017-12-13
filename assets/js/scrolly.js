@@ -385,7 +385,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
    ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -100)")
+    .attr("transform", "translate(100, -50)")
 
 //////////////////////////////
 /* svg.append("g")
@@ -401,7 +401,7 @@ var svg = d3.select("#vis").append("svg")
         // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (hhheight + padding) + ")")
+            .attr("transform", "translate(0," + (height + padding) + ")")
             .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
@@ -416,18 +416,18 @@ var svg = d3.select("#vis").append("svg")
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
           .attr("transform", function(d) {
-             return "translate(" + this.getBBox().hhheight*2 + "," + this.getBBox().hhheight + ")rotate(-45)";
+             return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
     
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (padding/2) +","+(hhheight/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
             .text("Hours (in thousands)");
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (wwwidth/2) +","+(hhheight-(padding/3))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
             .text("Year");
     
     
