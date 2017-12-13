@@ -304,8 +304,8 @@ var width = wwidth, height = hheight;
     var width = 500, height = 500;
     */
 
-        var x_domain = d3.extent(datasetset, function(d) { return d.date; }),
-            y_domain = d3.extent(datasetset, function(d) { return d.value; });
+        var x_domain = d3.extent(data, function(d) { return d.date; }),
+            y_domain = d3.extent(data, function(d) { return d.value; });
         
     
         
@@ -357,7 +357,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
      y.domain([4000000, 6000000]);*/
  
     
- var max = d3.max(datasetset, function(d) { return d.date; });
+ var max = d3.max(data, function(d) { return d.date; });
     /*   */ 
     var max = 2050;
     
@@ -380,7 +380,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     
  var x = d3.scale.linear()
     .range([0, width])
-   .domain([0, datasetset.length -1]); 
+   .domain([0, data.length -1]); 
 ///////     .domain([2000, 2024]);
 
  /* */   
@@ -464,7 +464,7 @@ svg.append("g")
       .call(yAxis)
 */
   svg.append("path")
-      .datum(datasetset)
+      .datum(data)
       .attr("class", "line")
       .attr("d", line);
 
@@ -509,7 +509,7 @@ svg.append("g")
   
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(datasetset)
+        .data(data)
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
