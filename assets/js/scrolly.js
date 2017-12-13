@@ -300,9 +300,13 @@ d3.select("#vis").select("g").remove();
   var hheight= window.innerHeight;
     
 var width = wwidth, height = hheight;
+	  
+	var wwwidth= (window.innerWidth-100);
+	var hhheight= (window.innerHeight-100);
+  
 var range = [];
  
-            padding = 2; // space around the chart, not including labels
+         var padding = 2; // space around the chart, not including labels
 
      
     /*
@@ -352,7 +356,7 @@ var y = d3.scale.linear()
              .scale(xScale)
             .tickFormat(date_format)
 
-            .tickSize(-height + 4*margin + axisMargin)
+         //////////   .tickSize(-height + 4*margin + axisMargin)
              .orient("bottom");
     
     
@@ -378,11 +382,11 @@ var line = d3.svg.area()
     .interpolate('cardinal');
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width - 250)
-    .attr("height", height - 250)
+    .attr("width", (wwwidth)
+    .attr("height", hhheight)
     .append("g")
    ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, 10)")
+    .attr("transform", "translate(40, -40)")
 
 //////////////////////////////
 /* svg.append("g")
