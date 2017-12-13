@@ -276,7 +276,8 @@ d3.select("#vis").select("g").remove();
             {"date": 2011, "value": 84100},
             {"date": 2012, "value": 87862},   
             {"date": 2013, "value": 90623},
-            {"date": 2014, "value": 91479}
+            {"date": 2014, "value": 91479},
+            {"date": 2015, "value": }
          
          
          ];
@@ -400,7 +401,7 @@ var svg = d3.select("#vis").append("svg")
         // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (hhheight - padding) + ")")
+            .attr("transform", "translate(0," + (hhheight + padding) + ")")
             .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
