@@ -257,35 +257,7 @@ d3.select("#vis").select("g").remove();
             labelWidth = 50;
     
     
-    
-    var dataset1 = [{
-    'qName': 'Q1',
-        'PFTE': '10',
-        'EFTE': '62.7',
-        'SOME': '72.2'
-}, {
-    'qName': 'Q2',
-        'PFTE': '58',
-        'EFTE': '59.9',
-        'SOME': '67.7'
-}, {
-    'qName': 'Q3',
-        'PFTE': '53.3',
-        'EFTE': '59.1',
-        'SOME': '69.4'
-}, {
-    'qName': 'Q4',
-        'PFTE': '35.7',
-        'EFTE': '58.8',
-        'SOME': '68'
-}, {
-    'qName': 'Q5',
-        'PFTE': '34.2',
-        'EFTE': '58.7',
-        'SOME': '72.4'
-}, ];
-    
-    
+     
     
     
     
@@ -862,12 +834,12 @@ svg.append("g")
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-
+*/
   svg.append("path")
       .datum(datasetset)
       .attr("class", "line")
       .attr("d", line);
-*/
+
 
 
 
