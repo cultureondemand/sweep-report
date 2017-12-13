@@ -276,8 +276,7 @@ d3.select("#vis").select("g").remove();
             {"date": 2011, "value": 84100},
             {"date": 2012, "value": 87862},   
             {"date": 2013, "value": 90623},
-            {"date": 2014, "value": 91479},
-            {"date": 2015, "value": ''}
+            {"date": 2014, "value": 91479} 
          
          
          ];
@@ -287,8 +286,7 @@ d3.select("#vis").select("g").remove();
             y_domain = d3.extent(data, function(d) { return d.value; });
         
     
-    
-    
+  
     
   
   //////var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
@@ -302,40 +300,33 @@ d3.select("#vis").select("g").remove();
     
 var width = wwidth, height = hheight;
 	  
-	var wwwidth= (window.innerWidth-300);
-	var hhheight= (window.innerHeight-100);
+	var wwwidth= (window.innerWidth-100+"px");
+	var hhheight= (window.innerHeight-50+"px");
   
 var range = [];
- 
-         var padding = 2; // space around the chart, not including labels
+var padding = 2; // space around the chart, not including labels
 
      
     /*
     var width = 500, height = 500;
-    */
+ 
     
  var x = d3.scale.linear()
     .range([0, width])
   .domain([0, data.length -1]);
  /////////////////////     .domain([2000, 2014]);
 
-    
-/*    var x = d3.scale.ordinal()
- ////   .range([range])
-    .range([0, width])
-  .domain(['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']); */
-    
-    
-    
+     
     
 var y = d3.scale.linear()
     .range([height, 0])
     .domain([50000, 100000]);
 
-     var scale = d3.scale.linear()
+var scale = d3.scale.linear()
             .domain([2000, 2014])
             .range([0, width - margin*4 - labelWidth]);
-
+   */
+	  
        var xScale = d3.time.scale()
 	        .domain(x_domain)    // values between for month of january
 		    .range([padding, wwwidth - padding]);   // map these sides of the chart, in this case 100 and 600
@@ -387,7 +378,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height)
     .append("g")
    ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(50, -10)")
+    .attr("transform", "translate(80, -50)")
 
 //////////////////////////////
 /* svg.append("g")
@@ -403,8 +394,9 @@ var svg = d3.select("#vis").append("svg")
         // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (height + padding) + ")")
-            .call(xAxis);
+            .attr("transform", "translate(0," + (height - padding) + ")")
+              .attr("text-anchor", "start")  // this makes it easy to centre the text as the transform is applied to the anchor
+          .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
         svg.append("g")
