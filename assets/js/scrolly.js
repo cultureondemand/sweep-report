@@ -353,12 +353,10 @@ var y = d3.scale.linear()
     
    var xAxis = d3.svg.axis()
         ///    .scale(scale)
-             .scale(xScale)
-            .tickFormat(date_format)
-
-         //////////   .tickSize(-height + 4*margin + axisMargin)
-             .orient("bottom");
-    
+            .scale(scale)
+            .tickSize(-hhheight + 4*margin + axisMargin)
+           .orient("bottom");
+      
     
 /* var xAxis = d3.svg.axis()
     .scale(x)
