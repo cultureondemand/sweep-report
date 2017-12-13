@@ -330,7 +330,7 @@ d3.select("#vis").select("g").remove();
 var width = wwidth, height = hheight;
 var range = [];
  
-            padding = 10; // space around the chart, not including labels
+            padding = 2; // space around the chart, not including labels
 
      
     /*
@@ -400,7 +400,7 @@ var yAxis = d3.svg.axis()
     
 
 var line = d3.svg.area()
-    .x(function(d, i) { return x(d.date); })
+    .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d.value); })
     .y0(height)
     .interpolate('cardinal');
