@@ -394,7 +394,7 @@ var svg = d3.select("#vis").append("svg")
         // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (height - padding) + ")")
+       ////     .attr("transform", "translate(0," + (height - padding) + ")")
           .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
