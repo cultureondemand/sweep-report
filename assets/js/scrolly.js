@@ -337,13 +337,13 @@ var y = d3.scale.linear()
 
        var xScale = d3.time.scale()
 	        .domain(x_domain)    // values between for month of january
-		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
+		    .range([padding, wwwidth - padding]);   // map these sides of the chart, in this case 100 and 600
 
 	  
 	     // define the y scale  (vertical)
         var yScale = d3.scale.linear()
 	        .domain(y_domain).nice()   // make axis end in round number
-		.range([height - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
+		.range([hhheight - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
                  //REMEMBER: y axis range has the bigger number first because the y value of zero is at the top of chart and increases as you go down.
 		    
 	  
@@ -376,7 +376,7 @@ var yAxis = d3.svg.axis()
 var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d.value); })
-    .y0(height)
+    .y0(hhheight)
     .interpolate('cardinal');
 
 var svg = d3.select("#vis").append("svg")
@@ -400,7 +400,7 @@ var svg = d3.select("#vis").append("svg")
         // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (height - padding) + ")")
+            .attr("transform", "translate(0," + (hhheight - padding) + ")")
             .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
@@ -415,18 +415,18 @@ var svg = d3.select("#vis").append("svg")
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
           .attr("transform", function(d) {
-             return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
+             return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().hhheight + ")rotate(-45)";
          });
     
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .attr("transform", "translate("+ (padding/2) +","+(hhheight/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
             .text("Hours (in thousands)");
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
+            .attr("transform", "translate("+ (wwwidth/2) +","+(hhheight-(padding/3))+")")  // centre below axis
             .text("Year");
     
     
