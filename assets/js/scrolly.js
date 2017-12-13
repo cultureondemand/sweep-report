@@ -307,7 +307,7 @@ var range = [];
 var padding = 2; // space around the chart, not including labels
 
      
-    /*
+ 
     var width = 500, height = 500;
  
     
@@ -325,11 +325,11 @@ var y = d3.scale.linear()
 var scale = d3.scale.linear()
             .domain([2000, 2014])
             .range([0, width - margin*4 - labelWidth]);
-   */
+   /*   */
 	  
        var xScale = d3.time.scale()
 	        .domain(x_domain)    // values between for month of january
-		    .range([padding, wwwidth - padding]);   // map these sides of the chart, in this case 100 and 600
+		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
 
 	  
 	     // define the y scale  (vertical)
@@ -383,14 +383,18 @@ var svg = d3.select("#vis").append("svg")
 //////////////////////////////
 /*  */
 /////////////////////////////////
-svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
+        // draw x axis with labels and move to the bottom of the chart area
+        svg.append("g")
+            .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
+       ////     .attr("transform", "translate(0," + (height - padding) + ")")
+          .call(xAxis);
+            
+  // draw y axis with labels and move in from the size by the amount of padding
+        svg.append("g")
+        	.attr("class", "axis")
+            .attr("transform", "translate("+padding+",0)")
+            .call(yAxis)
 
 
         // now rotate text on x axis
