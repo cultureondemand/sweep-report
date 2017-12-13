@@ -301,7 +301,7 @@ d3.select("#vis").select("g").remove();
     
 var width = wwidth, height = hheight;
 	  
-	var wwwidth= (window.innerWidth-100);
+	var wwwidth= (window.innerWidth-300);
 	var hhheight= (window.innerHeight-100);
   
 var range = [];
@@ -386,7 +386,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
    ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(40, -40)")
+    .attr("transform", "translate(100, -100)")
 
 //////////////////////////////
 /* svg.append("g")
@@ -667,6 +667,9 @@ d3.select("#vis").select("g").remove();
     var wwidth= window.innerWidth;
   var hheight= window.innerHeight;
     
+    var wwwidth= window.innerWidth-200;
+  var hhheight= window.innerHeight-200;
+    
 var width = wwidth, height = hheight;  
     
         var axisMargin = 1,
@@ -741,13 +744,13 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
 	  
 	         var xScale = d3.time.scale()
 	        .domain(x_domain)    // values between for month of january
-		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
+		    .range([padding, wwwidth - padding]);   // map these sides of the chart, in this case 100 and 600
 
 	  
 	     // define the y scale  (vertical)
         var yScale = d3.scale.linear()
 	        .domain(y_domain).nice()   // make axis end in round number
-		.range([height - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
+		.range([hhheight - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
                  //REMEMBER: y axis range has the bigger number first because the y value of zero is at the top of chart and increases as you go down.
 		    
 	  
@@ -771,7 +774,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
 
    var xAxis = d3.svg.axis()
             .scale(scale)
-            .tickSize(-height + 4*margin + axisMargin)
+            .tickSize(-hhheight + 4*margin + axisMargin)
            .orient("bottom");
 
 
@@ -824,11 +827,11 @@ var line = d3.svg.area()
     .interpolate('cardinal'); 
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width - 210)
-    .attr("height", height - 210)
+    .attr("width", wwwidth)
+    .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -20)")
+    .attr("transform", "translate(100, -100)")
 /*
 svg.append("g")
       .attr("class", "x axis")
