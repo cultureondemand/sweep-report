@@ -371,7 +371,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
 	     // define the y scale  (vertical)
         var yScale = d3.scale.linear()
 	        .domain(y_domain).nice()   // make axis end in round number
-		.range([hhheight - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
+		.range([height - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
                  //REMEMBER: y axis range has the bigger number first because the y value of zero is at the top of chart and increases as you go down.
 		    
 	  
@@ -442,7 +442,7 @@ var yAxis = d3.svg.axis()
     
     
 var line = d3.svg.area()
-    .x(function(d, i) { return x(i); })
+    .x(function(d, i) { return x(d.date); })
     .y1(function(d) { return y(d.value); })
     .y0(height)
     .interpolate('cardinal'); 
