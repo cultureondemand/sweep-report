@@ -395,7 +395,6 @@ var svg = d3.select("#vis").append("svg")
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
             .attr("transform", "translate(0," + (height - padding) + ")")
-              .attr("text-anchor", "start")  // this makes it easy to centre the text as the transform is applied to the anchor
           .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
