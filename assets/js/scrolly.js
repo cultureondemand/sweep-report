@@ -282,52 +282,88 @@ d3.select("#vis").select("g").remove();
          ];
             
             
-        var x_domain = d3.extent(data, function(d) { return d.date; }),
-            y_domain = d3.extent(data, function(d) { return d.value; });
-        
-    
+      
   
     
-  
-  //////var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
-    
-    //////////////    var max = d3.max(data, function(d) { return d.a; });
-        var max = 91479;
-
-
-  var wwidth= window.innerWidth;
+    var wwidth= window.innerWidth;
   var hheight= window.innerHeight;
     
-var width = wwidth, height = hheight;
-	  
-	var wwwidth= (window.innerWidth-100+"px");
-	var hhheight= (window.innerHeight-50+"px");
-  
-var range = [];
-var padding = 2; // space around the chart, not including labels
-
-     
- 
+    var wwwidth= window.innerWidth-200;
+  var hhheight= window.innerHeight-200;
+    
+var width = wwidth, height = hheight;  
+    
+        var axisMargin = 1,
+            margin = 10,
+            valueMargin = 1,
+            labelWidth = 50,
+                padding = 2; // space around the chart, not including labels
+        
+            
+    /*
     var width = 500, height = 500;
+    */
+
+        var x_domain = d3.extent(datasetset, function(d) { return d.date; }),
+            y_domain = d3.extent(datasetset, function(d) { return d.value; });
+        
+    
+        
+    /*
+     
+    var x = d3.scale.ordinal().rangeRoundBands([0, wwidth], .2);
+var y = d3.scale.linear().rangeRound([hheight, 0]);
+  
+   
+    
+    var color.domain(d3.keys(dataset[0]).filter(function (key) {
+        return key !== "year";
+    }));
+    
+    var efteValues = color.domain().map(function (name) {
+    return {
+        name: name,
+        values: dataset.map(function (d) {
+            return {
+                year: d.year,
+                pop: +d[name]
+            };
+        })
+        };
+    });
+    
+     x.domain(dataset.map(function(d) { 
+    	return d.year; }));
+
+    y.domain([
+    d3.min(efteValues, function (c) {
+        return d3.min(c.values, function (v) {
+            return v.pop;
+        });
+    }),
+    d3.max(efteValues, function (c) {
+        return d3.max(c.values, function (v) {
+            return v.pop;
+        });
+    })]);
+    */
+    
+    
+/*    
+      x.domain(dataset.map(function(d) { 
+    	return d.year; }));  
+    
+    
+     y.domain([4000000, 6000000]);*/
  
     
- var x = d3.scale.linear()
-    .range([0, width])
-  .domain([0, data.length -1]);
- /////////////////////     .domain([2000, 2014]);
-
-     
+ var max = d3.max(datasetset, function(d) { return d.date; });
+    /*   */ 
+    var max = 2050;
     
-var y = d3.scale.linear()
-    .range([height, 0])
-    .domain([50000, 100000]);
-
-var scale = d3.scale.linear()
-            .domain([2000, 2014])
-            .range([0, width - margin*4 - labelWidth]);
-   /*   */
+  
 	  
-       var xScale = d3.time.scale()
+	         var xScale = d3.time.scale()
 	        .domain(x_domain)    // values between for month of january
 		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
 
@@ -335,67 +371,117 @@ var scale = d3.scale.linear()
 	     // define the y scale  (vertical)
         var yScale = d3.scale.linear()
 	        .domain(y_domain).nice()   // make axis end in round number
-		.range([height - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
+		.range([hhheight - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
                  //REMEMBER: y axis range has the bigger number first because the y value of zero is at the top of chart and increases as you go down.
 		    
 	  
 	  
           var  date_format = d3.time.format("%Y");
-  
     
-   var xAxis = d3.svg.axis()
-        ///    .scale(scale)
-            .scale(xScale)
-               .tickFormat(date_format)
+ var x = d3.scale.linear()
+    .range([0, width])
+   .domain([0, datasetset.length -1]); 
+///////     .domain([2000, 2024]);
 
+ /* */   
+ var y = d3.scale.linear()
+    .range([height, 0])
+    .domain([4000000, 9000000]); 
+
+  
+     var scale = d3.scale.linear()
+            .domain([2000, 2050])
+            .range([0, width - margin*4 - labelWidth]);
+
+   var xAxis = d3.svg.axis()
+            .scale(xScale)
             .tickSize(-height + 4*margin + axisMargin)
            .orient("bottom");
-      
+
+
+	  
+	  
+	  
+	  
+	  
     
-/* var xAxis = d3.svg.axis()
+    
+    /*
+    
+    
+    
+        var scale = d3.scale.linear()
+            .domain([2000, 2050])
+            .range([0, width - margin*4 - labelWidth]);
+
+    var xAxis = d3.svg.axis()
+            .scale(scale)
+            .tickSize(-height + 4*margin + axisMargin)
+            .orient("bottom");
+     */
+    
+ /*   
+var xAxis = d3.svg.axis()
     .scale(x)
-    .orient("bottom"); */
+    .orient("bottom");
+*/
 
 var yAxis = d3.svg.axis()
-  /////////  .scale(y)
-              .scale(yScale)
-              .orient("left");
+    .scale(yScale)
+    .orient("left");
 
     
+/*     var line = d3.svg.line()
+    .interpolate("basis")
+    .x(function (d) {
+        return x(d.year);
+    })
+    .y(function (d) {
+        return y(d.pop);
+    });*/
     
     
-    
-    
-
 var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d.value); })
-    .y0(hhheight)
-    .interpolate('cardinal');
+    .y0(height)
+    .interpolate('cardinal'); 
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width)
+    .attr("width", wwwidth)
     .attr("height", height)
     .append("g")
-   ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(80, -50)")
+  ////////////  .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(100, -20)")
+/*
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
 
-//////////////////////////////
-/*  */
-/////////////////////////////////
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+*/
+  svg.append("path")
+      .datum(datasetset)
+      .attr("class", "line")
+      .attr("d", line);
 
-        // draw x axis with labels and move to the bottom of the chart area
+
+
+
+      // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
-       ////     .attr("transform", "translate(0," + (height - padding) + ")")
-          .call(xAxis);
+            .attr("transform", "translate(0," + (height - padding) + ")")
+            .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
         svg.append("g")
         	.attr("class", "axis")
             .attr("transform", "translate("+padding+",0)")
             .call(yAxis)
-
 
         // now rotate text on x axis
         // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
@@ -410,43 +496,43 @@ var svg = d3.select("#vis").append("svg")
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Hours (in thousands)");
+            .text("Population");
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
             .text("Year");
     
-    
-
-  svg.append("path")
-      .datum(data)
-      .attr("class", "line")
-      .attr("d", line);
-
+	  
+	  
+	  
+  
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(data)
+        .data(datasetset)
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d.value); })
-
-
- .on("mousemove", function(d){
-            div.style("left", d3.event.pageX-23+"px");
+        .attr("cy", function(d) { return y(d.value); }) 
+      
+      .on("mousemove", function(d){
+            div.style("left", d3.event.pageX+10+"px");
             div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
                         div.attr("class", "fixedtooltip");
 
-             div.html((d.value)+" Annual Hours of Delay, Denver-Aurora in "+(d.year));
+            div.html("<h4>"+(d.value)+" Annual hours of delay in </h4>"+(d.date)+"");
          })
 
         .on("mouseout", function(d){
             div.style("display", "none");
         })
+    
+    ///
+    ///
+    ////
   
   }
 
@@ -817,7 +903,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -100)")
+    .attr("transform", "translate(100, -80)")
 /*
 svg.append("g")
       .attr("class", "x axis")
