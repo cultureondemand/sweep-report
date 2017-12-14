@@ -436,21 +436,24 @@ var yAxis = d3.svg.axis()
         return y(d.pop);
     });*/
     
-    
-var line = d3.svg.area()
-/////    .x(function(d, i) { return x(d.date); })
-/////    .y1(function(d) { return y(d.value); })
+ 
+	  
+	  
+	  var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d.value); })
     .y0(height)
     .interpolate('cardinal'); 
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", wwwidth)
-    .attr("height", height)
+    .attr("width", wwidth)
+    .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -40)")
+    .attr("transform", "translate(100, -80)")
+
+
+ 
 /*
 svg.append("g")
       .attr("class", "x axis")
