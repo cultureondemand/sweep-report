@@ -2003,32 +2003,31 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 .shadow {
   
-   -webkit-filter: drop-shadow( -5px -5px 5px #000 ); 
-            filter: drop-shadow( -5px -5px 5px #000 );
+   -webkit-filter: drop-shadow( -1px -1px 1px #333 ); 
+            filter: drop-shadow( -1px -1px 1px #333 );
 
   
 }
 
 
 .fixedtooltip {
- 
+ background-color:#fff;
   
     fill: #000;
   font-size: 36px;
   font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
   padding: 6px;
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   text-align: center;
   text-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-  z-index:9999 !important;
+  z-index:999999 !important;
   
-  background:white;
+  background:#fff;
   border:0;
-  display:inline-block;
+  display:flex;
   position:fixed;
-  right:5%;
-  bottom:5%;
+  margin:auto;
 }
 
  
