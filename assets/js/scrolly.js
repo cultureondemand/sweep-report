@@ -251,24 +251,7 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "visibility:visible; ");
     
  
-    
-     var axisMargin = 1,
-            margin = 10,
-            valueMargin = 1,
-            labelWidth = 50,
-                padding = 2; // space around the chart, not including labels
-        
-    
-    
-    var wwidth= window.innerWidth;
-  var hheight= window.innerHeight;
-    
-    var wwwidth= window.innerWidth-200;
-  var hhheight= window.innerHeight-200;
-    
-var width = wwidth, height = hheight;  
-    
-         
+   
     
     
          var data=[
@@ -292,7 +275,24 @@ var width = wwidth, height = hheight;
          ];
             
             
-      
+       
+     var axisMargin = 1,
+            margin = 10,
+            valueMargin = 1,
+            labelWidth = 50,
+                padding = 2; // space around the chart, not including labels
+        
+    
+    
+    var wwidth= window.innerWidth;
+  var hheight= window.innerHeight;
+    
+    var wwwidth= window.innerWidth-200;
+  var hhheight= window.innerHeight-200;
+    
+var width = wwidth, height = hheight;  
+    
+         
  
             
     /*
@@ -352,9 +352,9 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
      y.domain([4000000, 6000000]);*/
  
     
- var max = d3.max(data, function(d) { return d.value; });
+ var max = d3.max(data, function(d) { return d.date; });
     /*   */ 
-    var max = 2050;
+    var max = 2014;
     
   
 	  
