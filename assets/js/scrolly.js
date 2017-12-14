@@ -389,12 +389,13 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             .range([0, width - margin*4 - labelWidth]);
 
    var xAxis = d3.svg.axis()
-            .scale(xScale)
-            .tickSize(-height + 4*margin + axisMargin)
-           .orient("bottom");
+     
 
-
-	  
+	 .scale(xScale)
+           .tickFormat(date_format)
+ 
+              .tickSize(-height + 4*margin + axisMargin)
+               .orient("bottom");  
 	  
 	  
 	  
@@ -470,21 +471,23 @@ svg.append("g")
 
       // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
-            .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
+       .attr("class", "x axis")
+  ////////          .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
             .attr("transform", "translate(0," + (height - padding) + ")")
             .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
         svg.append("g")
-        	.attr("class", "axis")
-            .attr("transform", "translate("+padding+",0)")
+/////////////////        	.attr("class", "axis")
+         .attr("class", "y axis")
+          .attr("transform", "translate("+padding+",0)")
             .call(yAxis)
 
         // now rotate text on x axis
         // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
-        svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
+        svg.selectAll(".x axis text")  // select all the text elements for the xaxis
           .attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
