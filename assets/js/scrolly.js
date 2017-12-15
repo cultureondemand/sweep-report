@@ -329,7 +329,7 @@ var range = [];
     
  var x = d3.scale.linear()
     .range([0, width])
-  .domain([0, data.length -1]);
+  .domain([0, data.length]);
  /////////////////////     .domain([2000, 2014]);
  
     
@@ -433,7 +433,7 @@ svg.append("g")
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
-                .attr("text-anchor", "start")  
+                .stye("text-anchor", "start !important")  
   		.attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
@@ -943,7 +943,7 @@ svg.append("g")
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
-                .attr("text-anchor", "start")  
+                .stye("text-anchor", "start !important")  
           .attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
@@ -1330,7 +1330,7 @@ svg.append("g")
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
-                  .attr("text-anchor", "start")  
+                .stye("text-anchor", "start !important")  
         .attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
