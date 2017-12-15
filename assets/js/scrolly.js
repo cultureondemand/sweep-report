@@ -302,36 +302,7 @@ d3.select("#vis").select("g").remove();
             valueMargin = 1,
             labelWidth = 50;
     
-    
-    
-    var dataset1 = [{
-    'qName': 'Q1',
-        'PFTE': '10',
-        'EFTE': '62.7',
-        'SOME': '72.2'
-}, {
-    'qName': 'Q2',
-        'PFTE': '58',
-        'EFTE': '59.9',
-        'SOME': '67.7'
-}, {
-    'qName': 'Q3',
-        'PFTE': '53.3',
-        'EFTE': '59.1',
-        'SOME': '69.4'
-}, {
-    'qName': 'Q4',
-        'PFTE': '35.7',
-        'EFTE': '58.8',
-        'SOME': '68'
-}, {
-    'qName': 'Q5',
-        'PFTE': '34.2',
-        'EFTE': '58.7',
-        'SOME': '72.4'
-}, ];
-    
-    
+     
     
     
     
@@ -369,8 +340,8 @@ var y = d3.scale.linear()
      var scale = d3.scale.linear()
             .domain([2000, 2014])
             .range([0, width - margin*4 - labelWidth]);
-var  date_format = d3.time.format("%Y");
-   var xAxis = d3.svg.axis()
+
+	  var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
   .tickFormat(d3.format("d.date"))
@@ -1222,41 +1193,33 @@ d3.select("#vis").select("g").remove();
             labelWidth = 50;
     
     
+   
     
-    var dataset1 = [{
-    'qName': 'Q1',
-        'PFTE': '10',
-        'EFTE': '62.7',
-        'SOME': '72.2'
-}, {
-    'qName': 'Q2',
-        'PFTE': '58',
-        'EFTE': '59.9',
-        'SOME': '67.7'
-}, {
-    'qName': 'Q3',
-        'PFTE': '53.3',
-        'EFTE': '59.1',
-        'SOME': '69.4'
-}, {
-    'qName': 'Q4',
-        'PFTE': '35.7',
-        'EFTE': '58.8',
-        'SOME': '68'
-}, {
-    'qName': 'Q5',
-        'PFTE': '34.2',
-        'EFTE': '58.7',
-        'SOME': '72.4'
-}, ];
-    
-    
-    
-    
+         var data=[
+           {"date":2000, "value": 59247},
+            {"date":2001, "value": 65105},
+            {"date":2002, "value": 70590},   
+            {"date": 2003, "value": 73139},
+           {"date": 2004, "value": 77530},
+            {"date": 2005, "value": 80507},
+            {"date": 2006, "value": 82043},   
+            {"date": 2007, "value": 82630},
+            {"date": 2008, "value": 82287},
+            {"date": 2009, "value": 81419},
+           {"date": 2010, "value": 83544},
+            {"date": 2011, "value": 84100},
+            {"date": 2012, "value": 87862},   
+            {"date": 2013, "value": 90623},
+            {"date": 2014, "value": 91479} 
+         
+         
+         ];
+            
+            
+  
     
   
-  var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
-    
+     
     //////////////    var max = d3.max(data, function(d) { return d.a; });
         var max = 91479;
 
@@ -1289,17 +1252,18 @@ var range = [];
     
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([50000, 100000]);
+    .domain([.5, 1]);
 
-     var scale = d3.scale.linear()
+       var scale = d3.scale.linear()
             .domain([2000, 2014])
             .range([0, width - margin*4 - labelWidth]);
 
-   var xAxis = d3.svg.axis()
+	  var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
-  .tickFormat(d3.format("x(i)"))
-           .orient("bottom");
+  .tickFormat(d3.format("d.date"))
+   .orient("bottom");
+
     
     
 /* var xAxis = d3.svg.axis()
@@ -1318,7 +1282,7 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
-    .y1(function(d) { return y(d); })
+    .y1(function(d) { return y(d.value); })
     .y0(height)
     .interpolate('cardinal');
 
@@ -1352,7 +1316,7 @@ svg.append("g")
       .enter().append("text")
 
         .attr("x", function(d, i) { return x(i); })
-        .attr("y", function(d) { return y(d); })
+        .attr("y", function(d) { return y(d.value); })
        .attr("transform", "translate(0,50)")
 .attr("class", "highlight")
            .text(function(d) {
@@ -1390,7 +1354,7 @@ svg.append("g")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d); })
+        .attr("cy", function(d) { return y(d.value); })
 
      
     
@@ -1406,7 +1370,7 @@ svg.append("g")
             div.style("position", "absolute");
                         div.attr("class", "fixedtooltip");
 
-             div.html("<h4>"+(d)+" Annual Hours of Delay, Denver-Aurora</h4>");
+             div.html("<h4>"+(d.value)+" Volume / Capacity Ratio </h4>");
          })
 
         .on("mouseout", function(d){
