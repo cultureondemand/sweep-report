@@ -1273,10 +1273,10 @@ var range = [];
     var width = 500, height = 500;
     */
     
- var x = d3.scale.linear()
+ var x = d3.scale.linear(i)
     .range([0, width])
-  /////////////////////     .domain([0, data.length -1]);
- .domain([2000, 2014]);
+   /////////////////////  .domain([0, data.length -1]);
+   .domain([2000, 2014]);
 
     
 /*    var x = d3.scale.ordinal()
@@ -1298,7 +1298,8 @@ var y = d3.scale.linear()
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
-            .orient("bottom");
+  .tickFormat(d3.format("x(i)"))
+           .orient("bottom");
     
     
 /* var xAxis = d3.svg.axis()
@@ -1331,7 +1332,6 @@ var svg = d3.select("#vis").append("svg")
 svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
- .tickFormat(d3.format("d"))
 	.call(xAxis);
 
   svg.append("g")
