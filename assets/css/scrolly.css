@@ -492,6 +492,39 @@ polyline {
 }
 
 
+
+
+
+
+#legendtext {
+    display: block;
+   z-index: 99999;
+   line-height: 1.6em;
+   text-transform: uppercase;
+   background-color: #fff;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+ /* font-size: .7em; */
+  font-weight: 800;
+    cursor: pointer;
+ 
+}
+
+
+
+
+
+
+
 #topbar0 {
   position: fixed;
   color: #000;
