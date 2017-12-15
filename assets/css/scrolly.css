@@ -1551,9 +1551,9 @@ word-spacing: normal !important;
 }
 
 .xaxis {
-  
+  /*
 text-anchor:start;
-
+*/
 }
 
 .highlight {
