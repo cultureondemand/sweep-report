@@ -878,7 +878,8 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
    var xAxis = d3.svg.axis()
             .scale(xScale)
             .tickSize(-height + 4*margin + axisMargin)
-           .orient("bottom");
+ .tickFormat(d3.format("d.year"))
+   .orient("bottom");
 
 
 	  
@@ -1274,8 +1275,8 @@ var range = [];
     
  var x = d3.scale.linear()
     .range([0, width])
-  .domain([0, data.length -1]);
- /////////////////////     .domain([2000, 2014]);
+  /////////////////////     .domain([0, data.length -1]);
+ .domain([2000, 2014]);
 
     
 /*    var x = d3.scale.ordinal()
@@ -1330,7 +1331,8 @@ var svg = d3.select("#vis").append("svg")
 svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+ .tickFormat(d3.format("d"))
+	.call(xAxis);
 
   svg.append("g")
       .attr("class", "y axis")
