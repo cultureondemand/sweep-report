@@ -343,7 +343,7 @@ var y = d3.scale.linear()
 var xScale = d3.scale.linear()
 ////.domain([0, d3.max(data, function(d, i) { return x(i); })])
  /////////////////////    .domain([0, data.length])
-   .domain([2000, 2014]);
+   .domain([2000, 2014])
 
 	  .range([padding, wwwidth - padding * 2]);
 
