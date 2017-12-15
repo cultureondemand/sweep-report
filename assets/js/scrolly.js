@@ -864,7 +864,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
 	  
 	         var xScale = d3.time.scale()
 	        .domain(x_domain)    // values between for month of january
-		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
+		    .range([padding, wwwidth - padding]);   // map these sides of the chart, in this case 100 and 600
 
 	  
 	     // define the y scale  (vertical)
@@ -878,7 +878,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
           var  date_format = d3.time.format("%Y");
     
  var x = d3.scale.linear()
-    .range([0, width])
+    .range([0, wwwidth])
    .domain([0, datasetset.length -1]); 
 ///////     .domain([2000, 2024]);
 
@@ -953,7 +953,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(70, -50)")
+    .attr("transform", "translate(80, -50)")
 /*
 svg.append("g")
       .attr("class", "x axis")
