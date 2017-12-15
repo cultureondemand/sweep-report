@@ -433,7 +433,7 @@ svg.append("g")
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
-                .stye("text-anchor", "start !important")  
+                .attr("text-anchor", "start")  
   		.attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
@@ -943,7 +943,7 @@ svg.append("g")
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
-                .stye("text-anchor", "start !important")  
+                .attr("text-anchor", "start")  
           .attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
@@ -1330,7 +1330,7 @@ svg.append("g")
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
-                .stye("text-anchor", "start !important")  
+                .attr("text-anchor", "start")  
         .attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
