@@ -453,9 +453,9 @@ svg.append("g")
             
   // draw y axis with labels and move in from the size by the amount of padding
         svg.append("g")
-  	.attr("class", "axis")
+  	.attr("class", "y axis")
      
-		.attr("transform", "translate("+padding+",0)")
+	/////////	.attr("transform", "translate("+padding+",0)")
             .call(yAxis)
 
         // now rotate text on x axis
