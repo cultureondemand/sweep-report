@@ -343,7 +343,7 @@ var y = d3.scale.linear()
 
 	  var xAxis = d3.svg.axis()
             .scale(scale)
-            .tickSize(-height + 4*margin + axisMargin)
+       ////////     .tickSize(-height + 4*margin + axisMargin)
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
     
@@ -850,7 +850,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
 
    var xAxis = d3.svg.axis()
             .scale(xScale)
-            .tickSize(-height + 4*margin + axisMargin)
+     ////////////       .tickSize(-height + 4*margin + axisMargin)
  .tickFormat(d3.format("d.year"))
    .orient("bottom");
 
@@ -1257,7 +1257,7 @@ var y = d3.scale.linear()
 
 	  var xAxis = d3.svg.axis()
             .scale(scale)
-            .tickSize(-height + 4*margin + axisMargin)
+    ///////////////        .tickSize(-height + 4*margin + axisMargin)
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
     
