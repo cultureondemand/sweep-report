@@ -313,7 +313,7 @@ d3.select("#vis").select("g").remove();
         var max = 91479;
 
 
-  var wwwidth= (window.innerWidth-200);
+  var wwwidth= (window.innerWidth-80+"px");
   var wwidth= window.innerWidth;
   var hhheight= (window.innerHeight-200);
   var hheight= window.innerHeight;
@@ -377,7 +377,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(50, -50)")
+    .attr("transform", "translate(70, -50)")
 
 
 
