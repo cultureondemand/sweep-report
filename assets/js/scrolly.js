@@ -4,7 +4,7 @@
  * using reusable charts pattern:
  * http://bost.ocks.org/mike/chart/
  */
-var padding=100;
+var padding=20;
 var scrollVis = function() {
   // constants to define the size
   // and margins of the vis area.
@@ -373,6 +373,7 @@ var y = d3.scale.linear()
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
+ 	    .tickFormat(d3.time.format("%Y"))
             .orient("bottom");
     
     
@@ -469,7 +470,7 @@ svg.append("g")
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Population");
+            .text("Total Delay (1000s of person-hours) ");
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
