@@ -1196,21 +1196,20 @@ d3.select("#vis").select("g").remove();
    
     
          var data=[
-           {"date":2000, "value": 59247},
-            {"date":2001, "value": 65105},
-            {"date":2002, "value": 70590},   
-            {"date": 2003, "value": 73139},
-           {"date": 2004, "value": 77530},
-            {"date": 2005, "value": 80507},
-            {"date": 2006, "value": 82043},   
-            {"date": 2007, "value": 82630},
-            {"date": 2008, "value": 82287},
-            {"date": 2009, "value": 81419},
-           {"date": 2010, "value": 83544},
-            {"date": 2011, "value": 84100},
-            {"date": 2012, "value": 87862},   
-            {"date": 2013, "value": 90623},
-            {"date": 2014, "value": 91479} 
+           {"date":2000, "value": .82},
+            {"date":2001, "value": .84},
+            {"date":2002, "value": .83},   
+            {"date": 2003, "value": .85},
+           {"date": 2004, "value": .86},
+            {"date": 2005, "value": .92},
+            {"date": 2006, "value": .71},   
+            {"date": 2007, "value": .76},
+            {"date": 2008, "value": .79},
+            {"date": 2009, "value": .8},
+           {"date": 2010, "value": .89},
+            {"date": 2011, "value": .9},
+            {"date": 2012, "value": .93},   
+            {"date": 2013, "value": .92} 
          
          
          ];
@@ -1246,10 +1245,10 @@ var range = [];
     
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([40000, 100000]);
+    .domain([.5, 1]);
 
      var scale = d3.scale.linear()
-            .domain([2000, 2014])
+            .domain([2000, 2013])
             .range([0, width - margin*4 - labelWidth]);
 
 	  var xAxis = d3.svg.axis()
@@ -1271,16 +1270,7 @@ var yAxis = d3.svg.axis()
     
     
     
-    
-
-var line = d3.svg.area()
-    .x(function(d, i) { return x(i); })
-    .y1(function(d) { return y(d.value); })
-    .y0(height)
-    .interpolate('cardinal');
-
-	  
-	  
+     
 	  
 
     
@@ -1344,12 +1334,12 @@ svg.append("g")
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .attr("transform", "translate("+ (padding/-2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
             .text("Volume / Capacity Ratio");
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(padding/3))+")")  // centre below axis
             .text("Year");
     
 	  
