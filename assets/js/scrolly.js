@@ -331,12 +331,11 @@ var range = [];
     .range([0, width])
   .domain([0, data.length]);
 
-	  
-	 
-    
-var y = d3.scale.linear()
-    .range([hhheight, 0])
+ var y = d3.scale.linear()
+    .range([height, 0])
     .domain([40000, 100000]);
+	 
+ 
 
 
 	  
