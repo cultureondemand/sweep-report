@@ -4,7 +4,7 @@
  * using reusable charts pattern:
  * http://bost.ocks.org/mike/chart/
  */
-var padding=20;
+var padding=0;
 var scrollVis = function() {
   // constants to define the size
   // and margins of the vis area.
@@ -373,7 +373,8 @@ var  date_format = d3.time.format("%Y");
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
-            .orient("bottom");
+  .tickFormat(d3.format("d.date"))
+   .orient("bottom");
     
     
 /* var xAxis = d3.svg.axis()
