@@ -373,7 +373,6 @@ var  date_format = d3.time.format("%Y");
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
- 	     .tickFormat(date_format)
             .orient("bottom");
     
     
