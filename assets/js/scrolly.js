@@ -878,8 +878,9 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
           var  date_format = d3.time.format("%Y");
     
  var x = d3.scale.linear()
-    .range([0, wwwidth])
-   .domain([0, datasetset.length -1]); 
+    .range([0, width])
+ ////  .domain([0, datasetset.length -1]); 
+   .domain([0, datasetset.length]); 
 ///////     .domain([2000, 2024]);
 
  /* */   
