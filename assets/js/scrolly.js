@@ -369,11 +369,11 @@ var y = d3.scale.linear()
      var scale = d3.scale.linear()
             .domain([2000, 2014])
             .range([0, width - margin*4 - labelWidth]);
-
+var  date_format = d3.time.format("%Y");
    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
- 	    .tickFormat(d3.time.format("%Y"))
+ 	     .tickFormat(date_format)
             .orient("bottom");
     
     
