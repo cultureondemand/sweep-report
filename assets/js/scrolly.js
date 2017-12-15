@@ -341,14 +341,14 @@ var y = d3.scale.linear()
 
 	  
 var xScale = d3.scale.linear()
-////.domain([0, d3.max(data, function(d, i) { return x(i); })])
+ .domain([0, d3.max(data, function(d, i) { return d.date; })])
  /////////////////////    .domain([0, data.length])
-   .domain([2000, 2014])
+/////   .domain([2000, 2014])
 
 	  .range([padding, wwwidth - padding * 2]);
 
 var yScale = d3.scale.linear()
-.domain([0, d3.max(data, function(d) { return d[1]; })])
+.domain([0, d3.max(data, function(d) { return d.value; })])
 //////.domain([40000, 100000])
 	  .range([hhheight - padding, padding]);
 
