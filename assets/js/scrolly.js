@@ -364,7 +364,8 @@ var yScale = d3.scale.linear()
 	  
      var scale = d3.scale.linear()
             .domain([2000, 2014])
-            .range([0, width - margin*4 - labelWidth]);
+     ///?       .range([0, width - margin*4 - labelWidth]);
+            .range([0, width]);
 
 	  var xAxis = d3.svg.axis()
          //////   .scale(scale)
