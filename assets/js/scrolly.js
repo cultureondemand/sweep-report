@@ -363,7 +363,7 @@ var yScale = d3.scale.linear()
 
 	  var xAxis = d3.svg.axis()
          //////   .scale(scale)
-            .scale(xScale)
+            .scale(scale)
        ////////     .tickSize(-height + 4*margin + axisMargin)
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
@@ -375,7 +375,7 @@ var yScale = d3.scale.linear()
 
 var yAxis = d3.svg.axis()
  /////   .scale(y)
-    .scale(yScale)
+    .scale(y)
     .orient("left");
 
     
@@ -909,7 +909,7 @@ var xAxis = d3.svg.axis()
 */
 
 var yAxis = d3.svg.axis()
-    .scale(yScale)
+    .scale(y)
     .orient("left");
 
     
