@@ -313,9 +313,9 @@ d3.select("#vis").select("g").remove();
         var max = 91479;
 
 
-  var wwwidth= (window.innerWidth-80+"px");
+  var wwwidth= (window.innerWidth-70+"px");
   var wwidth= window.innerWidth;
-  var hhheight= (window.innerHeight-200);
+  var hhheight= (window.innerHeight-50+"px");
   var hheight= window.innerHeight;
     
 var width = wwidth, height = hheight;
@@ -330,25 +330,27 @@ var range = [];
  var x = d3.scale.linear()
     .range([0, width])
   .domain([0, data.length]);
- /////////////////////     .domain([2000, 2014]);
- 
+
+	  
+	 
     
 var y = d3.scale.linear()
-    .range([height, 0])
+    .range([hhheight, 0])
     .domain([40000, 100000]);
 
 
 	  
 var xScale = d3.scale.linear()
 ////.domain([0, d3.max(data, function(d, i) { return x(i); })])
-  .domain([0, data.length])
+ /////////////////////    .domain([0, data.length])
+   .domain([2000, 2014]);
 
 	  .range([padding, wwwidth - padding * 2]);
 
 var yScale = d3.scale.linear()
 //////.domain([0, d3.max(data, function(d) { return d[1]; })])
 .domain([40000, 100000])
-	  .range([hheight - padding, padding]);
+	  .range([hhheight - padding, padding]);
 
 	  
 	  
@@ -394,7 +396,7 @@ var line = d3.svg.area()
 	  
 var svg = d3.select("#vis").append("svg")
     .attr("width", wwwidth)
-    .attr("height", height)
+    .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
     .attr("transform", "translate(70, -50)")
@@ -764,8 +766,11 @@ d3.select("#vis").select("g").remove();
     var wwidth= window.innerWidth;
   var hheight= window.innerHeight;
     
-    var wwwidth= window.innerWidth-200;
-  var hhheight= window.innerHeight-200;
+ 
+	  
+	  var wwwidth= (window.innerWidth-70+"px");
+  var wwidth= window.innerWidth;
+  var hhheight= (window.innerHeight-50+"px");
     
 var width = wwidth, height = hheight;  
     
@@ -929,7 +934,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", height)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(50, -50)")
+    .attr("transform", "translate(70, -50)")
 /*
 svg.append("g")
       .attr("class", "x axis")
