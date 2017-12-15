@@ -1249,7 +1249,7 @@ var range = [];
     
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([.5, 1]);
+    .domain([.5, 1.25]);
 
      var scale = d3.scale.linear()
             .domain([2000, 2013])
