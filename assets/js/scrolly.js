@@ -1282,15 +1282,6 @@ var line = d3.svg.area()
 	  
 	  
 	  
-	  
-var svg = d3.select("#vis").append("svg")
-    .attr("width", wwwidth)
-    .attr("height", height)
-    .append("g")
-  ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -80)")
-
-
 
     
     
@@ -1302,12 +1293,15 @@ var line = d3.svg.area()
     .y0(height)
     .interpolate('cardinal');
 
+	  
 var svg = d3.select("#vis").append("svg")
-    .attr("width", width - 210)
-    .attr("height", height - 210)
+    .attr("width", wwwidth)
+    .attr("height", height)
     .append("g")
-   ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -20)")
+  ////////////  .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(100, -80)")
+
+
 
   svg.append("path")
       .datum(data)
