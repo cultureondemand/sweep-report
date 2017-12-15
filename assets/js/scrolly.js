@@ -875,7 +875,8 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             .range([0, width - margin*4 - labelWidth]);
 
    var xAxis = d3.svg.axis()
-            .scale(xScale)
+       ///////     .scale(xScale)
+            .scale(scale)
      ////////////       .tickSize(-height + 4*margin + axisMargin)
  .tickFormat(d3.format("d.year"))
    .orient("bottom");
