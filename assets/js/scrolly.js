@@ -1293,6 +1293,12 @@ var svg = d3.select("#vis").append("svg")
    ///////// .attr("transform", "translate(50, 10)")
     .attr("transform", "translate(100, -20)")
 
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+
+/*
 svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
@@ -1301,13 +1307,45 @@ svg.append("g")
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
+  */
+	  
+	  
+      // draw x axis with labels and move to the bottom of the chart area
+        svg.append("g")
+            .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
+            .attr("transform", "translate(0," + (height - padding) + ")")
+            .call(xAxis);
+            
+  // draw y axis with labels and move in from the size by the amount of padding
+        svg.append("g")
+        	.attr("class", "axis")
+            .attr("transform", "translate("+padding+",0)")
+            .call(yAxis)
 
-  svg.append("path")
-      .datum(data)
-      .attr("class", "line")
-      .attr("d", line);
+        // now rotate text on x axis
+        // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
+        // first move the text left so no longer centered on the tick
+        // then rotate up to get 45 degrees.
+        svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
+          .attr("transform", function(d) {
+             return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
+         });
+    
+        // now add titles to the axes
+        svg.append("text")
+            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .text("Total Delay (1000s of person-hours) ");
 
-   
+        svg.append("text")
+            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
+            .text("Year");
+    
+	  
+	  
+	  
+	  
     
     
     // Add the scatterplot
