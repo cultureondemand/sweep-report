@@ -337,12 +337,28 @@ var y = d3.scale.linear()
     .range([height, 0])
     .domain([40000, 100000]);
 
+
+	  
+var xScale = d3.scale.linear()
+.domain([0, d3.max(data, function(d) { return d[0]; })])
+.range([padding, wwwidth - padding * 2]);
+
+var yScale = d3.scale.linear()
+.domain([0, d3.max(data, function(d) { return d[1]; })])
+.range([hheight - padding, padding]);
+
+	  
+	  
+	  
+	  
+	  
      var scale = d3.scale.linear()
             .domain([2000, 2014])
             .range([0, width - margin*4 - labelWidth]);
 
 	  var xAxis = d3.svg.axis()
-            .scale(scale)
+         //////   .scale(scale)
+            .scale(xScale)
        ////////     .tickSize(-height + 4*margin + axisMargin)
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
@@ -353,7 +369,8 @@ var y = d3.scale.linear()
     .orient("bottom"); */
 
 var yAxis = d3.svg.axis()
-    .scale(y)
+ /////   .scale(y)
+    .scale(yScale)
     .orient("left");
 
     
