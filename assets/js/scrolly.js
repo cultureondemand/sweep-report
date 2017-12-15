@@ -304,7 +304,9 @@ d3.select("#vis").select("g").remove();
     
      
     
-    
+       var x_domain = d3.extent(data, function(d) { return d.date; }),
+            y_domain = d3.extent(data, function(d) { return d.value; });
+        
     
   
 ///////  var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
@@ -345,13 +347,17 @@ var xScale = d3.scale.linear()
 /////   .domain([2000, 2014])
 
 	  .range([padding, wwwidth - padding * 2]);
-
+/*
 var yScale = d3.scale.linear()
 .domain([0, d3.max(data, function(d) { return d.value; })])
 //////.domain([40000, 100000])
 	  .range([hhheight - padding, padding]);
-
+*/
 	  
+	        var yScale = d3.scale.linear()
+	        .domain(y_domain).nice()   // make axis end in round number
+		.range([hhheight - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
+  
 	  
 	  
 	  
