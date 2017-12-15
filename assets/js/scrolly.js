@@ -380,8 +380,8 @@ var yScale = d3.scale.linear()
     .orient("bottom"); */
 
 var yAxis = d3.svg.axis()
- /////   .scale(y)
-    .scale(yScale)
+ .scale(y)
+ /////      .scale(yScale)
     .orient("left");
 
     
@@ -405,7 +405,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(70, -50)")
+    .attr("transform", "translate(80, -50)")
 
 
 
@@ -452,12 +452,24 @@ svg.append("g")
             .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
-        svg.append("g")
+  /*      svg.append("g")
   	.attr("class", "y axis")
-     
-	/////////	.attr("transform", "translate("+padding+",0)")
-            .call(yAxis)
+   	.attr("transform", "translate("+padding+",0)")
+            .call(yAxis) */
 
+	  
+	  
+	  
+  // draw y axis with labels and move in from the size by the amount of padding
+        svg.append("g")
+        	.attr("class", "axis")
+            .attr("transform", "translate("+padding+",0)")
+            .call(yAxis)
+	  
+	  
+	  
+	  
+	  
         // now rotate text on x axis
         // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
         // first move the text left so no longer centered on the tick
