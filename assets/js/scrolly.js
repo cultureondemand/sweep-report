@@ -375,7 +375,8 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
     
  var x = d3.scale.linear()
     .range([0, width])
-   .domain([0, data.length -1]); 
+//////////   .domain([0, data.length -1]); 
+   .domain([0, data.length]); 
 ///////     .domain([2000, 2024]);
 
  /* */   
@@ -398,8 +399,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
                .orient("bottom");  
 	  
 	  
-	  
-	  
+ 	  
     
     
     /*
@@ -437,13 +437,11 @@ var yAxis = d3.svg.axis()
     });*/
     
  
-	  
-	  
-	  var line = d3.svg.area()
+ var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d.value); })
     .y0(height)
-    .interpolate('cardinal'); 
+    .interpolate('curveStepAfter'); 
 
 var svg = d3.select("#vis").append("svg")
     .attr("width", wwidth)
