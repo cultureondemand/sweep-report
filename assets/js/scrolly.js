@@ -340,12 +340,15 @@ var y = d3.scale.linear()
 
 	  
 var xScale = d3.scale.linear()
-.domain([0, d3.max(data, function(d, i) { return x(i); })])
-.range([padding, wwwidth - padding * 2]);
+////.domain([0, d3.max(data, function(d, i) { return x(i); })])
+  .domain([0, data.length])
+
+	  .range([padding, wwwidth - padding * 2]);
 
 var yScale = d3.scale.linear()
-.domain([0, d3.max(data, function(d) { return d[1]; })])
-.range([hheight - padding, padding]);
+//////.domain([0, d3.max(data, function(d) { return d[1]; })])
+.domain([40000, 100000])
+	  .range([hheight - padding, padding]);
 
 	  
 	  
