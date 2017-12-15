@@ -1363,14 +1363,14 @@ svg.append("g")
        .attr("transform", "translate(0,50)")
 .attr("class", "highlight")
            .text(function(d) {
-            if (d == 65105) {return "T-REX Starts"}
+            if (d == .84) {return "T-REX Starts"}
             else 	{  }
 
-                 if (d == 82043) {return "T-REX Completed"}
+                 if (d == .71) {return "T-REX Completed"}
             else 	{  }
 
      
-                 if (d == 82287) {return "Congestion Hits Pre- Construction Levels"}
+                 if (d == .8) {return "Congestion Hits Pre- Construction Levels"}
             else 	{  }
 
      
@@ -1404,7 +1404,7 @@ svg.append("g")
      
     
     
-    
+ /*   
 
  .on("mousemove", function(d){
             div.style("left", d3.event.pageX-23+"px");
@@ -1422,7 +1422,7 @@ svg.append("g")
   
   
     
-    
+    */
    
     
     
