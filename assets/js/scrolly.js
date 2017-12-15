@@ -348,8 +348,8 @@ var xScale = d3.scale.linear()
 	  .range([padding, wwwidth - padding * 2]);
 
 var yScale = d3.scale.linear()
-//////.domain([0, d3.max(data, function(d) { return d[1]; })])
-.domain([40000, 100000])
+.domain([0, d3.max(data, function(d) { return d[1]; })])
+//////.domain([40000, 100000])
 	  .range([hhheight - padding, padding]);
 
 	  
