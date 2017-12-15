@@ -4,6 +4,7 @@
  * using reusable charts pattern:
  * http://bost.ocks.org/mike/chart/
  */
+var padding=100;
 var scrollVis = function() {
   // constants to define the size
   // and margins of the vis area.
