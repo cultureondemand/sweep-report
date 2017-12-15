@@ -790,8 +790,7 @@ d3.select("#vis").select("g").remove();
  
 	  
 	  var wwwidth= (window.innerWidth-70+"px");
-  var wwidth= window.innerWidth;
-  var hhheight= (window.innerHeight-50+"px");
+   var hhheight= (window.innerHeight-50+"px");
     
 var width = wwidth, height = hheight;  
     
@@ -952,13 +951,29 @@ var line = d3.svg.area()
     .y0(height)
     .interpolate('cardinal'); 
 
+	  
+	  
+	  
+	  
+	  
+	  
+var svg = d3.select("#vis").append("svg")
+    .attr("width", wwwidth)
+    .attr("height", hhheight)
+    .append("g")
+  ////////////  .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(80, -50)")
+
+
+
+/*
 var svg = d3.select("#vis").append("svg")
     .attr("width", wwwidth)
     .attr("height", height)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
     .attr("transform", "translate(80, -50)")
-/*
+
 svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
