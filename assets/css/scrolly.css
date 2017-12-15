@@ -1630,9 +1630,9 @@ stroke:none;
 }
 
 .node text {
-  font: .8em "HelveticaNeue-Light", sans-serif;
+  font: 1em "HelveticaNeue-Light", sans-serif;
   pointer-events: none;
-  text-anchor: middle;
+  /* text-anchor: middle; */
 }
 
 line.link {
