@@ -234,7 +234,7 @@ d3.select("#vis").select("g").remove();
   function showTitle4() {
          
   ////////  var bgimage = document.getElementsByClassName("bgbg");
-     
+   /*  
 
    d3.select("body").selectAll(".bgbg")
       .style('display', 'none');
@@ -250,7 +250,7 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "display:inline-block !important; ");
     vis.setAttribute("style", "visibility:visible; ");
     
- 
+ */
    
     
     
@@ -275,184 +275,139 @@ d3.select("#vis").select("g").remove();
          ];
             
             
-       
-     var axisMargin = 1,
+  
+	  
+	  
+	  
+  
+
+   d3.select("body").selectAll(".bgbg")
+      .style('display', 'none');
+
+  ///////////////bgimage.setAttribute("style", "display:none; ");
+
+  d3.select("#vis").select("svg").remove();
+d3.select("#vis").select("g").remove();
+
+  
+  
+        var vis = document.getElementById("vis");
+    vis.setAttribute("style", "display:inline-block !important; ");
+    vis.setAttribute("style", "visibility:visible; ");
+    
+ 
+    var axisMargin = 20,
             margin = 10,
             valueMargin = 1,
-            labelWidth = 50,
-                padding = 2; // space around the chart, not including labels
-        
+            labelWidth = 50;
     
     
-    var wwidth= window.innerWidth;
+    
+    var dataset1 = [{
+    'qName': 'Q1',
+        'PFTE': '10',
+        'EFTE': '62.7',
+        'SOME': '72.2'
+}, {
+    'qName': 'Q2',
+        'PFTE': '58',
+        'EFTE': '59.9',
+        'SOME': '67.7'
+}, {
+    'qName': 'Q3',
+        'PFTE': '53.3',
+        'EFTE': '59.1',
+        'SOME': '69.4'
+}, {
+    'qName': 'Q4',
+        'PFTE': '35.7',
+        'EFTE': '58.8',
+        'SOME': '68'
+}, {
+    'qName': 'Q5',
+        'PFTE': '34.2',
+        'EFTE': '58.7',
+        'SOME': '72.4'
+}, ];
+    
+    
+    
+    
+    
+  
+///////  var data = [59247,65105,70590,73139,77530,80507,82043,82630,82287,81419,83544,84100,87862,90623,91479];
+    
+    //////////////    var max = d3.max(data, function(d) { return d.a; });
+        var max = 91479;
+
+
+  var wwidth= window.innerWidth;
   var hheight= window.innerHeight;
     
-    var wwwidth= window.innerWidth-200;
-  var hhheight= window.innerHeight-200;
-    
-var width = wwidth, height = hheight;  
-    
-         
+var width = wwidth, height = hheight;
+var range = [];
  
-            
+    
+     
     /*
     var width = 500, height = 500;
     */
-
-        var x_domain = d3.extent(data, function(d) { return d.date; }),
-            y_domain = d3.extent(data, function(d) { return d.value; });
-        
-    
-        
-    /*
-     
-    var x = d3.scale.ordinal().rangeRoundBands([0, wwidth], .2);
-var y = d3.scale.linear().rangeRound([hheight, 0]);
-  
-   
-    
-    var color.domain(d3.keys(dataset[0]).filter(function (key) {
-        return key !== "year";
-    }));
-    
-    var efteValues = color.domain().map(function (name) {
-    return {
-        name: name,
-        values: dataset.map(function (d) {
-            return {
-                year: d.year,
-                pop: +d[name]
-            };
-        })
-        };
-    });
-    
-     x.domain(dataset.map(function(d) { 
-    	return d.year; }));
-
-    y.domain([
-    d3.min(efteValues, function (c) {
-        return d3.min(c.values, function (v) {
-            return v.pop;
-        });
-    }),
-    d3.max(efteValues, function (c) {
-        return d3.max(c.values, function (v) {
-            return v.pop;
-        });
-    })]);
-    */
-    
-    
-/*    
-      x.domain(dataset.map(function(d) { 
-    	return d.year; }));  
-    
-    
-     y.domain([4000000, 6000000]);*/
- 
-    
- var max = d3.max(data, function(d) { return d.date; });
-    /*   */ 
-    var max = 2014;
-    
-  
-	  
-	         var xScale = d3.time.scale()
-	        .domain(x_domain)    // values between for month of january
-		    .range([padding, width - padding]);   // map these sides of the chart, in this case 100 and 600
-
-	  
-	     // define the y scale  (vertical)
-        var yScale = d3.scale.linear()
-	        .domain(y_domain).nice()   // make axis end in round number
-		.range([height - padding, padding]);   // map these to the chart height, less padding.  In this case 300 and 100
-                 //REMEMBER: y axis range has the bigger number first because the y value of zero is at the top of chart and increases as you go down.
-		    
-	  
-	  
-          var  date_format = d3.time.format("%Y");
     
  var x = d3.scale.linear()
     .range([0, width])
-//////////   .domain([0, data.length -1]); 
-   .domain([0, data.length]); 
-///////     .domain([2000, 2024]);
+  .domain([0, data.length -1]);
+ /////////////////////     .domain([2000, 2014]);
 
- /* */   
- var y = d3.scale.linear()
+    
+/*    var x = d3.scale.ordinal()
+ ////   .range([range])
+    .range([0, width])
+  .domain(['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']); */
+    
+    
+    
+    
+var y = d3.scale.linear()
     .range([height, 0])
-    .domain([4000000, 9000000]); 
+    .domain([40000, 100000]);
 
-  
      var scale = d3.scale.linear()
-            .domain([2000, 2050])
+            .domain([2000, 2014])
             .range([0, width - margin*4 - labelWidth]);
 
    var xAxis = d3.svg.axis()
-     
-
-	 .scale(xScale)
-           .tickFormat(date_format)
- 
-              .tickSize(-height + 4*margin + axisMargin)
-               .orient("bottom");  
-	  
-	  
- 	  
-    
-    
-    /*
-    
-    
-    
-        var scale = d3.scale.linear()
-            .domain([2000, 2050])
-            .range([0, width - margin*4 - labelWidth]);
-
-    var xAxis = d3.svg.axis()
             .scale(scale)
             .tickSize(-height + 4*margin + axisMargin)
             .orient("bottom");
-     */
     
- /*   
-var xAxis = d3.svg.axis()
+    
+/* var xAxis = d3.svg.axis()
     .scale(x)
-    .orient("bottom");
-*/
+    .orient("bottom"); */
 
 var yAxis = d3.svg.axis()
-    .scale(yScale)
+    .scale(y)
     .orient("left");
 
     
-/*     var line = d3.svg.line()
-    .interpolate("basis")
-    .x(function (d) {
-        return x(d.year);
-    })
-    .y(function (d) {
-        return y(d.pop);
-    });*/
     
- 
- var line = d3.svg.area()
+    
+    
+    
+
+var line = d3.svg.area()
     .x(function(d, i) { return x(i); })
     .y1(function(d) { return y(d.value); })
     .y0(height)
-    .interpolate('curveStepAfter'); 
+    .interpolate('cardinal');
 
 var svg = d3.select("#vis").append("svg")
-    .attr("width", wwidth)
-    .attr("height", hhheight)
+    .attr("width", width - 210)
+    .attr("height", height - 210)
     .append("g")
-  ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -80)")
+   ///////// .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(100, -20)")
 
-
- 
-/*
 svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
@@ -461,53 +416,52 @@ svg.append("g")
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-*/
+
   svg.append("path")
       .datum(data)
       .attr("class", "line")
       .attr("d", line);
 
-
-
-
-      // draw x axis with labels and move to the bottom of the chart area
-        svg.append("g")
-       .attr("class", "x axis")
-  ////////          .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (height - padding) + ")")
-            .call(xAxis);
-            
-  // draw y axis with labels and move in from the size by the amount of padding
-        svg.append("g")
-/////////////////        	.attr("class", "axis")
-         .attr("class", "y axis")
-          .attr("transform", "translate("+padding+",0)")
-            .call(yAxis)
-
-        // now rotate text on x axis
-        // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
-        // first move the text left so no longer centered on the tick
-        // then rotate up to get 45 degrees.
-        svg.selectAll(".x axis text")  // select all the text elements for the xaxis
-          .attr("transform", function(d) {
-             return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
-         });
+   
     
-        // now add titles to the axes
-        svg.append("text")
-            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+(padding*2)+","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Population");
-
-        svg.append("text")
-            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
-            .text("Year");
     
-	  
-	  
-	  
+    // Add the scatterplot
+     svg.selectAll("dot")
+        .data(data)
+      .enter().append("text")
+
+        .attr("x", function(d, i) { return x(i); })
+        .attr("y", function(d) { return y(d.value); })
+       .attr("transform", "translate(0,50)")
+.attr("class", "highlight")
+           .text(function(d) {
+            if (d == 65105) {return "T-REX Starts"}
+            else 	{  }
+
+                 if (d == 82043) {return "T-REX Completed"}
+            else 	{  }
+
+     
+                 if (d == 82287) {return "Congestion Hits Pre- Construction Levels"}
+            else 	{  }
+
+     
+     })
+    
+     
+    
+    
+    
+     
+    
+    
+    
+      
   
+    
+    
+    
+    
     // Add the scatterplot
     svg.selectAll("dot")
         .data(data)
@@ -515,22 +469,42 @@ svg.append("g")
         .attr("r", 6.3)
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
-        .attr("cy", function(d) { return y(d.value); }) 
-      
-      .on("mousemove", function(d){
-            div.style("left", d3.event.pageX+10+"px");
+        .attr("cy", function(d) { return y(d.value); })
+
+     
+    
+     
+    
+    
+    
+
+ .on("mousemove", function(d){
+            div.style("left", d3.event.pageX-23+"px");
             div.style("top", (d3.event.pageY)-45+"px");
             div.style("display", "inline-block");
             div.style("position", "absolute");
                         div.attr("class", "fixedtooltip");
 
-            div.html("<h4>"+(d.value)+" Annual hours of delay in </h4>"+(d.date)+"");
+             div.html("<h4>"+(d.value)+" residents of Colorado in"+(d.date)+"</h4>");
          })
 
         .on("mouseout", function(d){
             div.style("display", "none");
         })
+  
+  
     
+    
+   
+    
+    
+    
+    
+	  
+	  
+	  
+	  
+	  
     ///
     ///
     ////
@@ -1175,9 +1149,9 @@ d3.select("#vis").select("g").remove();
 
   ///////////////bgimage.setAttribute("style", "display:none; ");
 
-  d3.select("#vis").select("svg").remove();
+/*  d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
-
+*/
   
   
         var vis = document.getElementById("vis");
