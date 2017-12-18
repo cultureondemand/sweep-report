@@ -448,7 +448,7 @@ svg.append("g")
       .call(yAxis)
  
 
-
+  /*
       // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
@@ -456,7 +456,7 @@ svg.append("g")
     /////               .attr("transform", "translate(0," + (height) + ")")
             .call(xAxis);
   
-	  /*
+	
   // draw y axis with labels and move in from the size by the amount of padding
       svg.append("g")
   	.attr("class", "y axis")
@@ -971,7 +971,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(80, -50)")
+    .attr("transform", "translate(100, -50)")
 
 
 
@@ -998,20 +998,25 @@ svg.append("g")
       .attr("d", line);
 
 
+  
 
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+ 
 
       // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "xaxis axis")  // two classes, one for css formatting, one for selection below
             .attr("transform", "translate(0," + (height - padding) + ")")
             .call(xAxis);
-            
+    /*        
   // draw y axis with labels and move in from the size by the amount of padding
         svg.append("g")
         	.attr("class", "axis")
             .attr("transform", "translate("+padding+",0)")
             .call(yAxis)
-
+*/
         // now rotate text on x axis
         // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
         // first move the text left so no longer centered on the tick
