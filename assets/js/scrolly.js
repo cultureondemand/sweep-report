@@ -432,14 +432,13 @@ var svg = d3.select("#vis").append("svg")
       .attr("class", "line")
       .attr("d", line);
 	  
-/*
 
 svg.append("g")
       .attr("class", "x axis")
   ///////////    .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
-*/
+ 
 /////////////////////////////////// 
 
 	  
@@ -464,7 +463,8 @@ svg.append("g")
    	.attr("transform", "translate("+padding+",0)")
             .call(yAxis)  
 
-	  
+	/*
+  
 	  
 	  
   // draw y axis with labels and move in from the size by the amount of padding
