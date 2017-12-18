@@ -331,9 +331,9 @@ var range = [];
     
  var x = d3.scale.linear()
     .range([0, width])
- .domain([0, data.length]) 
+ .domain([0, data.length]) ;
  ///////  .domain([2000, 2014])
- 	  .range([padding, wwwidth - padding * 2]);
+ ///////	  .range([padding, wwwidth - padding * 2]);
 
 
  var y = d3.scale.linear()
@@ -342,7 +342,7 @@ var range = [];
 	 
  
 
-
+/*
 	  
 var xScale = d3.scale.linear()
  .domain([0, d3.max(data, function(d, i) { return d.date; })])
@@ -350,7 +350,7 @@ var xScale = d3.scale.linear()
 /////   .domain([2000, 2014])
 
 	  .range([padding, wwwidth - padding * 2]);
-/*
+
 var yScale = d3.scale.linear()
 .domain([0, d3.max(data, function(d) { return d.value; })])
 //////.domain([40000, 100000])
