@@ -302,7 +302,7 @@ d3.select("#vis").select("g").remove();
             valueMargin = 1,
             labelWidth = 50;
     
-     
+     var padding=10;
     
        var x_domain = d3.extent(data, function(d) { return d.date; }),
             y_domain = d3.extent(data, function(d) { return d.value; });
