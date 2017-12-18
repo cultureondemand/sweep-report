@@ -331,7 +331,8 @@ var range = [];
     
  var x = d3.scale.linear()
     .range([0, width])
-  .domain([0, data.length]);
+ /////// .domain([0, data.length]);
+  .domain([2000, 2014]);
 
  var y = d3.scale.linear()
     .range([height, 0])
