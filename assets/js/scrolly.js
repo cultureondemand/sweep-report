@@ -360,7 +360,7 @@ var yScale = d3.scale.linear()
   
 	  
 	  
-	  
+	/*   
 	  
      var scale = d3.scale.linear()
             .domain([2000, 2014])
@@ -374,10 +374,14 @@ var yScale = d3.scale.linear()
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
     
-    
-/* var xAxis = d3.svg.axis()
+     */
+	  
+	  
+	  
+var xAxis = d3.svg.axis()
     .scale(x)
-    .orient("bottom"); */
+  .tickFormat(d3.format("d.date"))
+    .orient("bottom");
 
 var yAxis = d3.svg.axis()
  .scale(y)
@@ -405,7 +409,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(80, -50)")
+    .attr("transform", "translate(100, -50)")
 
 
 
