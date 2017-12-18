@@ -368,7 +368,11 @@ var yScale = d3.scale.linear()
             .domain([2000, 2014])
         .range([0, width - margin*4 - labelWidth]);
   ///?           .range([0, width]);
-   
+  
+	  
+	  
+	  
+	  
 	  var xAxis = d3.svg.axis()
          //////   .scale(scale)
             .scale(scale)
@@ -448,6 +452,8 @@ svg.append("g")
       .call(yAxis)
  
 
+	  
+	  
 	  
 	      svg.append("g")
             .attr("class", "x axis")  // two classes, one for css formatting, one for selection below
@@ -911,6 +917,9 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             .domain([2000, 2050])
             .range([0, width - margin*4 - labelWidth]);
 
+	  
+	  
+	  
    var xAxis = d3.svg.axis()
        ///////     .scale(xScale)
             .scale(scale)
@@ -1015,7 +1024,7 @@ svg.append("g")
       // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "x axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (height - padding) + ")")
+            .attr("transform", "translate(0," + (height + padding) + ")")
             .call(xAxis);
     /*        
   // draw y axis with labels and move in from the size by the amount of padding
