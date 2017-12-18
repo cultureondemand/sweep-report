@@ -363,8 +363,7 @@ var yScale = d3.scale.linear()
   
 	  
 	  
-	/*   
-	  
+	
      var scale = d3.scale.linear()
             .domain([2000, 2014])
      ///?       .range([0, width - margin*4 - labelWidth]);
@@ -377,15 +376,16 @@ var yScale = d3.scale.linear()
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
     
-     */
-	  
-	  
+    
+	/*   
+	    
 	  
 var xAxis = d3.svg.axis()
     .scale(x)
   .tickFormat(d3.format("d.date"))
     .orient("bottom");
-
+ */
+	  
 var yAxis = d3.svg.axis()
  .scale(y)
  /////      .scale(yScale)
@@ -436,7 +436,7 @@ var svg = d3.select("#vis").append("svg")
 
 svg.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
+  ///////////    .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
   svg.append("g")
