@@ -1638,7 +1638,7 @@ stroke:none;
 }
 
 .x.axis line {
-  stroke: #fff;
+  stroke: #000;
 }
 
 .x.axis .minor {
