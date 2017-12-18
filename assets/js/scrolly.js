@@ -457,7 +457,8 @@ svg.append("g")
 	  
 	      svg.append("g")
             .attr("class", "x axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (height - padding) + ")")
+     ////       .attr("transform", "translate(0," + (height - padding) + ")")
+            .attr("transform", "translate(0," + (height + padding) + ")")
             .call(xAxis);
 	  
   /*	  
