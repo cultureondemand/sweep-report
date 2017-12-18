@@ -332,7 +332,9 @@ var range = [];
  var x = d3.scale.linear()
     .range([0, width])
  /////// .domain([0, data.length]);
-  .domain([2000, 2014]);
+  .domain([2000, 2014])
+ 	  .range([padding, wwwidth - padding * 2]);
+
 
  var y = d3.scale.linear()
     .range([height, 0])
@@ -488,14 +490,14 @@ svg.append("g")
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate(40,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .attr("transform", "translate(-80,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
             .text("Total Delay (1000s of person-hours) ")
                     .attr("id", "legendtext")  ;
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
    ////////         .attr("transform", "translate("+ (width/2) +","+(height-(padding*3))+")")  // centre below axis
-            .attr("transform", "translate("+ (width/2) +","+(height-(50))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(50))+")")  // centre below axis
             .text("Year")
                     .attr("id", "legendtext")  ;
 
