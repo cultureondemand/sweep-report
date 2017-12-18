@@ -450,10 +450,10 @@ svg.append("g")
             .call(xAxis);
             
   // draw y axis with labels and move in from the size by the amount of padding
-  /*      svg.append("g")
+      svg.append("g")
   	.attr("class", "y axis")
    	.attr("transform", "translate("+padding+",0)")
-            .call(yAxis) */
+            .call(yAxis)  
 
 	  
 	  
