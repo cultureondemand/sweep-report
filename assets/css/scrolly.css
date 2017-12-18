@@ -1622,10 +1622,44 @@ stroke:none;
   fill: white;
 }
 
+
+
+/*
 .x axis path {
   display: none;
-      stroke-opacity: .3;
+  stroke-opacity: .3;
 }
+*/
+
+
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: #fff;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line,
+.y.axis path {
+  fill: none;
+  stroke: #000;
+}
+
+
+
+
+
+
 
 .d3-tip {
   line-height: 1;
