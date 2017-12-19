@@ -2059,7 +2059,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 .plotter {
  
-  fill:#fff;
+  fill:transparent;
   stroke:none;
 -webkit-filter: drop-shadow( -1px -1px 1px #333 ); 
  filter: drop-shadow( -1px -1px 1px #333 );
