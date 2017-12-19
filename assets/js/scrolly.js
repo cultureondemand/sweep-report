@@ -317,7 +317,7 @@ d3.select("#vis").select("g").remove();
 
   var wwwidth= (window.innerWidth-70+"px");
   var wwidth= window.innerWidth;
-  var hhheight= (window.innerHeight-50+"px");
+  var hhheight= (window.innerHeight-100+"px");
   var hheight= window.innerHeight;
     
 var width = wwidth, height = hheight;
@@ -417,7 +417,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -50)")
+    .attr("transform", "translate(100, -80)")
 
 
 
@@ -459,7 +459,7 @@ svg.append("g")
 	      svg.append("g")
             .attr("class", "x axis")  // two classes, one for css formatting, one for selection below
      ////       .attr("transform", "translate(0," + (height - padding) + ")")
-            .attr("transform", "translate(0," + (height + padding) + ")")
+            .attr("transform", "translate(0," + (height + (padding/2)) + ")")
             .call(xAxis);
 	  
   /*	  
@@ -822,7 +822,7 @@ var width = wwidth, height = hheight;
             margin = 10,
             valueMargin = 1,
             labelWidth = 50,
-                padding = 2; // space around the chart, not including labels
+                padding = 10; // space around the chart, not including labels
         
             
     /*
@@ -1035,29 +1035,35 @@ svg.append("g")
             .attr("transform", "translate("+padding+",0)")
             .call(yAxis)
 */
-        // now rotate text on x axis
+               // now rotate text on x axis
         // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
         // first move the text left so no longer centered on the tick
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
                 .attr("text-anchor", "start")  
-          .attr("transform", function(d) {
+  		.attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
     
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Population")
+            .attr("transform", "translate(-80,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .text("Total Delay (1000s of person-hours) ")
                     .attr("id", "legendtext")  ;
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
+   ////////         .attr("transform", "translate("+ (width/2) +","+(height-(padding*3))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(50))+")")  // centre below axis
             .text("Year")
                     .attr("id", "legendtext")  ;
-    
+
+	  
+	  
+
+	  
+	  
 	  
 	  
 	  
@@ -1430,22 +1436,26 @@ svg.append("g")
         // then rotate up to get 45 degrees.
         svg.selectAll(".xaxis text")  // select all the text elements for the xaxis
                 .attr("text-anchor", "start")  
-        .attr("transform", function(d) {
+  		.attr("transform", function(d) {
              return "translate(" + this.getBBox().height*-2 + "," + this.getBBox().height + ")rotate(-45)";
          });
     
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (padding) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Volume / Capacity Ratio")
+            .attr("transform", "translate(-80,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .text("Total Delay (1000s of person-hours) ")
                     .attr("id", "legendtext")  ;
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate("+ (width/2) +","+(height-(padding))+")")  // centre below axis
+   ////////         .attr("transform", "translate("+ (width/2) +","+(height-(padding*3))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(50))+")")  // centre below axis
             .text("Year")
                     .attr("id", "legendtext")  ;
+
+	  
+	  
     
 	  
 	  
