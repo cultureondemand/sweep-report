@@ -576,7 +576,7 @@ svg.append("g")
                   .attr('width', function(d) {
                     return d * 2; // data point * 2 pixels wide
  
-     });
+     })
     
 	  
 	  
