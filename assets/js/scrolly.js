@@ -922,8 +922,9 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             .domain([2000, 2050])
       ///////     .range([0, width - margin*2 - labelWidth]);
 	  
-	   .range([padding, wwwidth - padding]); 
-///////////////////////            .range([0, width - margin*4 - labelWidth]);
+///////////////////////  	   .range([padding, wwwidth - padding]); 
+////////////////          .range([0, width - margin*4 - labelWidth]);
+          .range([0, width - labelWidth]);
    //////         .range([0, wwwidth]);
 
 	  
