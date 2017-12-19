@@ -529,7 +529,7 @@ svg.append("g")
         .data(data)
       .enter().append("text")
 
-        .attr("x", function(d, i) { return (x(i) - margin*4); })
+        .attr("x", function(d, i) { return (x(i) - margin*2); })
   ////////////////      .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d.value); })
        .attr("transform", "translate(0,50)")
