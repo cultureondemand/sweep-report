@@ -525,7 +525,8 @@ svg.append("g")
 	  
     
     // Add the scatterplot
-     svg.selectAll("dot")
+     svg.selectAll("rect")
+ /////    svg.selectAll("dot")
         .data(data)
       .enter().append("text")
 
@@ -552,27 +553,44 @@ svg.append("g")
     
     
     
-     
-    
-    
-    
-      
-  
-    
     
     
     
     // Add the scatterplot
-    svg.selectAll("dot")
+/////    svg.selectAll("dot")
+    svg.selectAll("rect")
         .data(data)
-      .enter().append("circle")
-        .attr("r", 12.3)
+ ////////     .enter().append("circle")
+      .enter().append("rect")
+//////////////        .attr("r", 12.3)
+     /////   .attr("r", 12.3)
         .attr("class", "plotter")
+	
+	  
+	  
+     
+    
+    
+    
+                       .attr('height', 10)
+                  .attr('width', function(d) {
+                    return d * 2; // data point * 2 pixels wide
+ 
+     });
+    
+	  
+	  
+	  
+	  
+	  
+	  
+	/*  
+	  
     .attr("cx", function(d, i) { return x(i); })
    ////////////////////    .attr("cx", function(d, i) { return x(d.date); })
         .attr("cy", function(d) { return y(d.value); })
 
-     
+     */
     
      
     
