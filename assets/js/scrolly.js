@@ -523,7 +523,7 @@ svg.append("g")
 	  
 	  
 	  
-    
+    /*
     // Add the scatterplot
      svg.selectAll("rect")
  /////    svg.selectAll("dot")
@@ -551,7 +551,7 @@ svg.append("g")
     
      
     
-    
+    */
     
     
     
@@ -568,7 +568,8 @@ svg.append("g")
 	
 	  
 	  
-     
+        .domain([0, data.length])
+
     
     
     
