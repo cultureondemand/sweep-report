@@ -317,7 +317,8 @@ d3.select("#vis").select("g").remove();
 
   var wwwidth= (window.innerWidth-70+"px");
   var wwidth= window.innerWidth;
-  var hhheight= (window.innerHeight-100+"px");
+/////  var hhheight= (window.innerHeight-100+"px");
+  var hhheight= (window.innerHeight-100);
   var hheight= window.innerHeight;
     
 var width = wwidth, height = hheight;
@@ -338,7 +339,7 @@ var range = [];
 
  var y = d3.scale.linear()
     .range([height, 0])
-    .domain([40000, 100000]);
+    .domain([40000, 105000]);
 	 
  
 
@@ -367,7 +368,7 @@ var yScale = d3.scale.linear()
      var scale = d3.scale.linear()
             .domain([2000, 2014])
 ///////        .range([0, width - margin*4 - labelWidth]);
-        .range([0, width - margin*4]);
+        .range([0, wwwidth]);
   ///?           .range([0, width]);
   
 	  
