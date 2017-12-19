@@ -529,7 +529,7 @@ svg.append("g")
         .data(data)
       .enter().append("text")
 
-        .attr("x", function(d, i) { return (x(i) - margin*2); })
+        .attr("x", function(d, i) { return y(d.date); })
   ////////////////      .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d.value); })
        .attr("transform", "translate(0,50)")
@@ -922,7 +922,7 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
             .domain([2000, 2050])
            .range([0, width - margin*2 - labelWidth]);
 ///////////////////////            .range([0, width - margin*4 - labelWidth]);
-            .range([0, wwwidth]);
+   //////         .range([0, wwwidth]);
 
 	  
 	  
