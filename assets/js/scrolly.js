@@ -568,7 +568,8 @@ svg.append("g")
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
-      .attr("cx", function(d, i) { return (x(i) - margin*2); })
+  ////////////////////   .attr("cx", function(d, i) { return (x(i)); })
+      .attr("cx", function(d, i) { return x(d.date); })
         .attr("cy", function(d) { return y(d.value); })
 
      
