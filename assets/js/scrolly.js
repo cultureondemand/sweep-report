@@ -45,7 +45,11 @@ var scrollVis = function() {
   var updateFunctions = [];
  var div = d3.select("body").append("div").attr("class", "tooltip");
 
-  
+
+	
+var countt;
+var counttt;
+var countttt;
   
   /**
    * chart
@@ -316,6 +320,7 @@ d3.select("#vis").select("g").remove();
 
 
   var wwwidth= (window.innerWidth-70+"px");
+  var wwwwidth= (window.innerWidth-70);
   var wwidth= window.innerWidth;
 var hhheight= (window.innerHeight-100+"px");
 /////    var hhheight= (window.innerHeight-100);
@@ -324,7 +329,7 @@ var hhheight= (window.innerHeight-100+"px");
 var width = wwidth, height = hheight;
 var range = [];
  
-    var countt = wwwidth/15;
+    var countt = (wwwwidth/15);
      
     /*
     var width = 500, height = 500;
