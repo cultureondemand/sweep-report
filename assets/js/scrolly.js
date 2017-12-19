@@ -300,7 +300,7 @@ d3.select("#vis").select("g").remove();
     var axisMargin = 20,
             margin = 10,
             valueMargin = 1,
-            labelWidth = 50;
+            labelWidth = 20;
     
      var padding=10;
     
@@ -368,7 +368,7 @@ var yScale = d3.scale.linear()
      var scale = d3.scale.linear()
             .domain([2000, 2014])
 ///////        .range([0, width - margin*4 - labelWidth]);
-        .range([0, width - margin*4 + labelWidth]);
+        .range([0, width - margin*4 - labelWidth]);
 ///////        .range([0, wwwidth]);
   ///?           .range([0, width]);
   
@@ -529,7 +529,8 @@ svg.append("g")
         .data(data)
       .enter().append("text")
 
-        .attr("x", function(d, i) { return x(i); })
+        .attr("x", function(d, i) { return (x(i) - margin*4 + labelWidth); })
+  ////////////////      .attr("x", function(d, i) { return x(i); })
         .attr("y", function(d) { return y(d.value); })
        .attr("transform", "translate(0,50)")
 .attr("class", "highlight")
@@ -567,7 +568,7 @@ svg.append("g")
       .enter().append("circle")
         .attr("r", 6.3)
         .attr("class", "plotter")
-      .attr("cx", function(d, i) { return x(i); })
+      .attr("cx", function(d, i) { return (x(i) - margin*4 + labelWidth); })
         .attr("cy", function(d) { return y(d.value); })
 
      
