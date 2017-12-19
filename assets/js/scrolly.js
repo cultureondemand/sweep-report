@@ -568,7 +568,7 @@ svg.append("g")
 	
 
            .attr('height', hhheight)
-	   .attr('width',countt)
+	   .attr('width',countt+"px")
            
 ////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
 					     
