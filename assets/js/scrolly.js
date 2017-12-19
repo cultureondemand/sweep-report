@@ -572,15 +572,12 @@ svg.append("g")
     
     
     
-                       .attr('height', 10)
-                  .attr('width', function(d) {
-                    return d * 2; // data point * 2 pixels wide
- 
-     })
-    
-	  
-	  
-	  
+           .attr('height', hhheight)
+	   .attr('width',(wwwidth/data.length))
+           
+////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
+					     
+  
 	  
 	  
 	  
@@ -591,10 +588,7 @@ svg.append("g")
         .attr("cy", function(d) { return y(d.value); })
 
      */
-    
-     
-    
-    
+   
     
 
  .on("mousemove", function(d){
