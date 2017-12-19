@@ -317,14 +317,14 @@ d3.select("#vis").select("g").remove();
 
   var wwwidth= (window.innerWidth-70+"px");
   var wwidth= window.innerWidth;
-/////  var hhheight= (window.innerHeight-100+"px");
-  var hhheight= (window.innerHeight-100);
+var hhheight= (window.innerHeight-100+"px");
+/////    var hhheight= (window.innerHeight-100);
   var hheight= window.innerHeight;
     
 var width = wwidth, height = hheight;
 var range = [];
  
-    
+    var countt = wwwidth/15;
      
     /*
     var width = 500, height = 500;
@@ -566,15 +566,9 @@ svg.append("g")
      /////   .attr("r", 12.3)
         .attr("class", "plotter")
 	
-	  
-	  
-        .domain([0, data.length])
 
-    
-    
-    
            .attr('height', hhheight)
-	 //////  .attr('width',(wwwidth/data.length))
+	   .attr('width',countt)
            
 ////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
 					     
