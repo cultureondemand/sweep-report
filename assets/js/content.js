@@ -105,7 +105,7 @@ Maybe it is time to try something new.
       medium: "",
       large: ""
     },
-    body:"<span class="footnotenumberr">2</span> Texas A&M Transportation Institute. 2015. Annual Urban Mobility Scorecard. https://mobility.tamu.edu/ums/"
+    body:"<span class='footnotenumberr'>2</span> Texas A&M Transportation Institute. 2015. Annual Urban Mobility Scorecard. https://mobility.tamu.edu/ums/"
 
    },
   {
