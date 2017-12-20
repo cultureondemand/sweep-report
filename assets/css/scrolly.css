@@ -1041,13 +1041,12 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 2.2em;
+  font-size: 1.6em;
   font-weight: 600;
 
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 10px;
-  padding-top: 17px;
+  padding-left: 124px;
+   padding-top: 17px;
   padding-bottom: 16px;
   color: #fff;
 }
@@ -1084,13 +1083,12 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 2.2em;
+  font-size: 1.6em;
   font-weight: 600;
 
   margin: 0 auto;
-  padding-left: 47px;
-  padding-right: 10px;
-  padding-top: 16px;
+  padding-left: 124px;
+   padding-top: 16px;
   padding-bottom: 16px;
   color: #fff;
 }
@@ -1127,9 +1125,8 @@ background-color: #fff;
   font-weight: 600;
 
   margin: 0 auto;
-  padding-left: 47px;
-  padding-right: 10px;
-  padding-top: 16px;
+  padding-left: 124px;
+   padding-top: 16px;
   padding-bottom: 16px;
   color: #fff;
 }
@@ -1969,7 +1966,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   min-width:280px;
   max-width:400px;
   font-size:66%;
-  margin-left: 47px !important;
+  margin-left: 100px !important;
   
  
 }
@@ -1981,7 +1978,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   min-width:280px;
   max-width:400px;
   font-size:66%;
-  margin-left: 47px !important;
+  margin-left: 100px !important;
 }
 
 
@@ -1991,7 +1988,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   min-width:280px;
   max-width:400px;
   font-size:66%;
-  margin-left: 47px !important;
+  margin-left: 100px !important;
 }
 
 
@@ -2001,7 +1998,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   min-width:280px;
   max-width:400px;
   font-size:66%;
-  margin-left: 47px !important;
+  margin-left: 100px !important;
 }
 
 
@@ -2012,7 +2009,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   min-width:280px;
   max-width:400px;
   font-size:66%;
-  margin-left: 47px !important;
+  margin-left: 100px !important;
 }
 
 
@@ -2022,7 +2019,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
  
   fill: #fff;
 
-    font-size: 366%;
+    font-size: 166%;
     font-weight: 900;  
 }
 
