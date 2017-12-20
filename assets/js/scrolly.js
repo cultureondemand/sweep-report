@@ -1318,7 +1318,7 @@ d3.select("#vis").select("g").remove();
             {"date": 2005, "value": .92},
             {"date": 2006, "value": .71},   
             {"date": 2007, "value": .76},
-            {"date": 2008, "value": .79},
+            {"date": 2008, "value": .78},
             {"date": 2009, "value": .8},
            {"date": 2010, "value": .89},
             {"date": 2011, "value": .9},
