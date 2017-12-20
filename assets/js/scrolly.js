@@ -595,10 +595,10 @@ svg.append("g")
  .on("mousemove", function(d){
       /*      div.style("left", d3.event.pageX-23+"px");
             div.style("top", (d3.event.pageY)-45+"px");
-            div.style("display", "inline-block");
-          div.style("position", "absolute");
-            div.style("position", "fixed"); */
-           
+          div.style("position", "absolute");*/
+            div.style("position", "fixed"); 
+           div.style("display", "inline-block");
+
 	    div.attr("class", "fixedtooltip");
 
              div.html("Denver-Aurora delayed <h4> "+(d.value)+" </h4>hours annually in <h4>"+(d.date)+"</h4>");
@@ -1128,12 +1128,13 @@ svg.append("g")
         .attr("cy", function(d) { return y(d.pop); }) 
       */
       .on("mousemove", function(d){
-            div.style("left", d3.event.pageX+10+"px");
+      /*      div.style("left", d3.event.pageX-23+"px");
             div.style("top", (d3.event.pageY)-45+"px");
-            div.style("display", "inline-block");
-            div.style("position", "absolute");
-                        div.attr("class", "fixedtooltip");
+          div.style("position", "absolute");*/
+            div.style("position", "fixed"); 
+           div.style("display", "inline-block");
 
+	    div.attr("class", "fixedtooltip");
             div.html("<h4>"+(d.pop)+" Colorado Residents in </h4>"+(d.year)+"");
          })
 
@@ -1525,14 +1526,14 @@ svg.append("g")
        .attr("transform", "translate(0,50)")
 .attr("class", "highlight")
            .text(function(d) {
-            if (d == .84) {return "T-REX Starts"}
+            if (d.value == .84) {return "T-REX Starts"}
             else 	{  }
 
-                 if (d == .71) {return "T-REX Completed"}
+                 if (d.value == .71) {return "T-REX Completed"}
             else 	{  }
 
      
-                 if (d == .8) {return "Congestion Hits Pre- Construction Levels"}
+                 if (d.value == .8) {return "Congestion Hits Pre- Construction Levels"}
             else 	{  }
 
      
