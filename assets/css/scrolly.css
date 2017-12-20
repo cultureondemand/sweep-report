@@ -2148,3 +2148,16 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 
 
+.footnotenumber {
+   vertical-align: super; /* 2 */
+  font-size: 0.5em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: blue; /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+
+
+
+
