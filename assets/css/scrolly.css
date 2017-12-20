@@ -2081,7 +2081,8 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 .fixedtooltip {
  background-color:#fff;
-  
+  bottom:2%;
+  right:2%;
     fill: #000;
   font-size: 36px;
   font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
