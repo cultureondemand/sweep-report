@@ -1382,6 +1382,7 @@ d3.select("#vis").select("g").remove();
 
  
 	
+  var wwidth= (window.innerWidth);
   var wwwidth= (window.innerWidth-70+"px");
   var wwwwidth= (window.innerWidth-70);  
 	var hhheight= (window.innerHeight-50+"px");
