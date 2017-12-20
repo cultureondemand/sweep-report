@@ -1108,7 +1108,7 @@ svg.append("g")
            
 ////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
 					     
-              .attr("transform", "translate("0","+(height+(100))+")")  //  
+            ///////  .attr("transform", "translate("0",(height+(100))))   
 	  
 	     .attr("x", function(d, i) { return x(i); })
  
