@@ -689,7 +689,7 @@ h4 {
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .step {
-    margin-bottom: 116vh;
+    margin-bottom: 106vh;
     font-family: "HelveticaNeue",
       "Helvetica Neue",
       'TeXGyreHerosRegular',
@@ -717,7 +717,7 @@ h4 {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .step {
-    margin-bottom: 116vh;
+    margin-bottom: 106vh;
     font-family: "HelveticaNeue",
       "Helvetica Neue",
       'TeXGyreHerosRegular',
