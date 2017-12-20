@@ -32,7 +32,7 @@ var scrollVis = function() {
 
   // d3 selection that will be used
   // for displaying visualizations
-  var g = null;
+  var g = null; 
 
   // When scrolling to a new section
   // the activation function for that
