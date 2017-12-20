@@ -384,6 +384,7 @@ var yScale = d3.scale.linear()
 	  var xAxis = d3.svg.axis()
          //////   .scale(scale)
             .scale(scale)
+	  .ticks(7)
        ////////     .tickSize(-height + 4*margin + axisMargin)
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
@@ -426,18 +427,7 @@ var svg = d3.select("#vis").append("svg")
   ////////////  .attr("transform", "translate(50, 10)")
     .attr("transform", "translate(80, -50)")
 
-
-
-
-/*
-var svg = d3.select("#vis").append("svg")
-    .attr("width", width - 210)
-    .attr("height", height - 210)
-    .append("g")
-   ///////// .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(100, -20)")
-*/
-
+ 
 
   svg.append("path")
       .datum(data)
@@ -854,54 +844,6 @@ var width = wwidth, height = hheight;
             y_domain = d3.extent(datasetset, function(d) { return d.pop; });
         
     
-        
-    /*
-     
-    var x = d3.scale.ordinal().rangeRoundBands([0, wwidth], .2);
-var y = d3.scale.linear().rangeRound([hheight, 0]);
-  
-   
-    
-    var color.domain(d3.keys(dataset[0]).filter(function (key) {
-        return key !== "year";
-    }));
-    
-    var efteValues = color.domain().map(function (name) {
-    return {
-        name: name,
-        values: dataset.map(function (d) {
-            return {
-                year: d.year,
-                pop: +d[name]
-            };
-        })
-        };
-    });
-    
-     x.domain(dataset.map(function(d) { 
-    	return d.year; }));
-
-    y.domain([
-    d3.min(efteValues, function (c) {
-        return d3.min(c.values, function (v) {
-            return v.pop;
-        });
-    }),
-    d3.max(efteValues, function (c) {
-        return d3.max(c.values, function (v) {
-            return v.pop;
-        });
-    })]);
-    */
-    
-    
-/*    
-      x.domain(dataset.map(function(d) { 
-    	return d.year; }));  
-    
-    
-     y.domain([4000000, 6000000]);*/
- 
     
  var max = d3.max(datasetset, function(d) { return d.year; });
     /*   */ 
@@ -950,6 +892,8 @@ var y = d3.scale.linear().rangeRound([hheight, 0]);
 	  
    var xAxis = d3.svg.axis()
        ///////     .scale(xScale)
+   	  .ticks(10)
+
             .scale(scale)
      ////////////       .tickSize(-height + 4*margin + axisMargin)
  .tickFormat(d3.format("d.year"))
@@ -1437,6 +1381,8 @@ var y = d3.scale.linear()
 	  var xAxis = d3.svg.axis()
          //////   .scale(scale)
             .scale(scale)
+	  	  .ticks(6)
+
        ////////     .tickSize(-height + 4*margin + axisMargin)
   .tickFormat(d3.format("d.date"))
    .orient("bottom");
