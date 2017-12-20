@@ -1095,7 +1095,7 @@ svg.append("g")
     // Add the scatterplot
 /////    svg.selectAll("dot")
     svg.selectAll("rect")
-        .data(data)
+        .data(datasetset)
  ////////     .enter().append("circle")
       .enter().append("rect")
 //////////////        .attr("r", 12.3)
