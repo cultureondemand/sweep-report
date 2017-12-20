@@ -504,14 +504,14 @@ svg.append("g")
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate(-40,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .attr("transform", "translate(-50,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
             .text("Total Delay (1000s of person-hours) ")
                     .attr("id", "legendtext")  ;
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
    ////////         .attr("transform", "translate("+ (width/2) +","+(height-(padding*3))+")")  // centre below axis
-            .attr("transform", "translate("+ (width/2) +","+(height+(40))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(35))+")")  // centre below axis
             .text("Year")
                     .attr("id", "legendtext")  ;
 
@@ -591,7 +591,7 @@ svg.append("g")
 
 	    div.attr("class", "fixedtooltip");
 
-             div.html("<h4>Denver-Aurora delayed</h4>"+formatComma(d.value)+"<h4>hours annually in</h4>"+(d.date)+"");
+             div.html("<h4>Denver-Aurora delayed</h4>"+formatComma(d.value)+",000<h4>hours annually in</h4>"+(d.date)+"");
          })
 
         .on("mouseout", function(d){
@@ -1018,14 +1018,14 @@ svg.append("g")
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate(-80,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Total Delay (1000s of person-hours) ")
+            .attr("transform", "translate(-50,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .text("Population (in Millions) ")
                     .attr("id", "legendtext")  ;
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
    ////////         .attr("transform", "translate("+ (width/2) +","+(height-(padding*3))+")")  // centre below axis
-            .attr("transform", "translate("+ (width/2) +","+(height+(50))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(45))+")")  // centre below axis
             .text("Year")
                     .attr("id", "legendtext")  ;
 
@@ -1553,14 +1553,14 @@ var svg = d3.select("#vis").append("svg")
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate(-40,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .attr("transform", "translate(-50,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
             .text("Avg Volume/Capacity Ratio")
                     .attr("id", "legendtext")  ;
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
    ////////         .attr("transform", "translate("+ (width/2) +","+(height-(padding*3))+")")  // centre below axis
-            .attr("transform", "translate("+ (width/2) +","+(height+(50))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(45))+")")  // centre below axis
             .text("Year")
                     .attr("id", "legendtext")  ;
 
