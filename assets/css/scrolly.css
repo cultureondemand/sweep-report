@@ -2169,6 +2169,10 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 }
 
 
-
+footer {
+  margin-top: 50px;
+  border-top: 1px solid silver;
+  font-size: 0.8em;
+}
 
 
