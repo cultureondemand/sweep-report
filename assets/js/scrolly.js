@@ -225,7 +225,12 @@ d3.select("#vis").select("g").remove();
         var vis = document.getElementById("vis");
     vis.setAttribute("style", "display:none !important; ");
     vis.setAttribute("style", "visibility:hidden; ");
-  
+   
+	  
+	  
+	  div.style("display", "none");
+
+     
   
   }
 
@@ -1101,6 +1106,8 @@ svg.append("g")
 
   function showTitle6() {
   
+        div.style("display", "none");
+
     
     
    d3.select("body").selectAll(".bgbg")
@@ -1187,7 +1194,7 @@ var chart = d3.select("#vis").append("svg")
             div.style("top", (d3.event.pageY)-45+"px");
             div.style("position", "absolute"); */
             div.style("display", "inline-block");
-                  div.attr("class", "ttooltip");
+                  div.attr("class", "fixedtooltip");
 
             div.html((d.a)+"<h4>"+(d.b)+"</h4>");
          })
@@ -1269,7 +1276,9 @@ d3.select("#vis").select("g").remove();
   ///////////////////////
 
   function showTitle8() {
-  
+      div.style("display", "none");
+
+    
    
   d3.select("#vis").select("svg").remove();
 d3.select("#vis").select("g").remove();
@@ -1301,7 +1310,7 @@ d3.select("#vis").select("g").remove();
    
     
          var data=[
-           {"date":2000, "value": .8},
+           {"date":2000, "value": .81},
             {"date":2001, "value": .84},
             {"date":2002, "value": .83},   
             {"date": 2003, "value": .85},
