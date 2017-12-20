@@ -829,10 +829,12 @@ d3.select("#vis").select("g").remove();
   var hheight= window.innerHeight;
     
  
-	  
-	  var wwwidth= (window.innerWidth-70+"px");
-   var hhheight= (window.innerHeight-50+"px");
-    
+	
+  var wwwidth= (window.innerWidth-70+"px");
+  var wwwwidth= (window.innerWidth-70);  
+	var hhheight= (window.innerHeight-50+"px");
+    var counttt = (wwwwidth/50+"px");
+        
 var width = wwidth, height = hheight;  
     
         var axisMargin = 1,
@@ -1087,6 +1089,30 @@ svg.append("g")
 	  
 	  
 	  
+    
+    // Add the scatterplot
+/////    svg.selectAll("dot")
+    svg.selectAll("rect")
+        .data(data)
+ ////////     .enter().append("circle")
+      .enter().append("rect")
+//////////////        .attr("r", 12.3)
+     /////   .attr("r", 12.3)
+        .attr("class", "plotter")
+	
+
+           .attr('height', hhheight)
+	   .attr('width', counttt)
+           
+////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
+					     
+  
+	  
+	     .attr("x", function(d, i) { return x(i); })
+ 
+	  
+	/*  
+	  
 	  
 	  
   
@@ -1098,7 +1124,7 @@ svg.append("g")
         .attr("class", "plotter")
       .attr("cx", function(d, i) { return x(i); })
         .attr("cy", function(d) { return y(d.pop); }) 
-      
+      */
       .on("mousemove", function(d){
             div.style("left", d3.event.pageX+10+"px");
             div.style("top", (d3.event.pageY)-45+"px");
@@ -1351,16 +1377,18 @@ d3.select("#vis").select("g").remove();
     //////////////    var max = d3.max(data, function(d) { return d.a; });
        var max = 91479;
 
-
-  var wwwidth= (window.innerWidth-200);
-  var wwidth= window.innerWidth;
-  var hhheight= (window.innerHeight-200);
+ 
+	
+  var wwwidth= (window.innerWidth-70+"px");
+  var wwwwidth= (window.innerWidth-70);  
+	var hhheight= (window.innerHeight-50+"px");
   var hheight= window.innerHeight;
     
 var width = wwidth, height = hheight;
 var range = [];
  
-    
+       var countttt = (wwwwidth/13+"px");
+ 
      
     /*
     var width = 500, height = 500;
@@ -1485,8 +1513,8 @@ svg.append("g")
 	  
     
     
-    // Add the scatterplot
-     svg.selectAll("dot")
+    // Add the scatterplot text
+     svg.selectAll("rect")
         .data(data)
       .enter().append("text")
 
@@ -1517,6 +1545,30 @@ svg.append("g")
     
     
       
+    
+    // Add the scatterplot
+/////    svg.selectAll("dot")
+    svg.selectAll("rect")
+        .data(data)
+ ////////     .enter().append("circle")
+      .enter().append("rect")
+//////////////        .attr("r", 12.3)
+     /////   .attr("r", 12.3)
+        .attr("class", "plotter")
+	
+
+           .attr('height', hhheight)
+	   .attr('width', countttt)
+           
+////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
+					     
+  
+	  
+	     .attr("x", function(d, i) { return x(i); })
+ 
+	  
+	/*  
+	    
   
     
     
@@ -1532,7 +1584,7 @@ svg.append("g")
         .attr("cy", function(d) { return y(d.value); })
 
      
-    
+    */
      
     
     
