@@ -1108,7 +1108,7 @@ svg.append("g")
            
 ////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
 					     
-  
+              .attr("transform", "translate("0","+(height+(100))+")")  //  
 	  
 	     .attr("x", function(d, i) { return x(i); })
  
@@ -1165,7 +1165,7 @@ svg.append("g")
 d3.select("#vis").select("g").remove();
 
   var data_tax = [
-{a:"1993 Revenue",b:372},
+{a:"1993 Real Revenue",b:372},
 {a:"2015 Real Revenue",b:351} 
 ];
     
@@ -1236,13 +1236,13 @@ var chart = d3.select("#vis").append("svg")
 
 
  .on("mousemove", function(d){
-            div.style("left", d3.event.pageX+10+"px");
+   /*        div.style("left", d3.event.pageX+10+"px");
             div.style("top", (d3.event.pageY)-45+"px");
+            div.style("position", "absolute"); */
             div.style("display", "inline-block");
-            div.style("position", "absolute");
-                  div.attr("class", "fixedtooltip");
+                  div.attr("class", "ttooltip");
 
-            div.html((d.a)+"<h4>"+(d.b)+"%</h4>");
+            div.html((d.a)+"<h4>"+(d.b)+"</h4>");
          })
 
         .on("mouseout", function(d){
