@@ -1196,7 +1196,7 @@ var chart = d3.select("#vis").append("svg")
             div.style("display", "inline-block");
                   div.attr("class", "fixedtooltip");
 
-            div.html((d.a)+"<h4>"+(d.b)+"</h4>");
+       /////////////     div.html((d.a)+"<h4>"+(d.b)+"</h4>");
          })
 
         .on("mouseout", function(d){
@@ -1226,8 +1226,8 @@ var chart = d3.select("#vis").append("svg")
             .attr("x", 15) //margin right
             .attr("dy", ".35em") //vertical align middle
             .attr("text-anchor", "start")
-            .text(function(d){
-                return (d.a+":<br />$"+d.b+"M");
+            .html(function(d){
+                return (d.a+":<h4>$"+d.b+"M</h4>");
             })
        ////////// .attr("x", function(d){
           ///////      var width = this.getBBox().width;
