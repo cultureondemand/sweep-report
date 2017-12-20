@@ -514,14 +514,14 @@ svg.append("g")
         // now add titles to the axes
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-            .attr("transform", "translate(-80,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .attr("transform", "translate(-40,"+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
             .text("Total Delay (1000s of person-hours) ")
                     .attr("id", "legendtext")  ;
 
         svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
    ////////         .attr("transform", "translate("+ (width/2) +","+(height-(padding*3))+")")  // centre below axis
-            .attr("transform", "translate("+ (width/2) +","+(height+(50))+")")  // centre below axis
+            .attr("transform", "translate("+ (width/2) +","+(height+(40))+")")  // centre below axis
             .text("Year")
                     .attr("id", "legendtext")  ;
 
@@ -1409,20 +1409,137 @@ var y = d3.scale.linear()
     .range([height, 0])
     .domain([.5, 1.25]);
 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   
+	
+     var scale = d3.scale.linear()
+            .domain([2000, 2013])
+///////        .range([0, width - margin*4 - labelWidth]);
+        .range([0, width - margin*4 - labelWidth]);
+///////        .range([0, wwwidth]);
+  ///?           .range([0, width]);
+  
+	  
+	  
+	  
+	  
+	  var xAxis = d3.svg.axis()
+         //////   .scale(scale)
+            .scale(scale)
+       ////////     .tickSize(-height + 4*margin + axisMargin)
+  .tickFormat(d3.format("d.date"))
+   .orient("bottom");
+    
+    
+	/*   
+	    
+	  
+var xAxis = d3.svg.axis()
+    .scale(x)
+  .tickFormat(d3.format("d.date"))
+    .orient("bottom");
+ */
+	  
+var yAxis = d3.svg.axis()
+ .scale(y)
+ /////      .scale(yScale)
+    .orient("left");
+
+    
+    
+    
+    
+    
+
+var line = d3.svg.area()
+    .x(function(d, i) { return x(i); })
+    .y1(function(d) { return y(d.value); })
+    .y0(height)
+    .interpolate('cardinal');
+
+	  
+	  
+	  
+	  
+var svg = d3.select("#vis").append("svg")
+    .attr("width", wwwidth)
+    .attr("height", hhheight)
+    .append("g")
+  ////////////  .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(80, -50)")
+
+
+
+
+/*
+var svg = d3.select("#vis").append("svg")
+    .attr("width", width - 210)
+    .attr("height", height - 210)
+    .append("g")
+   ///////// .attr("transform", "translate(50, 10)")
+    .attr("transform", "translate(100, -20)")
+*/
+
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+	  
+ /*
+svg.append("g")
+      .attr("class", "x axis")
+  ///////////    .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+ */
+/////////////////////////////////// 
+
+	  
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+ 
+
+	  
+	  
+	  
+	      svg.append("g")
+            .attr("class", "x axis")  // two classes, one for css formatting, one for selection below
+     ////       .attr("transform", "translate(0," + (height - padding) + ")")
+            .attr("transform", "translate(0," + (height + (padding/2)) + ")")
+            .call(xAxis);
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  /*
      var scale = d3.scale.linear()
             .domain([2000, 2013])
             .range([0, width - margin*4 - labelWidth]);
 
 	  var xAxis = d3.svg.axis()
             .scale(scale)
-    ///////////////        .tickSize(-height + 4*margin + axisMargin)
-  .tickFormat(d3.format("d.date"))
+   .tickFormat(d3.format("d.date"))
    .orient("bottom");
-    
-    
-/* var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom"); */
+     
 
 var yAxis = d3.svg.axis()
     .scale(y)
@@ -1459,17 +1576,7 @@ var svg = d3.select("#vis").append("svg")
       .datum(data)
       .attr("class", "line")
       .attr("d", line);
-
-/*
-svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-	.call(xAxis);
-
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-  */
+ 
 	  
 	  
       // draw x axis with labels and move to the bottom of the chart area
@@ -1483,6 +1590,9 @@ svg.append("g")
         	.attr("class", "axis")
             .attr("transform", "translate("+padding+",0)")
             .call(yAxis)
+	  
+	  
+	  */
 
         // now rotate text on x axis
         // solution based on idea here: https://groups.google.com/forum/?fromgroups#!topic/d3-js/heOBPQF3sAY
