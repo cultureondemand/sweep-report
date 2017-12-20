@@ -601,7 +601,7 @@ svg.append("g")
 
 	    div.attr("class", "fixedtooltip");
 
-             div.html("Denver-Aurora delayed <h4> "+(d.value)+" </h4>hours annually in <h4>"+(d.date)+"</h4>");
+             div.html("<h4>Denver-Aurora delayed</h4>"+(d.value)+"<h4>hours annually in</h4>"+(d.date)+"");
          })
 
         .on("mouseout", function(d){
@@ -1135,7 +1135,7 @@ svg.append("g")
            div.style("display", "inline-block");
 
 	    div.attr("class", "fixedtooltip");
-            div.html("<h4>"+(d.pop)+" Colorado Residents in </h4>"+(d.year)+"");
+            div.html((d.pop)+"<h4> Colorado Residents in </h4>"+(d.year));
          })
 
         .on("mouseout", function(d){
