@@ -115,7 +115,7 @@ Maybe it is time to try something new.
       large: ""
     },
     body: `
-      3 Colorado State Demography Office. 2017. Population Forecasts. https://demography.dola.colorado.gov/population/population-totals-colorado-substate/#population-totals-for- colorado-and-sub-state-regions
+      <span style="footnotenumber">3</span> Colorado State Demography Office. 2017. Population Forecasts. https://demography.dola.colorado.gov/population/population-totals-colorado-substate/#population-totals-for- colorado-and-sub-state-regions
     `
   },
   {
@@ -127,7 +127,7 @@ Maybe it is time to try something new.
       large: ""
     },
     body: `
-4 Federal Highway Administration. Highway Statistics. 1993 and 2015. Table SF-1 Motor Fuel Taxes. https://www.fhwa.dot.gov/policyinformation/statistics.cfm and
+<span style="footnotenumber">4</span> Federal Highway Administration. Highway Statistics. 1993 and 2015. Table SF-1 Motor Fuel Taxes. https://www.fhwa.dot.gov/policyinformation/statistics.cfm and
 US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalculator.com/
     `
   },
@@ -144,14 +144,14 @@ US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalcu
     
   },
   {
-    section: "Figure 5 | Congestion on the T-REX Corridor5",
+    section: "Figure 5 | Congestion on the T-REX Corridor <span style='footnotenumber'>5</span>",
   header: "",
     bkgImage: {
       small: "",
       medium: "",
       large: ""
     },
-    body:`5 Volume/Capacity Ratio data was obtained for the entire corridor from CDOT.`
+    body:`<span style="footnotenumber">5</span> Volume/Capacity Ratio data was obtained for the entire corridor from CDOT.`
 
   } ,
   {
