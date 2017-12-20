@@ -153,7 +153,7 @@ US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalcu
       medium: "",
       large: ""
     },
-    body:`<span class="footnotenumber">5</span> Volume/Capacity Ratio data was obtained for the entire corridor from CDOT.`
+    body:`<span class="footnotenumberr">5</span> Volume/Capacity Ratio data was obtained for the entire corridor from CDOT.`
 
   } ,
   {
