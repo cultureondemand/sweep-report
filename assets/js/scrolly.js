@@ -579,7 +579,8 @@ svg.append("g")
 					     
   
 	  
-	  
+	     .attr("x", function(d, i) { return x(i); })
+ 
 	  
 	/*  
 	  
