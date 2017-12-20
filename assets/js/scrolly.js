@@ -1237,7 +1237,7 @@ var yAxis = d3.svg.axis()
             .attr("dy", ".35em") //vertical align middle
             .attr("text-anchor", "start")
             .text(function(d){
-                return (d.a+":$"+d.b+"M");
+                return (d.a+": $"+d.b+"M");
             })
        ////////// .attr("x", function(d){
           ///////      var width = this.getBBox().width;
