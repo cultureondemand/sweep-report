@@ -79,14 +79,16 @@ Vehicles with three or more occupants can use the HOT lanes for free, while cars
 </span>
 
 <p>
-As part of a companion white paper1, SWEEP analyzed this section of I-25 and found that there could be significant benefits from converting one lane in each direction to a HOT lane, then investing the revenue in transit passes and connections to transit particularly for the first and final miles of popular commuter routes. This win-win approach would give drivers access to HOT lanes where congestion would be greatly reduced. It further would allow more people to use additional, affordable, effective and efficient transit instead of driving. Meanwhile, traffic in the remaining “free” lanes would be no worse than before the changes. This method optimizes the use of the existing highway, and will give travelers new options that will save them time, whether they choose to pay a toll when they are in a rush, or take the train because there are now better first- and final-mile connections to the transit stations.						
+As part of a companion white paper <span class='footnotenumber'>1</span>, SWEEP analyzed this section of I-25 and found that there could be significant benefits from converting one lane in each direction to a HOT lane, then investing the revenue in transit passes and connections to transit particularly for the first and final miles of popular commuter routes. This win-win approach would give drivers access to HOT lanes where congestion would be greatly reduced. It further would allow more people to use additional, affordable, effective and efficient transit instead of driving. Meanwhile, traffic in the remaining “free” lanes would be no worse than before the changes. This method optimizes the use of the existing highway, and will give travelers new options that will save them time, whether they choose to pay a toll when they are in a rush, or take the train because there are now better first- and final-mile connections to the transit stations.						
 
 <p>
 This approach should appeal across the political spectrum. For conservatives, the plan minimizes expenditures of tax money and uses market forces to manage congestion. For those on the left, this approach also would increase transit use, avoid environmental impacts and give low-income commuters better access to transit. In a world of extremely limited transportation funds, it should appeal to officials trying to manage limited budgets by make the best use of existing infrastructure.					
 
 <p>
 Maybe it is time to try something new. 
-
+<footer>
+<span class="footnotenumberr">1</span> Salisbury and Toor. 2017. Managed Lanes and Other Strategies to Improve Mobility on the I-25 South Corridor
+</footer>
 
 `
   },
@@ -96,14 +98,14 @@ Maybe it is time to try something new.
 
 
   {
-    section: "Figure 1 | Annual Hours of Delay, Denver-Aurora2",
+    section: "Figure 1 | Annual Hours of Delay, Denver-Aurora <span class='footnotenumber'>2</span>",
    header: "",
     bkgImage: {
        small: "",
       medium: "",
       large: ""
     },
-    body:"2 Texas A&M Transportation Institute. 2015. Annual Urban Mobility Scorecard. https://mobility.tamu.edu/ums/"
+    body:"<span class="footnotenumberr">2</span> Texas A&M Transportation Institute. 2015. Annual Urban Mobility Scorecard. https://mobility.tamu.edu/ums/"
 
    },
   {
@@ -115,11 +117,11 @@ Maybe it is time to try something new.
       large: ""
     },
     body: `
-      <span class="footnotenumber">3</span> Colorado State Demography Office. 2017. Population Forecasts. https://demography.dola.colorado.gov/population/population-totals-colorado-substate/#population-totals-for- colorado-and-sub-state-regions
+      <span class="footnotenumberr">3</span> Colorado State Demography Office. 2017. Population Forecasts. https://demography.dola.colorado.gov/population/population-totals-colorado-substate/#population-totals-for- colorado-and-sub-state-regions
     `
   },
   {
-    section: "Figure 3 | Colorado State Motor Fuel Taxes in Real Dollars, 1993 and 20154",
+    section: "Figure 3 | Colorado State Motor Fuel Taxes in Real Dollars, 1993 and 2015 <span class='footnotenumber'>4</span>",
    header: "",
     bkgImage: {
       small: "",
@@ -127,7 +129,7 @@ Maybe it is time to try something new.
       large: ""
     },
     body: `
-<span class="footnotenumber">4</span> Federal Highway Administration. Highway Statistics. 1993 and 2015. Table SF-1 Motor Fuel Taxes. https://www.fhwa.dot.gov/policyinformation/statistics.cfm and
+<span class="footnotenumberr">4</span> Federal Highway Administration. Highway Statistics. 1993 and 2015. Table SF-1 Motor Fuel Taxes. https://www.fhwa.dot.gov/policyinformation/statistics.cfm and
 US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalculator.com/
     `
   },
