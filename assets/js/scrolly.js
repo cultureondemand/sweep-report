@@ -1300,7 +1300,7 @@ d3.select("#vis").select("g").remove();
    
     
          var data=[
-           {"date":2000, "value": .82},
+           {"date":2000, "value": .8},
             {"date":2001, "value": .84},
             {"date":2002, "value": .83},   
             {"date": 2003, "value": .85},
@@ -1353,7 +1353,7 @@ var range = [];
     
 var y = d3.scale.linear()
     .range([height, 0])
-    .domain([.5, 1.25]);
+    .domain([.5, 1.1]);
 
 	  
 	  
