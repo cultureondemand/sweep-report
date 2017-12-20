@@ -456,7 +456,7 @@ svg.append("g")
 	      svg.append("g")
             .attr("class", "x axis")  // two classes, one for css formatting, one for selection below
      ////       .attr("transform", "translate(0," + (height - padding) + ")")
-            .attr("transform", "translate(0," + (height + (padding/2)) + ")")
+            .attr("transform", "translate(0," + (height + (padding/4)) + ")")
             .call(xAxis);
 	  
   /*	  
@@ -997,7 +997,7 @@ svg.append("g")
       // draw x axis with labels and move to the bottom of the chart area
         svg.append("g")
             .attr("class", "x axis")  // two classes, one for css formatting, one for selection below
-            .attr("transform", "translate(0," + (height + padding) + ")")
+            .attr("transform", "translate(0," + (height + padding/4) + ")")
             .call(xAxis);
     /*        
   // draw y axis with labels and move in from the size by the amount of padding
