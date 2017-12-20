@@ -626,7 +626,8 @@ svg.append("g")
    */
   function showTitle5() {
   
-  
+              div.style("display", "none");
+
     
     
    d3.select("body").selectAll(".bgbg")
