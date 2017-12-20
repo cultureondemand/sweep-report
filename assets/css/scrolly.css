@@ -2079,7 +2079,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 }
 
 
-.fixedtooltip {
+.ttooltip {
  background-color:#fff;
   bottom:2%;
   right:2%;
@@ -2095,6 +2095,27 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   
   background:#fff;
   border:0;
+  display:flex;
+  position:fixed;
+  margin:auto;
+}
+
+
+.fixedtooltip {
+/* background-color:#fff; */
+  bottom:100px;
+  right:50px;
+    fill: #000;
+  font-size: 36px;
+  font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
+  padding: 6px;
+  pointer-events: none;
+  position: fixed;
+  text-align: center;
+  text-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  z-index:999999 !important;
+  
+   border:0;
   display:flex;
   position:fixed;
   margin:auto;
