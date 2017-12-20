@@ -1611,6 +1611,7 @@ text-anchor:start;
   fill:#000;  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 1.1em;
+  max-width:200px;
  }
 
 .line {
