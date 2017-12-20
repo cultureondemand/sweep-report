@@ -1180,9 +1180,19 @@ var chart = d3.select("#vis").append("svg")
 
     xAxis = d3.svg.axis()
             .scale(scale)
-            .tickSize(-height + 4*margin + axisMargin)
+        //////////    .tickSize(-height + 4*margin + axisMargin)
             .orient("bottom");
 
+ var y = d3.scale.linear()
+    .range([height, 0]); 
+	  
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+	  
+	  
+	  
     bar.append("rect")
 
 
