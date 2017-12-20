@@ -329,7 +329,7 @@ var hhheight= (window.innerHeight-100+"px");
 var width = wwidth, height = hheight;
 var range = [];
  
-    var countt = (wwwwidth/15);
+    var countt = (wwwwidth/15+"px");
      
     /*
     var width = 500, height = 500;
@@ -573,7 +573,7 @@ svg.append("g")
 	
 
            .attr('height', hhheight)
-	   .attr('width',this.countt)
+	   .attr('width', countt)
            
 ////////// .attr('width', function(d) { return d * 2; }) // data point * 2 pixels wide 
 					     
