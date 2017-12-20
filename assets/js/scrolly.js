@@ -1296,7 +1296,7 @@ d3.select("#vis").select("g").remove();
             valueMargin = 1,
             labelWidth = 50;
     
-    
+    var padding=10;
    
     
          var data=[
@@ -1425,7 +1425,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(40, -50)")
+    .attr("transform", "translate(80, -50)")
 
 
 
