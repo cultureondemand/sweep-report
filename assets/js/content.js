@@ -151,10 +151,7 @@ Maybe it is time to try something new.
       medium: "",
       large: ""
     },
-    body:`In 2006, at the cost of $1.67 billion, the Transportation Expansion (T-REX) project, which widened
-I-25 and added parallel transit service, was completed. Congestion along the corridor improved, but
-the improvements were short lived. By 2010, just four years after completion, congestion had
-returned to the level experienced when construction began in 2001.`
+    body:`By 2010, just four years after completion of the $1.67 billion  Transportation Expansion (T-REX) project, congestion had returned to the level experienced when construction began in 2001.`
 
   } ,
   {
