@@ -1320,7 +1320,7 @@ var yAxis = d3.svg.axis()
 
   chart.append("g")
       .attr("class", "y axis")
-            .attr("transform", "translate(10,-10)")
+            .attr("transform", "translate(10,-20)")
       .call(yAxis);
  
 
