@@ -2081,8 +2081,8 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   min-width:280px;
   max-width:400px;
   font-size:96%;
-  margin-left: 60% !important;
-  margin-right: 10% !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 
 
