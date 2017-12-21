@@ -653,7 +653,7 @@ h4 {
     font-size: 1.2em;
     width: 100%;
     min-width: 260px;
-    overflow: visible;
+    overflow: hidden;
   }
 }
 
@@ -671,7 +671,7 @@ h4 {
     font-size: 1.2em;
     width: 100%;
     min-width: 260px;
-    overflow: visible;
+    overflow: hidden;
   }
 }
 
@@ -689,7 +689,7 @@ h4 {
     font-size: 1.1em;
     width: 100%;
     min-width: 260px;
-    overflow: visible;
+    overflow: hidden;
   }
 }
 
