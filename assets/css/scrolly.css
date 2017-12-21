@@ -125,9 +125,9 @@ div.tooltip {
   float: left;
   display: block;
   position: fixed;
-  left: 1%;
-  bottom: 1%;
-  padding: .3em;
+  left: 1px;
+  bottom: 1px;
+  padding: .1em;
   z-index:9999999999999;
  /* background-color: #fff; */
   opacity: 1;
