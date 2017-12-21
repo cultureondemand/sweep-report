@@ -919,55 +919,24 @@ var width = wwidth, height = hheight;
 	  
 	  
    var xAxis = d3.svg.axis()
-       ///////     .scale(xScale)
-   	  .ticks(10)
+   ///////     .scale(xScale)
+   	.ticks(10)
+   	.scale(scale)
+   ////////////       .tickSize(-height + 4*margin + axisMargin)
+ 	.tickFormat(d3.format("d.year"))
+   	.orient("bottom");
 
-            .scale(scale)
-     ////////////       .tickSize(-height + 4*margin + axisMargin)
- .tickFormat(d3.format("d.year"))
-   .orient("bottom");
 
-
-	  
-	  
-	  
-	  
-	  
-    
-    
-    /*
-    
-    
-    
-        var scale = d3.scale.linear()
-            .domain([2000, 2050])
-            .range([0, width - margin*4 - labelWidth]);
-
-    var xAxis = d3.svg.axis()
-            .scale(scale)
-            .tickSize(-height + 4*margin + axisMargin)
-            .orient("bottom");
-     */
-    
- /*   
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-*/
+ 
+  var formatValue = d3.format(".2s");
+ 
 
 var yAxis = d3.svg.axis()
     .scale(y)
+.tickFormat(function(d) { return formatValue(d)})
     .orient("left");
 
     
-/*     var line = d3.svg.line()
-    .interpolate("basis")
-    .x(function (d) {
-        return x(d.year);
-    })
-    .y(function (d) {
-        return y(d.pop);
-    });*/
     
     
 var line = d3.svg.area()
