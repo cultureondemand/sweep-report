@@ -2058,7 +2058,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   width:33%;
   min-width:280px;
   max-width:400px;
-  font-size:66%;
+  font-size:96%;
   margin-left: 100px !important;
   
  
@@ -2070,7 +2070,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   width:33%;
   min-width:280px;
   max-width:400px;
-  font-size:66%;
+  font-size:96%;
   margin-left: 100px !important;
 }
 
@@ -2080,18 +2080,18 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   width:33%;
   min-width:280px;
   max-width:400px;
-  font-size:66%;
+  font-size:96%;
   margin-left: 100px !important;
 }
 
 
 
 #step-6 {
-  width:33%;
+  width:25%;
   min-width:280px;
   max-width:400px;
-  font-size:66%;
-  margin-left: 100px !important;
+  font-size:96%;
+  margin-left: 75% !important;
 }
 
 
@@ -2101,7 +2101,7 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   width:33%;
   min-width:280px;
   max-width:400px;
-  font-size:66%;
+  font-size:96%;
   margin-left: 100px !important;
 }
 
