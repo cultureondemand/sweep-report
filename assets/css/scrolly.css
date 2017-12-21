@@ -78,8 +78,17 @@ div.tooltip {
 /*  background: rgba(0, 0, 0, 0.6); */
   fill: #000;
   font-size: 36px;
-  font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
-  padding: 4px 6px;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;  padding: 4px 6px;
   pointer-events: none;
   position: absolute;
   text-align: center;
@@ -100,8 +109,17 @@ div.tooltip {
 }
 
 #output {
-  font-family: 'Oswald', serif;
-  font-weight: 300;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;  font-weight: 300;
   font-size: 0.6em;
   color: #000;
   float: left;
@@ -110,6 +128,7 @@ div.tooltip {
   left: 1%;
   bottom: 1%;
   padding: .3em;
+  z-index:9999999999999;
  /* background-color: #fff; */
   opacity: 1;
 /*  max-width: 25%; */
@@ -401,7 +420,18 @@ background-color:#c78242;
 }
 
 .labels {
-  font: 1em 'Oswald', sans-serif;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  font-size:1em;
   fill: white;
   opacity: .8;
 }
@@ -428,8 +458,7 @@ line {
 
 #graphic {
   padding-top: 0;
-  font-family: "Oswald",
-    "HelveticaNeueLight",
+  font-family: "HelveticaNeueLight",
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
     "HelveticaNeue",
@@ -1537,8 +1566,17 @@ word-spacing: normal !important;
 }
 
 #sections .titleB {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;  font-weight: 700;
 
   font-size: 3.4em;
   margin-bottom: .3em;
@@ -1573,8 +1611,17 @@ word-spacing: normal !important;
 }
 
 #vis .title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;  font-weight: 700;
   top: 6em;
   font-size: 14em;
   text-anchor: middle;
@@ -1584,8 +1631,17 @@ word-spacing: normal !important;
 }
 
 #vis .sub-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;  font-weight: 700;
   font-size: 8em;
   color: #000;
   text-anchor: middle;
@@ -1607,7 +1663,19 @@ text-anchor:start;
 .highlight {
   visibility:visible;
   display:inline-block;
-  fill:#000;  font-family: 'Oswald', sans-serif;
+  fill:#000;  
+    font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
+  
   font-weight: 700;
   font-size: 1.1em;
   max-width:200px;
@@ -2101,7 +2169,17 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   right:2%;
     fill: #000;
   font-size: 36px;
-  font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
   padding: 6px;
   pointer-events: none;
   position: fixed;
@@ -2123,7 +2201,17 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
   right:50px;
     fill: #000;
   font-size: 36px;
-  font-family: 'Oswald', 'HelveticaNeue-Light', Arial, Helvetica, sans-serif;
+  font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
   padding: 6px;
   pointer-events: none;
   position: fixed;
@@ -2149,6 +2237,17 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 
 .footnotenumber {
+    font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
    vertical-align: super; /* 2 */
   font-size: 0.5em; /* 3 */
   margin-left: 2px; /* 4 */
@@ -2160,6 +2259,17 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 
 .footnotenumberr {
+    font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
    vertical-align: super; /* 2 */
   font-size: 0.8em; /* 3 */
   margin-left: 2px; /* 4 */
@@ -2170,6 +2280,17 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 
 footer {
+    font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
   margin-top: 50px;
   border-top: 1px solid silver;
   font-size: 0.6em;
