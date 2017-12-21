@@ -1202,7 +1202,7 @@ var chart = d3.select("#vis").append("svg")
           ////  .attr("width", width+"px")
 	      .attr("width", wwwidth)
     .attr("height", hhheight)
-     .attr("transform", "translate(100, -50)")
+     .attr("transform", "translate(50, -50)")
         ////   .style("margin-right", "80px")
 
 	  
@@ -1309,7 +1309,8 @@ var yAxis = d3.svg.axis()
   
     chart.insert("g",":first-child")
             .attr("class", "axisHorizontal")
-            .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin)+")")
+         /////   .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin)+")")
+            .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - margin)+")")
             .call(xAxis);
 
 
