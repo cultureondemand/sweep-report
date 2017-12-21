@@ -958,7 +958,7 @@ var svg = d3.select("#vis").append("svg")
     .attr("height", hhheight)
     .append("g")
   ////////////  .attr("transform", "translate(50, 10)")
-    .attr("transform", "translate(50, -50)")
+    .attr("transform", "translate(70, -50)")
 
 
 
