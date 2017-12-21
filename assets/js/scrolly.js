@@ -658,6 +658,11 @@ d3.select("#vis").select("g").remove();
 	  
         var fnB = document.getElementById("fnB");
     fnB.setAttribute("style", "display:inline-block !important; ");
+	  
+	  
+	  
+        var fnC = document.getElementById("fnC");
+    fnC.setAttribute("style", "display:none !important; ");
      
     ///
     ////
