@@ -132,8 +132,14 @@ div.tooltip {
  /* background-color: #fff; */
   opacity: 1;
 /*  max-width: 25%; */
+  background:none;
+  background-color:transparent;
 }
+#output a {
+  background:none;
+  background-color:transparent;
 
+}
 
 #pmnglogo {
   top: .5em;
