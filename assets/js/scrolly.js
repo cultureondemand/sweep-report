@@ -266,12 +266,10 @@ d3.select("#vis").select("g").remove();
   
         var fnA = document.getElementById("fnA");
     fnA.setAttribute("style", "display:inline-block !important; ");
-    fnA.setAttribute("style", "visibility:visible; ");
-
+ 
 	       var fnB = document.getElementById("fnB");
     fnB.setAttribute("style", "display:none !important; ");
-    fnB.setAttribute("style", "visibility:hidden; ");
-    
+     
 	  
 	  
          var data=[
@@ -656,13 +654,11 @@ d3.select("#vis").select("g").remove();
   
         var fnA = document.getElementById("fnA");
     fnA.setAttribute("style", "display:none !important; ");
-    fnA.setAttribute("style", "visibility:hidden; ");
-    
+     
 	  
         var fnB = document.getElementById("fnB");
     fnB.setAttribute("style", "display:inline-block !important; ");
-    fnB.setAttribute("style", "visibility:visible; ");
-    
+     
     ///
     ////
     ////
@@ -1128,12 +1124,10 @@ svg.append("g")
 	   
         var fnC = document.getElementById("fnC");
     fnC.setAttribute("style", "display:inline-block !important; ");
-    fnC.setAttribute("style", "visibility:visible; ");
-
+ 
 	       var fnB = document.getElementById("fnB");
     fnB.setAttribute("style", "display:none !important; ");
-    fnB.setAttribute("style", "visibility:hidden; ");
-	  
+ 	  
 	  
 	  
 	  
@@ -1305,12 +1299,10 @@ var yAxis = d3.svg.axis()
 	  
         var fnC = document.getElementById("fnC");
     fnC.setAttribute("style", "display:none !important; ");
-    fnC.setAttribute("style", "visibility:hidden; ");
-
+ 
 	       var fnD = document.getElementById("fnD");
     fnD.setAttribute("style", "display:none !important; ");
-    fnD.setAttribute("style", "visibility:hidden; ");
-	  
+ 	  
 	  
 	  
 	  
@@ -1339,8 +1331,7 @@ d3.select("#vis").select("g").remove();
     
 	       var fnD = document.getElementById("fnD");
     fnD.setAttribute("style", "display:inline-block !important; ");
-    fnD.setAttribute("style", "visibility:visible; ");
-	  
+ 	  
 	  
    
   d3.select("#vis").select("svg").remove();
@@ -1761,8 +1752,7 @@ var svg = d3.select("#vis").append("svg")
   
 	       var fnD = document.getElementById("fnD");
     fnD.setAttribute("style", "display:none !important; ");
-    fnD.setAttribute("style", "visibility:hidden; ");
-	  
+ 	  
   
   
   d3.select("#vis").select("svg").remove();
