@@ -1153,8 +1153,8 @@ svg.append("g")
 d3.select("#vis").select("g").remove();
 
   var data_tax = [
-{a:"1993 Real Revenue",b:372},
-{a:"2015 Real Revenue",b:351} 
+{a:"1993 Real revenue",b:372},
+{a:"2015 Real revenue",b:351} 
 ];
     
 ////////////////////////////////
@@ -1189,8 +1189,8 @@ var width = wwidth, height = hheight;
 	  
 
 
-    var barHeight = (height-axisMargin-margin*2)* 0.6/data_tax.length,
-            barPadding = (height-axisMargin-margin*2)*0.4/data_tax.length,
+    var barHeight = (height-axisMargin-margin*2)* 0.4/data_tax.length,
+            barPadding = (height-axisMargin-margin*2)*0.2/data_tax.length,
             data, bar, svg, scale, xAxis, labelWidth = 0;
 
     max = d3.max(data_tax, function(d) { return d.b; });
@@ -1202,7 +1202,7 @@ var chart = d3.select("#vis").append("svg")
           ////  .attr("width", width+"px")
 	      .attr("width", wwwidth)
     .attr("height", hhheight)
-     .attr("transform", "translate(50, -50)")
+     .attr("transform", "translate(10, -50)")
         ////   .style("margin-right", "80px")
 
 	  
