@@ -1248,6 +1248,8 @@ var chart = d3.select("#vis").append("svg")
 
 var yAxis = d3.svg.axis()
     .scale(y)
+	  .ticks(0)
+
     .orient("left");
 	  
 	  
@@ -1307,7 +1309,7 @@ var yAxis = d3.svg.axis()
           
 
   
-    chart.insert("g",":first-child")
+    chart.append("g")
             .attr("class", "x axis")
          /////   .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin)+")")
             .attr("transform", "translate(" + (margin + labelWidth) + ","+ ((height - margin)-10)+")")
@@ -1318,6 +1320,7 @@ var yAxis = d3.svg.axis()
 
   chart.append("g")
       .attr("class", "y axis")
+            .attr("transform", "translate("10","0")")
       .call(yAxis);
  
 
