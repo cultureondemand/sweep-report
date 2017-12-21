@@ -933,7 +933,7 @@ var width = wwidth, height = hheight;
 
 var yAxis = d3.svg.axis()
     .scale(y)
-	  .ticks(5)
+	////////  .ticks(5)
 
 .tickFormat(function(d) { return formatValue(d)})
     .orient("left");
