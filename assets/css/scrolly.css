@@ -554,7 +554,7 @@ h4 {
    z-index: 99999;
    line-height: 1.6em;
    text-transform: uppercase;
-   background-color: #fff;
+   color: #fff;
   font-family: "HelveticaNeueLight",
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
@@ -566,7 +566,7 @@ h4 {
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: .8em; 
+  font-size: .7em; 
   font-weight: 800;
     cursor: pointer;
  
