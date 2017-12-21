@@ -1310,7 +1310,7 @@ var yAxis = d3.svg.axis()
     chart.insert("g",":first-child")
             .attr("class", "axisHorizontal")
          /////   .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin)+")")
-            .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - margin)+")")
+            .attr("transform", "translate(" + (margin + labelWidth) + ","+ ((height - margin)-10)+")")
             .call(xAxis);
 
 
