@@ -129,9 +129,7 @@ Maybe it is time to try something new.
       large: ""
     },
     body: `
-<span class="footnotenumberr">4</span> Federal Highway Administration. Highway Statistics. 1993 and 2015. Table SF-1 Motor Fuel Taxes. https://www.fhwa.dot.gov/policyinformation/statistics.cfm and
-US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalculator.com/
-    `
+ Between 1993 (when Colorado last raised its gas tax) and 2015, the nominal value of the money CDOT collected rose by about $200 million dollars, but in real value the revenue has actually decreased by $21 million.    `
   },
 
     {
