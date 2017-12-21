@@ -920,7 +920,7 @@ var width = wwidth, height = hheight;
 	  
    var xAxis = d3.svg.axis()
    ///////     .scale(xScale)
-   	.ticks(10)
+   	.ticks(5)
    	.scale(scale)
    ////////////       .tickSize(-height + 4*margin + axisMargin)
  	.tickFormat(d3.format("d.year"))
@@ -933,6 +933,8 @@ var width = wwidth, height = hheight;
 
 var yAxis = d3.svg.axis()
     .scale(y)
+	  .ticks(5)
+
 .tickFormat(function(d) { return formatValue(d)})
     .orient("left");
 
