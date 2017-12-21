@@ -231,6 +231,9 @@ d3.select("#vis").select("g").remove();
 	  div.style("display", "none");
 
      
+        var fnA = document.getElementById("fnA");
+    fnA.setAttribute("style", "display:none !important; ");
+ 
   
   }
 
