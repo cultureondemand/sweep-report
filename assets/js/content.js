@@ -105,7 +105,7 @@ Maybe it is time to try something new.
       medium: "",
       large: ""
     },
-    body:"<span class='footnotenumberr'>2</span> Texas A&M Transportation Institute. 2015. Annual Urban Mobility Scorecard. https://mobility.tamu.edu/ums/"
+    body:"With already high levels of congestion and significant barriers to additional highway expansion, the portion of the I-25 corridor between 6th Avenue and 470 presents a challenge to transportation planners. "
 
    },
   {
@@ -117,7 +117,7 @@ Maybe it is time to try something new.
       large: ""
     },
     body: `
-      <span class="footnotenumberr">3</span> Colorado State Demography Office. 2017. Population Forecasts. https://demography.dola.colorado.gov/population/population-totals-colorado-substate/#population-totals-for- colorado-and-sub-state-regions
+     As population and employment increases along the corridor, issues of congestion are only expected to become worse.
     `
   },
   {
@@ -153,7 +153,10 @@ US Inflation Calculator. 2017. Inflation Calculator. http://www.usinflationcalcu
       medium: "",
       large: ""
     },
-    body:`<span class="footnotenumberr">5</span> Volume/Capacity Ratio data was obtained for the entire corridor from CDOT.`
+    body:`In 2006, at the cost of $1.67 billion, the Transportation Expansion (T-REX) project, which widened
+I-25 and added parallel transit service, was completed. Congestion along the corridor improved, but
+the improvements were short lived. By 2010, just four years after completion, congestion had
+returned to the level experienced when construction began in 2001.`
 
   } ,
   {
