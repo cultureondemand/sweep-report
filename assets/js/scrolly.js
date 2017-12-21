@@ -1160,18 +1160,36 @@ d3.select("#vis").select("g").remove();
 ////////////////////////////////
 /////// drawHBarChart(data_tax);
 
+   
+	  
+	  
+	  
+    var wwidth= window.innerWidth;
+  var hheight= window.innerHeight;
     
-
-
-    var axisMargin = 5,
+ 
+	
+  var wwwidth= (window.innerWidth-70+"px");
+  var wwwwidth= (window.innerWidth-70);  
+	var hhheight= (window.innerHeight-50+"px");
+    var counttt = (wwwwidth/50+"px");
+        
+var width = wwidth, height = hheight;  
+    
+        var axisMargin = 1,
             margin = 10,
-            valueMargin = 4,
-  ///////          width = parseInt(d3.select('body').style('width'), 10),
-            width = (window.innerWidth-16),
-     //////////       height = parseInt(d3.select('body').style('height'), 10),
-           ////// height = 500,
-        height= window.innerHeight-16,
-            barHeight = (height-axisMargin-margin*2)* 0.6/data_tax.length,
+            valueMargin = 1,
+            labelWidth = 50,
+                padding = 10; // space around the chart, not including labels
+        
+	  
+	  
+	  
+	  
+	  
+
+
+    var barHeight = (height-axisMargin-margin*2)* 0.6/data_tax.length,
             barPadding = (height-axisMargin-margin*2)*0.4/data_tax.length,
             data, bar, svg, scale, xAxis, labelWidth = 0;
 
@@ -1182,10 +1200,17 @@ d3.select("#vis").select("g").remove();
 var chart = d3.select("#vis").append("svg")
 ///////////////var chart = d3.select("#"+name)
           ////  .attr("width", width+"px")
-          .attr("width", "100%")
-            .attr("height", "100%");
-         ////   .style("margin-right", "80px")
+	      .attr("width", wwwidth)
+    .attr("height", hhheight)
+     .attr("transform", "translate(100, -50)")
+        ////   .style("margin-right", "80px")
 
+	  
+   ////////////  .attr("transform", "translate(50, 10)")
+
+	  
+	  
+	  
 
     bar = chart.selectAll("g")
             .data(data_tax)
