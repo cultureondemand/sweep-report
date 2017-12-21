@@ -2077,11 +2077,12 @@ top: 0;left: 0;display: inline-block;position: fixed; z-index: 99999988;
 
 
 #step-5 {
-  width:25%;
+  width:30%;
   min-width:280px;
   max-width:400px;
   font-size:96%;
-  margin-left: 75% !important;
+  margin-left: 60% !important;
+  margin-right: 10% !important;
 }
 
 
