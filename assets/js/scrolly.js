@@ -1191,8 +1191,8 @@ var chart = d3.select("#vis").append("svg")
     bar.attr("class", "thing-0")
             .attr("cx",0)
             .attr("transform", function(d, i) {
-return "translate(" + margin + "," + (i * (barHeight + barPadding) + barPadding) + ")";
-  /////        return "translate(" + margin + "," + (i * (barHeight + barPadding)) + ")";
+  /////       return "translate(" + margin + "," + (i * (barHeight + barPadding) + barPadding) + ")";
+ return "translate(" + margin + "," + (i * (barHeight + barPadding)) + ")";
             });
 
     bar.append("text")
