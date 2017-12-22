@@ -2318,4 +2318,7 @@ footer {
   line-height:1em;
 }
 
-
+.tick {
+ font-size:.7em;
+  font-weight:600;
+}
