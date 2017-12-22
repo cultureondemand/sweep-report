@@ -271,6 +271,10 @@ background-color:rgba(56, 113, 193,.9);*/
 background-color:rgba(56, 113, 193,.9);*/
 
  }#container-6 {
+    color: #fff;
+    background-color: rgba(79, 101, 34, .9);
+      box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  
 /*max-width: 800px;
 
 background-color:rgba(55, 150, 51,.9);*/
@@ -282,6 +286,15 @@ background-color:rgba(55, 150, 51,.9);*/
 
 
 #container-8 {
+ 
+ 
+     color: #fff;
+    background-color: rgba(79, 101, 34, .9);
+      box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+ 
+ 
+ 
 /*max-width: 800px; 
 
 background-color:rgba(128, 10, 214,.9);*/
