@@ -10,6 +10,17 @@ background-color: rgba(79, 101, 34, .9);
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    font-family: "HelveticaNeueLight",
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    'TeXGyreHerosRegular',
+    "Helvetica",
+    "Tahoma",
+    "Geneva",
+    "Arial",
+    sans-serif;
 }
 
 .bgbg {
@@ -1094,7 +1105,7 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
 
   margin: 0 auto;
@@ -1136,7 +1147,7 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 600;
 
   margin: 0 auto;
@@ -1174,7 +1185,7 @@ background-color: #fff;
     "Geneva",
     "Arial",
     sans-serif;
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-weight: 600;
 
   margin: 0 auto;
