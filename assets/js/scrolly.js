@@ -1160,8 +1160,8 @@ var width = wwidth, height = hheight;
 	  
 
 
-    var barHeight = (hhheight-axisMargin-margin*2)* 0.5/data_tax.length,
-            barPadding = (hhheight-axisMargin-margin*2)*0.4/data_tax.length,
+    var barHeight = (height-axisMargin-margin*2)* 0.4/data_tax.length,
+            barPadding = (height-axisMargin-margin*2)*0.4/data_tax.length,
             data, bar, svg, scale, xAxis, labelWidth = 0;
 
     max = d3.max(data_tax, function(d) { return d.b; });
