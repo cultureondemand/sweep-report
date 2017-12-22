@@ -1160,8 +1160,8 @@ var width = wwidth, height = hheight;
 	  
 
 
-    var barHeight = (height-axisMargin-margin*2)* 0.4/data_tax.length,
-            barPadding = (height-axisMargin-margin*2)*0.8/data_tax.length,
+    var barHeight = (height-axisMargin-margin*4)* 0.4/data_tax.length,
+            barPadding = (height-axisMargin-margin*2)*0.2/data_tax.length,
             data, bar, svg, scale, xAxis, labelWidth = 0;
 
     max = d3.max(data_tax, function(d) { return d.b; });
@@ -1192,7 +1192,7 @@ var chart = d3.select("#vis").append("svg")
             .attr("cx",0)
             .attr("transform", function(d, i) {
   /////       return "translate(" + margin + "," + (i * (barHeight + barPadding) + barPadding) + ")";
- return "translate(" + margin + "," + (i * (barHeight + barPadding)) + ")";
+ return "translate(" + margin + "," + (i * (barHeight + barPadding) + barPadding) + ")";
             });
 
     bar.append("text")
