@@ -1173,7 +1173,7 @@ var chart = d3.select("#vis").append("svg")
           ////  .attr("width", width+"px")
 	      .attr("width", wwwidth)
     .attr("height", hhheight)
-     .attr("transform", "translate(10, 50)")
+     .attr("transform", "translate(10, 20)")
         ////   .style("margin-right", "80px")
 
 	  
@@ -1192,7 +1192,7 @@ var chart = d3.select("#vis").append("svg")
             .attr("cx",0)
             .attr("transform", function(d, i) {
            /////     return "translate(" + margin + "," + (i * (barHeight + barPadding) + barPadding) + ")";
-                return "translate(" + margin + "," + (i * (barHeight - barPadding)) + ")";
+                return "translate(" + margin + "," + (i * (barHeight + barPadding)) + ")";
             });
 
     bar.append("text")
@@ -1278,14 +1278,14 @@ var yAxis = d3.svg.axis()
       ///////////      });
 
  
-          
-
+          ////////////////////////////////////////////////////////////
+/////// the real xAxis here: taken out because this chart doesn't need it but can turn back on here
   
-    chart.append("g")
-            .attr("class", "x axis")
+ ////   chart.append("g")
+  ////          .attr("class", "x axis")
          /////   .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin)+")")
-            .attr("transform", "translate(" + (margin + labelWidth) + ","+ ((height - margin)-50)+")")
-            .call(xAxis);
+    ///        .attr("transform", "translate(" + (margin + labelWidth) + ","+ ((height - margin)-50)+")")
+    ////        .call(xAxis);
 
 
  
