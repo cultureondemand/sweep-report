@@ -168,13 +168,13 @@ header: "",
  
 <p>&nbsp;</p>
 
-<h3 class='prog'>Saving money and protecting the environment
-by advancing energy efficiency
-in Arizona, Colorado, Nevada, New Mexico, Utah and Wyoming</h3>
+<h3 class='prog'>
 
-<span><a href='http://www.swenergy.org/' target='_blank'>Southwest Energy Efficiency Project</a></span>
+<a href='http://www.swenergy.org/' target='_blank'>Southwest Energy Efficiency Project</a>
 
 <br />
+Saving money and protecting the environment by advancing energy efficiency in Arizona, Colorado, Nevada, New Mexico, Utah and Wyoming</h3>
+
 
 <a href="//www.facebook.com/SWenergyefficiency/" class="social-icon" aria-label="Facebook" alt="Facebook">
 <img src="assets/images/facebook-box.png" height="21" border="0" alt="facebook"></a>
@@ -184,8 +184,7 @@ in Arizona, Colorado, Nevada, New Mexico, Utah and Wyoming</h3>
 
 <br />
 <br />
-
-.
+ 
 <p>&nbsp;</p>
 
 <button class="mdc-button mdc-button--raised" data-demo-no-js style="font-size:135%;font-weight:800; " onclick="window.open('assets/sweep_improving_mobility_wout_more_lanes.pdf')">
