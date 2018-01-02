@@ -1131,7 +1131,7 @@ background-color: #fff;
   position: fixed;
   display: block;
   top: 39px;
-  z-index: 9990;
+ /* z-index: 9990; */
   width: 100%;
   line-height: 1em;
   left: 0;
@@ -1173,7 +1173,7 @@ background-color: #fff;
   position: fixed;
   display: block;
   top: 39px;
-  z-index: 9990;
+ /* z-index: 9990; */
   width: 100%;
   line-height: 1em;
   left: 0;
@@ -1211,7 +1211,7 @@ background-color: #fff;
   position: fixed;
   display: block;
   top: 39px;
-  z-index: 9990;
+/*  z-index: 9990; */
   width: 100%;
   line-height: 1em;
   left: 0;
