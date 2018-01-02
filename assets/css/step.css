@@ -216,8 +216,10 @@ margin-bottom:.6em;
 top:0;
 
 
-}h3.prog {
-color:#3871C1;
+}
+
+h3.prog {
+color:rgba(79, 101, 34, .9);
  }
 
 
