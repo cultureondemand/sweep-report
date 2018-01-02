@@ -1173,7 +1173,7 @@ var chart = d3.select("#vis").append("svg")
           ////  .attr("width", width+"px")
 	      .attr("width", wwwidth)
     .attr("height", hhheight)
-     .attr("transform", "translate(10, 40)")
+     .attr("transform", "translate(10, 60)")
         ////   .style("margin-right", "80px")
 
 	  
