@@ -231,8 +231,8 @@ d3.select("#vis").select("g").remove();
 	  div.style("display", "none");
 
      
-        var fnA = document.getElementById("fnA");
-    fnA.setAttribute("style", "display:none !important; ");
+   /////     var fnA = document.getElementById("fnA");
+ ///////   fnA.setAttribute("style", "display:none !important; ");
  
   
   }
@@ -263,7 +263,7 @@ d3.select("#vis").select("g").remove();
     vis.setAttribute("style", "display:inline-block !important; ");
     vis.setAttribute("style", "visibility:visible; ");
     
- */
+ 
    
     
   
@@ -273,7 +273,7 @@ d3.select("#vis").select("g").remove();
 	       var fnB = document.getElementById("fnB");
     fnB.setAttribute("style", "display:none !important; ");
      
-	  
+*/	  
 	  
          var data=[
            {"date":2000, "value": 59247},
@@ -655,17 +655,17 @@ svg.append("g")
 d3.select("#vis").select("g").remove();
 
   
-        var fnA = document.getElementById("fnA");
-    fnA.setAttribute("style", "display:none !important; ");
+  ////      var fnA = document.getElementById("fnA");
+ /////   fnA.setAttribute("style", "display:none !important; ");
      
 	  
-        var fnB = document.getElementById("fnB");
-    fnB.setAttribute("style", "display:inline-block !important; ");
+  /////      var fnB = document.getElementById("fnB");
+  /////  fnB.setAttribute("style", "display:inline-block !important; ");
 	  
 	  
 	  
-        var fnC = document.getElementById("fnC");
-    fnC.setAttribute("style", "display:none !important; ");
+    ////    var fnC = document.getElementById("fnC");
+/////    fnC.setAttribute("style", "display:none !important; ");
      
     ///
     ////
@@ -1101,11 +1101,11 @@ svg.append("g")
 	  
 	  
 	   
-        var fnC = document.getElementById("fnC");
-    fnC.setAttribute("style", "display:inline-block !important; ");
+  //////      var fnC = document.getElementById("fnC");
+ ///////   fnC.setAttribute("style", "display:inline-block !important; ");
  
-	       var fnB = document.getElementById("fnB");
-    fnB.setAttribute("style", "display:none !important; ");
+////////	       var fnB = document.getElementById("fnB");
+//////////    fnB.setAttribute("style", "display:none !important; ");
  	  
 	  
 	  
@@ -1311,11 +1311,11 @@ var yAxis = d3.svg.axis()
 	  
 	  
 	  
-        var fnC = document.getElementById("fnC");
-    fnC.setAttribute("style", "display:none !important; ");
+   ////     var fnC = document.getElementById("fnC");
+  /////  fnC.setAttribute("style", "display:none !important; ");
  
-	       var fnD = document.getElementById("fnD");
-    fnD.setAttribute("style", "display:none !important; ");
+/////	       var fnD = document.getElementById("fnD");
+ ///////   fnD.setAttribute("style", "display:none !important; ");
  	  
 	  
 	  
@@ -1343,8 +1343,8 @@ d3.select("#vis").select("g").remove();
       div.style("display", "none");
 
     
-	       var fnD = document.getElementById("fnD");
-    fnD.setAttribute("style", "display:inline-block !important; ");
+	////       var fnD = document.getElementById("fnD");
+ //////   fnD.setAttribute("style", "display:inline-block !important; ");
  	  
 	  
    
@@ -1764,8 +1764,8 @@ var svg = d3.select("#vis").append("svg")
   function showTitle9() {
   
   
-	       var fnD = document.getElementById("fnD");
-    fnD.setAttribute("style", "display:none !important; ");
+	/////       var fnD = document.getElementById("fnD");
+/////////////    fnD.setAttribute("style", "display:none !important; ");
  	  
   
   
