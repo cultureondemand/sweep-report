@@ -109,7 +109,7 @@ Maybe it is time to try something new.
 
    },
   {
-    section: "Figure 2 | Colorado Population, 2000-2050 <span class='footnotenumber'>3</span>",
+    section: "Figure 2 | Colorado Population, 2000-2050 <span class='footnotenumber'>3</span><br /> <div id='outputB'><div id='fnA'><span class='footnotenumberr'>3</span> Colorado State Demography Office. 2017.  <a href='https://demography.dola.colorado.gov/population/population-totals-colorado-substate/#population-totals-for-'>Population Forecasts.</a></div></div>",
    header: "",
     bkgImage: {
       small: "",
@@ -121,7 +121,7 @@ Maybe it is time to try something new.
     `
   },
   {
-    section: "Figure 3 | Colorado State Motor Fuel Taxes in Real Dollars, 1993 and 2015 <span class='footnotenumber'>4</span>",
+    section: "Figure 3 | Colorado State Motor Fuel Taxes in Real Dollars, 1993 and 2015 <span class='footnotenumber'>4</span><br /> <div id='outputB'><div id='fnA'><span class='footnotenumberr'>4</span> Federal Highway Administration. Highway Statistics. 1993 and 2015. <a href='https://www.fhwa.dot.gov/policyinformation/statistics.cfm'>Table SF-1 Motor Fuel Taxes.</a> and US Inflation Calculator. 2017. <a href='http://www.usinflationcalculator.com/'>Inflation Calculator.</a></div></div>",
    header: "",
     bkgImage: {
       small: "",
@@ -144,7 +144,7 @@ Maybe it is time to try something new.
     
   },
   {
-    section: "Figure 5 | Congestion on the T-REX Corridor <span class='footnotenumber'>5</span>",
+    section: "Figure 5 | Congestion on the T-REX Corridor <span class='footnotenumber'>5</span><br /> <div id='outputB'><div id='fnA'><span class='footnotenumberr'>5</span> Volume/Capacity Ratio data was obtained for the entire corridor from CDOT.</div></div>",
   header: "",
     bkgImage: {
       small: "",
