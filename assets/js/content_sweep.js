@@ -98,7 +98,7 @@ Maybe it is time to try something new.
 
 
   {
-    section: "Figure 1 | Annual Hours of Delay, Denver-Aurora <span class='footnotenumber'>2</span><br /> <div id='outputB'><div id='fnA' style='display:none; '><span class='footnotenumberr'>2</span> Texas A&M Transportation Institute. 2015.  <a href='https://mobility.tamu.edu/ums/'>Annual Urban Mobility Scorecard.</a></div></div>",
+    section: "Figure 1 | Annual Hours of Delay, Denver-Aurora <span class='footnotenumber'>2</span><br /> <div id='outputB'><div id='fnA'><span class='footnotenumberr'>2</span> Texas A&M Transportation Institute. 2015.  <a href='https://mobility.tamu.edu/ums/'>Annual Urban Mobility Scorecard.</a></div></div>",
    header: "",
     bkgImage: {
        small: "",
