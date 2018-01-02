@@ -136,8 +136,8 @@ Maybe it is time to try something new.
     section: "Figure 4 | Managed Lanes and Interstate Expansion Costs in the Denver Metro Area",
     header: "",
     bkgImage: {
-      small: "map.png",
-      medium: "map.png",
+      small: "map_mobi.png",
+      medium: "map_mobi.png",
       large: "map.png"
     },
     body: `  `
