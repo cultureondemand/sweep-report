@@ -140,7 +140,7 @@ Maybe it is time to try something new.
       medium: "map_mobi.png",
       large: "map.png"
     },
-    body: `  `
+    body: `CDOT faces significant funding challenges and lacks the funding to complete other major highway expansions that are already planned (I-70 East, I-25 North, I-70 Mountain, and I-270).`
     
   },
   {
