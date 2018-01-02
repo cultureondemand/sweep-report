@@ -188,7 +188,7 @@ in Arizona, Colorado, Nevada, New Mexico, Utah and Wyoming</h3>
 .
 <p>&nbsp;</p>
 
-<button class="mdc-button mdc-button--raised" data-demo-no-js style="padding:.6em;font-size:135%;font-weight:800; " onclick="window.open('assets/sweep_improving_mobility_wout_more_lanes.pdf')">
+<button class="mdc-button mdc-button--raised" data-demo-no-js style="font-size:135%;font-weight:800; " onclick="window.open('assets/sweep_improving_mobility_wout_more_lanes.pdf')">
 Download the Report
 </button>
 
