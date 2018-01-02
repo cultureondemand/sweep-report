@@ -168,9 +168,11 @@ header: "",
  
 <p>&nbsp;</p>
 
-<h3 class='prog'></h3>
+<h3 class='prog'>Saving money and protecting the environment
+by advancing energy efficiency
+in Arizona, Colorado, Nevada, New Mexico, Utah and Wyoming</h3>
 
-<span><a href='http://www.swenergy.org/' target='_blank'>www.swenergy.org</a></span>
+<span><a href='http://www.swenergy.org/' target='_blank'>Southwest Energy Efficiency Project</a></span>
 
 <br />
 
