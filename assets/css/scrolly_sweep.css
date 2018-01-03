@@ -1513,8 +1513,8 @@ vertical-align: top;
     text-align: left;
     position: relative;
     display: inline-block;
-  width: 100%;
-/*       padding-left: 111px; */
+/*   width: 100%;
+      padding-left: 111px; */
      padding-top: 1em;
   
   
@@ -1561,8 +1561,8 @@ word-spacing: normal !important;
     text-align: left;
     position: relative;
     display: inline-block;
-    width: 100%;
-/*     padding-left: 200px; */
+/*      width: 100%;
+   padding-left: 200px; */
        padding-top: 1em;
 
   
@@ -1604,8 +1604,8 @@ word-spacing: normal !important;
     text-align: left;
     position: relative;
     display: inline-block;
-    width: 100%;
-/*    left: 25%; */
+/*      width: 100%;
+  left: 25%; */
     padding-left: 40px;
   
   
