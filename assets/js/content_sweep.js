@@ -105,7 +105,7 @@ Maybe it is time to try something new.
       medium: "",
       large: ""
     },
-    body:"With already high levels of congestion and significant barriers to additional highway expansion, the portion of the I-25 corridor between 6th Avenue and 470 presents a challenge to transportation planners. "
+    body:"<a href='https://www.youtube.com/watch?v=1PnWbXnnr4g'>This U.S. Department of Transportation video illustrates</a> the intensity and complexity of adding new lanes to Interstate 25 through southeast metro Denver, known as the T-REX project. Lack of funds and the high cost of acquiring more land for right-of-ways make adding even more lanes cost-prohibitive."
 
    },
   {
